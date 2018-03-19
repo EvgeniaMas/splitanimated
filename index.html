@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="libs/animate/dropdown.css">
 	<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
@@ -24,326 +24,601 @@
 
 
 	<div id="global-wrapper">
-	<div id="preloader">
-	<div id="preload">
-		<div class="preload-info animated flip">
-	          <p class="text ">Home Climate </p>
-	          <img class="logo " src="img/team_logo.png" alt="Логотип">
-				<span class="logo-line"></span>
-			   <p class="text"> Высокий уровень Вашего комфорта!</p>
-		</div>
-	</div>		
-   </div>
-
-
- <header class="v-header container">
- 	<img class="header_logo " src="img/team_logo.png" alt="Логотип">
-    <div class="fullscreen-video-wrap">
-           <video src="split.1.mp4" autoplay="" loop="">
-    </video>
-    </div>
-    <div class="header-overlay"></div>
-    <div class="header-content text-md-center">
-
-    	<div  class="open">
-	<span class="cls"></span>
-	<span>
-		<ul class="sub-menu ">
-			<li>
-				<a href="#main" title="Главная">Главная</a>
-			</li>
-			<li>
-				<a href="#about" title="Преимущества">Преимущества</a>
-			</li>
-			<li>
-				<a href="#skills" title="Каталог">Каталог</a>
-			</li>
-			<li>
-				<a href="#jobs" title="Услуги">Услуги</a>
-			</li>
-			<li>
-				<a href="#contact" title="Гарантии">Гарантии</a>
-			</li>
-
-			<li> 
-				<div class="si-phone">
-			<a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a><br>
-			<a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
-			<a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
-		</div>   
-			</li>
-		</ul>
 
 
 
-	</span>
-	<span class="cls"></span>
+
+ <style>
+  
+
+.section--purple {
+  background-color: #9b59b6;
+  height: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+.section--blue {
+  background-color: #3498db;
+  height: 300px;
+   position: relative;
+  z-index: 2;
+}
+
+.section--green {
+  background-color: #2ecc71;
+  min-height: 300px;
+   position: relative;
+  z-index: 2;
+
+}
+
+#main {
+  text-align: center;
+}
+
+#more {
+  margin: 20px auto 48px;
+}
+
+.wrapper {
+margin:auto;
+height: 100%;    
+}
+/*Стили прелоадера */
+
+#pagetransition {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  
+}
+#preloader {
+ position: relative;
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #34b3a0;
+  
+ }
+.square {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+ 
+}
+
+.square.white {
+  background: #fff;
+  height: 200%;
+  right: -50%;
+  top: -130%;
+  z-index: 5;
+}
+
+.square.grey {
+  background: #225470;
+  height: 200%;
+  left: -50%;
+  bottom: -130%;
+  z-index: 4;
+}
+.vic-gb {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+  background: url(img/team_logo.png) no-repeat center;
+  background-size: contain;
+}
+
+/*Видео шапка*/ 
+
+.v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  
+}
+
+img.header_logo {
+  display: block;
+  width: 70px;
+  position: absolute;
+  top: 40px;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.fullscreen-video-wrap{
+ position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:100vh;
+ position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#225470;
+  opacity:0.65;
+}
+
+.header-content{
+  z-index:2;
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+}
+
+.btn{
+  background: #34b3a0;
+  color:#fff;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*Меню сайта */
+
+
+
+
+.open {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  z-index: 2;
+}
+.open:hover {
+  opacity: 0.8;
+}
+.open span {
+  display: block;
+  float: left;
+  clear: both;
+  height: 4px;
+  width: 40px;
+ 
+  background-color: #fff;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.open span:nth-child(1) {
+  margin-top: 10px;
+  z-index: 9;
+}
+.open span:nth-child(2) {
+  margin-top: 25px;
+}
+.open span:nth-child(3) {
+  margin-top: 40px;
+}
+
+.sub-menu {
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(38, 84, 133, 0.54);
+ 
+  z-index: 18;
+  overflow: hidden;
+}
+.sub-menu li {
+  display: block;
+  float: right;
+  clear: both;
+  height: auto;
+  margin-right: -160px;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.sub-menu li a {
+text-transform: uppercase;
+}
+
+
+.sub-menu li:first-child {
+  margin-top: 220px;
+}
+.sub-menu li:nth-child(1) {
+  -webkit-transition-delay: 0.05s;
+}
+.sub-menu li:nth-child(2) {
+  -webkit-transition-delay: 0.10s;
+}
+.sub-menu li:nth-child(3) {
+  -webkit-transition-delay: 0.15s;
+}
+.sub-menu li:nth-child(4) {
+  -webkit-transition-delay: 0.20s;
+}
+.sub-menu li:nth-child(5) {
+  -webkit-transition-delay: 0.25s;
+}
+.sub-menu li a {
+  color: #fff;
+  
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
+  padding-right: 20px;
+	padding-left: 20px;
+}
+.sub-menu li a:hover {
+	background-color: #34b3a0;
+	min-width: 180px;
+	width: 100%;
+	color:#fff;
+	text-align: right;
+
+}
+
+
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 550px;
+  width: 420px;
+  padding-bottom: 10px;
+}
+.oppenned span:nth-child(2) {
+  overflow: visible;
+}
+.oppenned span:nth-child(1), .oppenned span:nth-child(3) {
+  z-index: 100;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.oppenned span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(12px) translateX(12px);
+          transform: rotate(45deg) translateY(12px) translateX(12px);
+}
+.oppenned span:nth-child(2) {
+  height: 550px;
+  width: 420px;
+  right: -160px;
+  top: -160px;
+ 
+  background-color: rgba(38, 84, 133, 0.54);
+}
+.oppenned span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
+          transform: rotate(-45deg) translateY(-10px) translateX(10px);
+}
+.oppenned li {
+  margin-right: 168px;
+}
+
+.button {
+  display: block;
+  float: left;
+  clear: both;
+  padding: 20px 40px;
+  background: #fff;
+  border-radius: 3px;
+  border: 2px solid #10a1ea;
+  overflow: hidden;
+  position: relative;
+}
+.button:after {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  -webkit-transform: rotate(45deg) translateX(-540px) translateY(-100px);
+          transform: rotate(45deg) translateX(-540px) translateY(-100px);
+  background: #10a1ea;
+  z-index: 1;
+}
+.button:before {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 40px;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+.button:hover {
+  text-decoration: none;
+}
+.button:hover:after {
+  -webkit-transform: translateX(-300px) translateY(-100px);
+          transform: translateX(-300px) translateY(-100px);
+}
+.button:hover:before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+
+
+
+
+
+  </style>
+
+</head>
+ 
+<body>
+
+ <!-- <div id="preloader">
+  <div id="pagetransition">
+ 
+  <div class="square white"></div>
+  
+  <div class="square grey"></div>
+  
+  <div class="vic-gb"></div>
 </div>
-    
-     <div class="header-description">
-				<div ><h1 class="header-description-title">Бесшумные кондиционеры <br>от Ведущих производителей </h1><br>
-				<p class="header-description-text"> Гарантия 5 лет, <br>установка в день покупки за 2 часа</p></div>
-							
-				
-				
-				<button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Оставить заявку</span></button>
-			</div>      
+</div> -->
+	
+<header class="v-header container">
+  <img class="header_logo " src="img/team_logo.png" alt="Логотип">
+  <div class="fullscreen-video-wrap">
+      <video src="split.1.mp4" autoplay="" loop=""></video>
+  </div>  
+  <div class="header-overlay"></div>
+    <div  class="open">
+      <span class="cls"></span>
+      <span>
+        <ul class="sub-menu sitesmenu">
+          <li>
+            <a href="#main">Главная</a>
+          </li>
+          <li>
+            <a href="#advantages" >Преимущества</a>
+          </li>
+          <li>
+            <a href="#catalog" >Каталог</a>
+          </li>
+          <li>
+            <a href="##service" >Услуги</a>
+          </li>
+          <li>
+            <a href="#guarantee" >Гарантии</a>
+          </li>
+          <li> 
+            <div class="si-phone">
+              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a><br>
+              <a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
+              <a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
+            </div>   
+          </li>
+        </ul>
+    </span>
+    <span class="cls"></span>
+  </div>
+  <div class="header-content text-md-center">    
+      <div class="header-description">       
+          <h1 class="header-description-title">Бесшумные кондиционеры <br>от ведущих производителей </h1><br>
+           <p class="header-description-text"> Гарантия 5 лет, <br>установка в день покупки за 2 часа</p>        
+           <button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Оставить заявку</span></button>
+      </div>      
+    </div>
+</header>
+
+
+
+
+  
+<section id="bonus" class="container-fluid wow slideInRight"> 
+  <div  class="container"> 
+   
+      <h2 class="section_title">Закажите сплит-систему <br>сейчас и бонусами для вас станут:</h2>
+     <div class="wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+   <div class="row">
+        <div  class="col-md-4 col-sm-4"> 
+          
+            <p class="bonus_text">Год обслуживания бесплатно </p>    
+           
+         </div>
+         <div class="col-md-4 col-sm-4"> 
+          
+           <p class="bonus_text">Опрессовка системы, исключающая <br>впоследствии утечку фреона </p> 
+           
+         </div>
+         <div  class="col-md-4 col-sm-4"> 
+          
+           <p class="bonus_text">Нержавеющие кронштейны для <br>крепления в подарок </p>  
+          
+         </div>
+       </div>
+
+       <button id="bonus" type="button" class="callback_btn " data-toggle="modal" data-target="#main_modal"><span>Получить бонусы</span></button>
       
-    </div>
-    
-  </header>
-
-
-	  
-
-
-
-
-	
-<section id="order" class=" split_special_offer ">
-		<div class=" cre-animate" data-animation="slide-in-from-left" data-speed="1300" data-delay="0" data-offset="90%" data-easing="ease">
-		<div class="container">
-			<div class="top_wrapper">
-				<h2 class="section_title">Закажите сплит-систему <br>сейчас и бонусами для вас станут:</h2>
-				<div class="text_block">
-					<ul>
-						<li><span>&#10004;</span>Год обслуживания бесплатно</li>
-						<li><span>&#10004;</span> Опрессовка системы, исключающая <br>впоследствии утечку фреона</li>
-						<li><span>&#10004;</span> Нержавеющие кронштейны для <br>крепления в подарок</li>
-					</ul>
-			    </div>
-<button id="bonus" type="button" class="callback_btn white_bg " data-toggle="modal" data-target="#main_modal"><span>Получить бонусы</span></button>
-			</div>
-		</div>
-	</section>
-
-	<!-- END SPECIAL OFFER -->
-<section id="cost" class="arrow-jump-label">
-	<div class="container">
-		<h2 class="section_title">
-			НАШИ ПРЕИМУЩЕСТВА </h2> <br>
-			<span class="logo-line"></span>
-			<span class="white_textdesc"> Мы комплексно решаем задачи по установке<br> и обслуживанию климатического оборудования, <br>			
-			чтобы создавать для Вас комфортный климат</span>
-		
-		<div class="col-md-12">
-		   <div class="grey_block">
-
-			 <div class="cost-image-wrapper">
-			    <span class="icon_wrapper "> 				
-				   <span class="advantages_picture main_icon icon1"></span>
-			    </span>
-			  </div>
-			  <div class="cost-text">
-			     <div class="cost-text-inner">
-				<b>МОНТАЖ И СЕРВИС</b> <br>
-				Профессионалы осуществят   <br>
-				монтаж любой сложности, <br>
-				а также сервисное обслуживание. <br>				
-			    </div>
-			  </div>
-		  </div>
-		</div>
-
-		<div class="col-md-12">
-			 <div class="grey_block evens">
-
-			<div class="cost-image-wrapper">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon2 "></span>
-			</span>
-			</div>
-			<div class="cost-text">
-			<div class="cost-text-inner">
-				<b>БЕСПЛАТНАЯ ДОСТАВКА</b><br>
-			   Бесплатная доставка <br>
-			  по городу Находка и<br>
-			   Находкинскому городскому округу.<br>	  				
-			</div>
-			</div>
-
-		</div>
-	</div>
-	
-
-
-<div class="col-md-12">
-	 <div class="grey_block">
-		<div class="cost-image-wrapper">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon3 "></span>
-			</span>
-			</div>
-			<div class="cost-text">
-			<div class="cost-text-inner">
-				<b>ДОСТУПНЫЕ ЦЕНЫ</b><br>
-			Мы предлагаем сплит системы<br>
-			в разных ценовых категориях <br>
-			от недорогих до премиум класса.			
-			</div>
-			</div>
-		</div>
-	</div>
-
-
-		<div class="col-md-12">
-       <div class="grey_block evens">
-			<div class="cost-image-wrapper">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon4"></span>
-			</span>
-			</div>
-			<div class="cost-text">
-			<div class="cost-text-inner">
-				<b>ГАРАНТИЯ 5 ЛЕТ</b><br>
-			  Мы уверены в своем товаре, <br>
-			  предоставляем дополнительную <br>
-			  гарантию.				
-			</div>
-			</div>
-
-		</div>	
-	</div>
-</div>
-</div>
+       </div>
+      </div> 
+    </div>    
 </section>
+ 
 
-<section id="steps" class="arrow-jump-label">
 
-	<div class="container">
-		<!-- Title -->
+ <section id="advantages" class="container-fluid section_paddings section--green wow slideInLeft" data-wow-duration="4s"> 
+  <div class="container">   
+     <h2 class="section_title">
+      НАШИ ПРЕИМУЩЕСТВА </h2> <br>
+      <span class="logo-line"></span>
+      <span class="white_textdesc"> Мы комплексно решаем задачи по установке<br> и обслуживанию климатического оборудования, <br>     
+      чтобы создавать для Вас комфортный климат</span>
+     <div class="wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+     <div class="row">
+        <div  class="col-md-6 col-sm-6"> 
+          
+             <div class="cost-text-inner">
+        <b>МОНТАЖ И СЕРВИС</b> <br>
+        Профессионалы осуществят   <br>
+        монтаж любой сложности, <br>
+        а также сервисное обслуживание. <br>        
+          </div>   
+           
+         </div>
+         <div class="col-md-6 col-sm-6"> 
+          
+           <div class="cost-text-inner">
+        <b>БЕСПЛАТНАЯ ДОСТАВКА</b><br>
+         Бесплатная доставка <br>
+        по городу Находка и<br>
+         Находкинскому городскому округу.<br>           
+      </div>
+           
+         </div>
+         <div  class="col-md-6 col-sm-6"> 
+          
+          <div class="cost-text-inner">
+        <b>ДОСТУПНЫЕ ЦЕНЫ</b><br>
+      Мы предлагаем сплит системы<br>
+      в разных ценовых категориях <br>
+      от недорогих до премиум класса.     
+      </div>
+          
+         </div>
+      
+
+
+<div  class="col-md-6 col-sm-6"> 
+          
+          <p class="cost-text-inner">
+        <b>ГАРАНТИЯ 5 ЛЕТ</b><br>
+        Мы уверены в своем товаре, <br>
+        предоставляем дополнительную <br>
+        гарантию.       
+      </div>
+          
+        
+       </div>
+     </div>
+    </div>
+</section>
+      <section class="section--purple wow slideInRight" data-wow-delay="2s">
+
+
+
+      </section>
+      <section class="section--blue wow bounceInLeft" data-wow-offset="300"></section>
+      
+      <button id="moar">LOAD MOAR!!</button>
+    </div>
+  </div>
+  
+ <!-- END SPECIAL OFFER -->
+
+<section id="steps">
+	<div class="container">		
 		<h2 class="section_title">
 			С НАМИ РАБОТАТЬ  <br>
 			НАДЕЖНО И УДОБНО
 		</h2>
-
 		<div class="col-md-12">
 			<ul class="steps">
-				<li class="steps_description">		
-		          <div class="cost-image-wrapper line">
-			        <span class="icon_wrapper"> 				
-				       <span class="advantages_picture main_icon icon11 "></span>
-			        </span>
-                </div>
+				<li class="steps_description">		          
 			    <p class="steps_text">Вы звоните или  
 					приезжаете к нам в офис </p>			
-				</li>
-
-
-				
+				</li>				
 				<li class="steps_description">
-
-<div class="cost-image-wrapper line">
-			<span class="icon_wrapper "> 				
-				<span class="advantages_picture main_icon icon12 "></span>
-			</span>
-</div>
 			<p class="steps_text">Мы ответим на все вопросы и и поможем определиться  с производителем сплит-системы</p>
-			
-
-					
-					
-				</li>
-
-				<li class="steps_description">
-
-					<div class="cost-image-wrapper line">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon13 "></span>
-			</span>
-</div>
+					</li>
+				<li class="steps_description">					
 			<p class="steps_text">Приедем и произведем   необходимые замеры, подберем подходящую модель</p>
-			
-					
-					
 				</li>
-
-				<li class="steps_description">
-					<div class="cost-image-wrapper line">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon14"></span>
-			</span>
-</div>
+				<li class="steps_description">					
 			<p class="steps_text">Привезем и установим сплит-систему,
-                    сделаем это аккуратно,  даже после готового ремонта</p>
-			
+                    сделаем это аккуратно,  даже после готового ремонта</p>	
 					
 				</li>
-
-				<li class="steps_description">
-					<div class="cost-image-wrapper line">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon15"></span>
-			</span>
-</div>
-			<p class="steps_text">Вывезем и уберем  весь мусор,проведем консультацию по пользованию</p>
-			
-					
+				<li class="steps_description">				
+			<p class="steps_text">Вывезем и уберем  весь мусор,проведем консультацию по пользованию</p>					
 				</li>
-
 			</ul>
-
-
 		</div>
 	</div>
 </section>
 
-
-
-
-
-
-
-
-		
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-	<section class="split_specialist">
-
+<section id="order_specialist">
 		<div class="container">
-
 			<div class="blue_wrapper">
-
 				<h2 class="wrapper_title">Помните!</h2>
-
-				<p class="animated  rotateIn">Срок службы и качество работы сплит­-системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>
-
+				<p class="wow  rotateIn">Срок службы и качество работы сплит­-системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>
 			</div>
-
 			<div class="wrapper">
-
 				<h2 class="section_title"><span>Закажите выезд специалиста</span> <br><span class="white_text"> для индивидуального расчета мощности сплит-системы </span></h2>
-
 				<h3 class="second_title">абсолютно бесплатно</h3>
-
 				<button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Заказать</span> БЕСПЛАТНЫЙ выезд</button>
-
-
 			</div>
-
 			<div class="bottom_wrapper">
-
 				<h2 class="wrapper_title">А ТАКЖЕ!</h2>
-
 				<p>При выборе важно учесть множество факторов, таких как, площадь помещения, количество людей, высоту потолков, выделяющее тепло оборудование... <br>Чтобы предусмотреть все нюансы, обратитесь к профессионалам.</p>
-
 			</div>
-
 		</div>
+</section>
 
-	</section>
+
 <section class="partners split_partners">
 		<div class="container">
 			<h2 class="section_title"><span>Home Climate</span> - официальный дилер</h2>
@@ -401,8 +676,7 @@
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
 								<img class="brand-logo" src="partner/kentatsu.png" alt="" />
 							 </div>
-							</div>	
-
+							</div>
 								<div class="swiper-slide">
 								<div class="partner_logo">
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
@@ -414,29 +688,25 @@
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
 								<img class="brand-logo" src="partner/lg.png" alt="" />
 							 </div>
-							</div>	
-
+							</div>
 								<div class="swiper-slide">
 								<div class="partner_logo">
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
 								<img class="brand-logo" src="partner/mitsubisi.png" alt="" />
 							 </div>
-							</div>	
-
+							</div>
 									<div class="swiper-slide">
 								<div class="partner_logo">
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
 								<img class="brand-logo" src="partner/samsung.png" alt="" />
 							 </div>
 							</div>
-
 									<div class="swiper-slide">
 								<div class="partner_logo">
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
 								<img class="brand-logo" src="partner/toshiba.png" alt="" />
 							 </div>
 							</div>
-
 									<div class="swiper-slide">
 								<div class="partner_logo">
 									<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><polygon class="actor" points="92.44,25.50 50.00,1.00 7.56,25.50 7.56,74.50 50.00,99.00 92.44,74.50" opacity="1.00" fill="rgb(255,255,255)" fill-opacity="1" stroke="rgba(132,123,110,0.35)" stroke-width="1" stroke-opacity="1" stroke-dasharray=""></polygon></svg>
@@ -444,25 +714,14 @@
 							 </div>
 							</div>				
 					</div>
-				</div>
-
-			
+				</div>			
 				<!-- Add Arrows -->
-
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
-
 			</div>
-
 		</div>
-
-	</section>
-
-
-
-
-	<!-- END PARTNERS -->
-	
+</section>
+<!-- END PARTNERS -->	
 <section id="services" class="split_advantages">
 		<div class="container">
 			<h2 class="section_title">УСЛУГИ</h2>
@@ -565,44 +824,26 @@
 <!-- SPLIT PRODUCTS -->
 
 <section id="catalog" class="split_products">
-
 		<div class="container">
-
 			<h2 class="section_title">Наш ассортимент</h2>
-
 			<p class="title_info">позволяет подобрать оборудование  с учетом всех ваших пожеланий</p>
-
 			<h3 class="second_title">Самые популярные модели сплит-систем</h3>
-
 			<div class="wrapper">
-
 				<div class="item">
-
 					<div class="item_header">
-
 						<p>Ballu BSE-07HN1</p>
-
 					</div>
-
 					<div class="slider_wrapper">
-
 						<div class="item_swiper">
-
 							<div class="swiper-wrapper">
-
 								<div class="swiper-slide product_card">
-
 									<img data-image="black" src="img/split/Ballu-BSLI-07HN1-NEW/1.jpg" alt="">
                 <img data-image="blue" src="img/split/Ballu-BSLI-07HN1-NEW/2.jpg" alt="">
     <img data-image="red" class="active" src="img/split/Ballu-BSLI-07HN1-NEW/3.jpg" alt="">
 
 								</div>
-
 							</div>
-
-						</div>
-
-						
+						</div>						
 					</div>
 
 
@@ -641,20 +882,8 @@
 					
 					<button type="button" class="buy_btn callback_btn" data-toggle="modal" data-target="#order_modal">Купить</button>
 					<button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
-
 				</div>
-
-
-
-
-
-				
-
-
-			
-
 		</div>
-
 	</section>
 
 	<!-- END SPLIT PRODUCTS -->
@@ -707,10 +936,7 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- END SPLIT ADVANTAGES -->
-
-
 <section class="download_section split_download">
 			<div class="container">
 				<div class="wrapper">
@@ -722,246 +948,136 @@
 				</div>
 			</div>
 	</section>
-
 	<!-- END DOWNLOAD SECTION -->
-
 <!-- MAINTENANCE -->
 
-	<section class="maintenance">
+
+
+
+
+
+	<section id="service_process" class="maintenance">
+
+  
+    <div class="preload_overlay"></div>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
 
 		<div class="container">
-
 			<h2 class="section_title">Сервисное обслуживание</h2>
-
 			<p class="title_info"> всех систем кондиционирования <br>и вентиляции помещений</p>
-
 			<h3 class="second_title">Что входит в сервис кондиционеров и сплит-систем</h3>
-
 			<div class="wrapper">
-
 				<div class="item left_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>01</p>
-
-					</div>
-
-					<p class="text well">Диагностика кондиционеров</p>
-
+					</div> -->
+					<p class="text">Диагностика кондиционеров</p>
 				</div>
-
 				<div class="item right_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>02</p>
-
-					</div>
-
-					<p class="text well">Проверка и чистка теплообменника внешнего и внутреннего блоков</p>
-
+					</div> -->
+					<p class="text">Проверка и чистка теплообменника внешнего и внутреннего блоков</p>
 				</div>
-
 				<div class="item left_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>03</p>
-
-					</div>
-
-					<p class="text well">Проверка и чистка фильтров, испарителя, конденсатора</p>
-
+					</div> -->
+					<p class="text">Проверка и чистка фильтров, испарителя, конденсатора</p>
 				</div>
-
 				<div class="item right_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>04</p>
-
-					</div>
-
-					<p class="text well">Проверка и чистка дренажной системы кондиционера</p>
-
+					</div> -->
+					<p class="text">Проверка и чистка дренажной системы кондиционера</p>
 				</div>
-
 				<div class="item left_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>05</p>
-
-					</div>
-
-					<p class="text well">Измерение рабочего давления в системе</p>
-
+					</div> -->
+					<p class="text">Измерение рабочего давления в системе</p>
 				</div>
-
 				<div class="item right_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>06</p>
-
-					</div>
-
-					<p class="text well">Диагностика утечки фреона</p>
-
+					</div> -->
+					<p class="text">Диагностика утечки фреона</p>
 				</div>
-
 				<div class="item left_item">
-
-					<div class="number">
-
+				<!-- 	<div class="number">
 						<p>07</p>
-
-					</div>
-
-					<p class="text well">Дозаправка кондиционера фреоном (хладагент), если это необходимо</p>
-
+					</div> -->
+					<p class="text">Дозаправка кондиционера фреоном (хладагент), если это необходимо</p>
 				</div>
-
 				<div class="item right_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>08</p>
-
-					</div>
-
-					<p class="text well">Перевод кондиционера с летнего режима на зимний и наоборот</p>
-
+					</div> -->
+					<p class="text">Перевод кондиционера с летнего режима на зимний и наоборот</p>
 				</div>
-
 				<div class="item left_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>09</p>
-
-					</div>
-
-					<p class="text well">Проверка состояния термоизоляции фреонопроводов</p>
-
+					</div> -->
+					<p class="text">Проверка состояния термоизоляции фреонопроводов</p>
 				</div>
-
 				<div class="item right_item">
-
-					<div class="number">
-
+					<!-- <div class="number">
 						<p>10</p>
-
-					</div>
-
-					<p class="text well">Дезинфекция кондиционера</p>
-
+					</div> -->
+					<p class="text">Дезинфекция кондиционера</p>
 				</div>
-
 			</div>
-
 			<div class="blue_wrapper">
-
 				<p>Чистку и сервисное обслуживание сплит-систем наши специалисты выполняют уникальным способом. Мы разработали сервисный пакет с отводом грязной воды, который крепится под внутренний блок сплита, после чего он, обработанный спецсредством , промывается насквозь напором воды из мойки высокого давления KARCHER. <br>Какими либо другими способами так тщательно вымыть сплит невозможно.</p>
-
 			</div>
-
 		</div>
-
-	</section>
+</section>
 
 
 	<!-- ORDER TODAY -->
 
-	<section class="order_today">
-
+<section class="order_today">
 		<div class="container">
-
 			<h2 class="section_title">Оставьте заявку на сервис сегодня</h2>
-
 			<p class="title_info">и мы заменим фильтры тонкой очистки абсолютно бесплатно!</p>
-
-
-<button type="button" class="callback_btn  white_bg" data-toggle="modal" data-target="#services_modal"><span>Вызвать сервисную службу</span></button>
-			
-
+      <button type="button" class="callback_btn  white_bg" data-toggle="modal" data-target="#services_modal"><span>Вызвать сервисную службу</span></button>	
 			<p class="bottom_text">*Обращаем ваше внимание на то, что больше ни одна компания в регионе замену фильтров не производит</p>
-
 		</div>
-
-	</section>
+</section>
 
 	<!-- END ORDER TODAY -->
 
-<div id="reputation">	
+<div id="guarantee">	  
+  	<div class="preload_overlay"></div>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
   <div class="container"> 
-  	<div class="our_services">
+    <h2 class="section_title">
+      Гарантия  </h2> <br>
+      <!-- <span class="logo-line"></span> -->
+      <span class="white_textdesc"> Гарантии, которые исполним на 100%</span> 
+</div>
 
-
-<h2 class="section_title">
-			Гарантия  </h2> <br>
-			<span class="logo-line"></span>
-			<span class="white_textdesc"> Гарантии, которые исполним на 100%</span>
-
-  	    
+<!-- <div class="header-overlay"></div> -->
 
 
 
 <div class="col-md-12">
-
-	<div class="col-md-4">
-		   <div class="grey_block">
-
-			 <div class="cost-image-wrapper">
-			    <span class="icon_wrapper"> 				
-				   <span class="advantages_picture main_icon icon22"></span>
-			    </span>
-			  </div>
-			  <div class="cost-text">
-			     <div class="cost-text-inner ">
-				<p class="white">Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы	</p>			
-			    </div>
-			  </div>
-		  </div>
+	<div class="col-md-4">		
+				<p class="guarantee_text">Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы	</p>			  		  
 		</div>
-
+		<div class="col-md-4"> 		  
+				<p class="guarantee_text">Бесплатная диагностика при неисправности</p>
+    </div>
 		<div class="col-md-4">
-		   <div class="grey_block">
-
-			 <div class="cost-image-wrapper">
-			    <span class="icon_wrapper"> 				
-				   <span class="advantages_picture main_icon icon222"></span>
-			    </span>
-			  </div>
-			  <div class="cost-text">
-			     <div class="cost-text-inner">
-				<p class="white">Бесплатная диагностика при неисправности</p>			
-			    </div>
-			  </div>
-		  </div>
+				<p class="guarantee_text">Обмен или бесплатный ремонт, если поломка по нашей вине 	</p>
 		</div>
-
-		<div class="col-md-4">
-		   <div class="grey_block">
-
-			 <div class="cost-image-wrapper">
-			    <span class="icon_wrapper"> 				
-				   <span class="advantages_picture main_icon icon2222"></span>
-			    </span>
-			  </div>
-			  <div class="cost-text">
-			     <div class="cost-text-inner">
-				<p class="white">Обмен или бесплатный ремонт, если поломка по нашей вине 	</p>		
-			    </div>
-			  </div>
-		  </div>
-		</div>
-
-
-
-
-	</div>
+</div>
 
 
 
@@ -974,18 +1090,11 @@
 </div>
 
 
-<section class="maintenance" id="about_company">
-
+<!-- <section class="maintenance" id="about_company">
 		<div class="container">
-
-			<h2 class="section_title">О компании</h2>
-
-					
+			<h2 class="section_title">О компании</h2>					
 			<div class="wrapper">
-
-				<div class="item company left_item">
-
-					
+				<div class="item company left_item">					
 		<div class="cost-image-wrapper">
 			<span class="icon_wrapper"> 				
 				<span class="advantages_picture main_icon icon33 "></span>
@@ -1010,7 +1119,6 @@
 				</div>
 
 				<div class="item company right_item">
-
 					<div class="cost-image-wrapper">
 			<span class="icon_wrapper"> 				
 				<span class="advantages_picture main_icon icon333 "></span>
@@ -1070,7 +1178,7 @@
 
 		</div>
 
-	</section>
+	</section> -->
 
 
 
@@ -1104,12 +1212,8 @@
 
 
 
-	<article class="page-form-block arrow-jump-label" id="page-form-block-3">
+<!-- <article class="page-form-block wow pulse"  data-wow-iteration="1" data-wow-duration="3000ms">
 		<div class="container">
-	<div class="centered">
-
-		<div class="page-form-border top"></div>
-
 		<form action="send.php" method="post" class="send-form page-form" autocomplete="off">
 
 			<div class="form-title">
@@ -1121,18 +1225,16 @@
 
 			<input type="text" name="client_name" class="client-name" placeholder="Ваше имя">
 			<input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон">
+			
+			<input type="hidden" name="form_type" value="Консультация специалиста">
 
-			<input type="hidden" name="send_type" class="send-type" value="3">
-			<input type="hidden" name="send_extra" class="send-extra" value="1">
-			<input type="hidden" name="form_type" value="Экскурсия">
-
-			<button type="submit" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Получить ответ</span></button>
+			<button type="submit" class="callback_btn" data-toggle="modal" data-target="#main_modal"><span>Получить ответ</span></button>
 
 		</form>
 
 	</div>
 </div>
-	</article>
+</article> -->
 
 	<!-- END LAST QUESTION -->
 
@@ -1140,36 +1242,41 @@
 
 	<!-- CONTACTS -->
 
-	<div class="map">
 
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 
-	</div>
-
-	<!-- END CONTACTS -->
-<!-- FOOTER -->
 
 
 
 <footer class="container-fluid footer">
+<div id="map">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+</div>
     <div class="container">
+
       <div class="row">
           <div class="col-md-12">
             <div class="col-md-4">
-              <img id="img_logo" src="img/team_logo.png" alt="Логотип">
-             <!--  <a data-target=".modal_policy" data-toggle="modal" class="policy">Политика конфиденциальности</a> -->
+              <img id="img_logo" src="img/team_logo.png" alt="Логотип">          
              <p class="social">Мы в социальных сетях</p>
             </div>
             <div class="col-md-4">
               <p class="footer__sections">Навигация</p>
-              <ul class="footer__menu">
-               
-							<li><a href="/index.html#main">Главная</a></li>
-							<li><a href="/index.html#cost">Преимущества</a></li>
-							<li><a href="/index.html#catalog">Каталог</a></li>
-							<li><a href="/index.html#service">Услуги</a></li>
-							<li><a href="/index.html#reputation">Гарантии</a></li>           
-                             
+              <ul class="sitesmenu  footer__menu">               
+            			<li>
+                    <a href="#main">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#advantages" >Преимущества</a>
+                  </li>
+                  <li>
+                    <a href="#catalog" >Каталог</a>
+                  </li>
+                  <li>
+                    <a href="##service" >Услуги</a>
+                  </li>
+                  <li>
+                    <a href="#guarantee" >Гарантии</a>
+                  </li>                       
               </ul>
             </div>
             <div class="col-md-4">
@@ -1185,7 +1292,7 @@
                </div>
                <div class="col-md-10 col-xs-10">
                  <span class="footer__contactsText">+7 (4236) 799-766 
-</span>
+                     </span>
                 </div>
                 <div class="col-md-2 col-xs-2">
                 <span><img class="footer_icon" src="img/footer_icon2.png" alt="Иконка"></span>
@@ -1198,45 +1305,12 @@
       </div>
     </div>
 </footer>
-
-<!-- <link rel="stylesheet" href="widget/cbk.css">
-
-<script type="text/javascript" src="widget/cbk.js" charset="UTF-8" async></script> -->
-
-<!-- BEGIN JIVOSITE CODE {literal} -->
-
-<!-- <script type="text/javascript">
-
-  (function (w, d) {
-
-    w.amo_jivosite_id = 'NTU1tD75Cs';
-
-    var s = document.createElement('script'), f = d.getElementsByTagName('script')[0];
-
-    s.id = 'amo_jivosite_js';
-
-    s.type = 'text/javascript';
-
-    s.async = true;
-
-    s.src = 'https://forms.amocrm.ru/chats/jivosite/jivosite.js';
-
-    f.parentNode.insertBefore(s, f);
-
-  })(window, document);
-
-</script> -->
-
-<!-- {/literal} END JIVOSITE CODE -->
-
-	</footer>
-
-	<!-- END FOOTER -->
+<!-- END FOOTER -->
 	
 
-	</div>
+	</div><!-- END PAGE WRAPPER -->
 
-	<!-- END PAGE WRAPPER -->
+	
 	<!-- MAIN MODAL -->
 
 	<div class="modal fade main_modal" id="main_modal">
@@ -1731,13 +1805,31 @@
 
 	<![endif]-->
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
-	<script src="js/menu.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
-		<!-- <script src="js/jquery-migrate-1.2.1.min.js"> </script> -->
+	<script src="js/wow.js"></script>
+		 <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+  <script src="js/menu.js"></script>
 		<!-- JS Scripts -->
 		<script src="js/plugins_all.js"> </script>
 		<script src="js/jquery.easing.js"> </script>
-	<script src="js/slider.js"> </script>
+		<script src="js/scroll.js"></script>
+	<!-- <script src="js/slider.js"> </script> -->
 	<script src="libs/jqueryui/jquery-ui.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.js"></script>
 	<script src="ibs/bootstrap/bootstrap-hover-dropdown.min.js"></script>
@@ -1756,7 +1848,32 @@
 	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
 	<!-- <script src="js/map.js"></script>	 -->
 
-	<script type="text/javascript">$(document).ready(function() {
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js'></script>
+
+  
+
+    <script  src="js/preloader.js"></script>
+
+
+
+
+<script>
+  var preloader = document.getElementById("preloader");
+    function fadeOutnojquery(el){el.style.opacity = 1;
+      var interpreloader = setInterval(function(){
+    el.style.opacity = el.style.opacity - 0.05;
+    if (el.style.opacity <=0.05){ 
+      clearInterval(interpreloader);
+      preloader.style.display = "none";
+    }},15);
+    };
+    window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
+    },2000); // Время работы прелоадера ms
+    };
+  </script>
+
+
+	<script>$(document).ready(function() {
  
   $('.color-choose input').on('click', function() {
       var headphonesColor = $(this).attr('data-image');
@@ -1767,24 +1884,5 @@
   });
  
 });</script>
-
-<!-- Скрипт прелоадера  -->
-
-
-<script>
-	var preloader = document.getElementById("preload");
-	  function fadeOutnojquery(el){el.style.opacity = 1;
-	    var interpreloader = setInterval(function(){
-		el.style.opacity = el.style.opacity - 0.05;
-		if (el.style.opacity <=0.05){ 
-		  clearInterval(interpreloader);
-		  preloader.style.display = "none";
-		}},15);
-		};
-		window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
-		},1000); // Время работы прелоадера ms
-		};
-  </script>
-
 </body>
 </html>
