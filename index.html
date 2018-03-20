@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="libs/selectstyle/jquery.formstyler.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
+	<link href="http://allfont.ru/allfont.css?fonts=roboto-bold" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">   
 </head>
@@ -157,6 +157,11 @@ img.header_logo {
   overflow:hidden;
 }
 
+
+
+
+
+
 .fullscreen-video-wrap video{
   min-height:100%;
   min-width:100%;
@@ -178,23 +183,22 @@ img.header_logo {
 }
 
 .header-content p{
-  font-size:1.5rem;
+  font-size:24px;
   display:block;
   padding-bottom:2rem;
+  font-family: 'Roboto Bold', arial;
 }
 
-.btn{
-  background: #34b3a0;
-  color:#fff;
-  font-size:1.2rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
+h1.header-description-title {
+  font-size: 36px;
+    font-family: 'Roboto Bold', arial;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 15%;
 }
-
-
-
-
-
 
 /*Меню сайта */
 
@@ -408,7 +412,7 @@ text-transform: uppercase;
  
 <body>
 
- <!-- <div id="preloader">
+<!--  <div id="preloader">
   <div id="pagetransition">
  
   <div class="square white"></div>
@@ -439,7 +443,7 @@ text-transform: uppercase;
             <a href="#catalog" >Каталог</a>
           </li>
           <li>
-            <a href="##service" >Услуги</a>
+            <a href="#service" >Услуги</a>
           </li>
           <li>
             <a href="#guarantee" >Гарантии</a>
@@ -465,7 +469,7 @@ text-transform: uppercase;
 </header>
 
 <section id="bonus" class="container-fluid site-section site-sectionwhite wow slideInLeft" data-wow-duration="4s"> 
-  <div  class="container"> 
+  <div  class="container bonus_container"> 
    
       <h2 class="section_titleblack">Закажите сплит-систему сейчас и бонусами для вас станут:</h2>
     
@@ -494,27 +498,27 @@ text-transform: uppercase;
 
 
 
-<div id="service_process">
+<div id="service_process" class="container-fluid">
 
   
-   <!--  <div class="preload_overlay"></div> -->
+    <div class="preload_overlay"></div>
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
 
 
 
-  <div class="wow slideInLeft" data-wow-duration="4s">   
-     <h2 class="section_titleblack">
+  <div class="container wow slideInRight" data-wow-duration="4s">   
+     <h2 class="section_titlewhite">
       НАШИ ПРЕИМУЩЕСТВА </h2> <br>
       
-      <span class="black_textdesc"> Мы комплексно решаем задачи по установке<br> и обслуживанию климатического оборудования, <br>     
+      <span class="white_textdesc"> Мы комплексно решаем задачи по установке<br> и обслуживанию климатического оборудования, <br>     
       чтобы создавать для Вас комфортный климат</span>
      <div class="wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
      <div class="row">
         <div  class="col-md-6 col-sm-6"> 
           
-             <p class="section_text advantages">
+             <p class="section_textwhite">
         <b>МОНТАЖ И СЕРВИС</b> <br>
         Профессионалы осуществят   <br>
         монтаж любой сложности, <br>
@@ -524,7 +528,7 @@ text-transform: uppercase;
          </div>
          <div class="col-md-6 col-sm-6"> 
           
-            <p class="section_text advantages">
+            <p class="section_textwhite">
         <b>БЕСПЛАТНАЯ ДОСТАВКА</b><br>
          Бесплатная доставка <br>
         по городу Находка и<br>
@@ -534,7 +538,7 @@ text-transform: uppercase;
          </div>
          <div  class="col-md-6 col-sm-6"> 
           
-          <p class="section_text advantages">
+          <p class="section_textwhite">
         <b>ДОСТУПНЫЕ ЦЕНЫ</b><br>
       Мы предлагаем сплит системы<br>
       в разных ценовых категориях <br>
@@ -547,7 +551,7 @@ text-transform: uppercase;
 
 <div  class="col-md-6 col-sm-6"> 
           
-         <p class="section_text advantages">
+         <p class="section_textwhite">
         <b>ГАРАНТИЯ 5 ЛЕТ</b><br>
         Мы уверены в своем товаре, <br>
         предоставляем дополнительную <br>
@@ -603,28 +607,27 @@ text-transform: uppercase;
 </section>
 
 
-<section id="order_specialist" class="site-section">
+<section id="order_specialist" class="site-section site-sectionwhite">
     <div class="container">
-      <div class="blue_wrapper">
+      <div class="col-md-12">
+         <div class="col-md-6">        
         <h2 class="wrapper_title">Помните!</h2>
-        <p class="wow  rotateIn">Срок службы и качество работы сплит­-системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>
+        <p class="wow">Срок службы и качество работы сплит­системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>   
+        <h2 class="wrapper_title">А ТАКЖЕ!</h2>
+        <p>При выборе важно учесть множество факторов, таких как, площадь помещения, количество людей, высоту потолков, выделяющее тепло оборудование... <br>Чтобы предусмотреть все нюансы, обратитесь к профессионалам.</p>
       </div>
-      <div class="wrapper">
+      <div class="col-md-6">
         <h2 class="section_title"><span>Закажите выезд специалиста</span> <br><span class="white_text"> для индивидуального расчета мощности сплит-системы </span></h2>
         <h3 class="second_title">абсолютно бесплатно</h3>
         <button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Заказать</span> БЕСПЛАТНЫЙ выезд</button>
       </div>
-      <div class="bottom_wrapper">
-        <h2 class="wrapper_title">А ТАКЖЕ!</h2>
-        <p>При выборе важно учесть множество факторов, таких как, площадь помещения, количество людей, высоту потолков, выделяющее тепло оборудование... <br>Чтобы предусмотреть все нюансы, обратитесь к профессионалам.</p>
-      </div>
-    </div>
+      
+  </div>
+</div>
 </section>
-
-
 <section class="partners split_partners site-section">
     <div class="container">
-      <h2 class="section_title"><span>Home Climate</span> - официальный дилер</h2>
+      <h2 class="section_title">Home Climate - официальный дилер</h2>
       <p class="title_info">всемирно известных <br>производителей климатического оборудования</p>
       <div class="wrapper">     
         <div class="partners_swiper">
@@ -725,56 +728,61 @@ text-transform: uppercase;
     </div>
 </section>
 
-<section id="services" class="split_advantages site-section">
-    <div class="container">
-      <h2 class="section_title">УСЛУГИ</h2>
-      <div class="wrapper">
-        <div class="item left_item">
-          <div class="services__inner">
-            <span class="blue_arrow">&#10004;</span>
-            <p class="services__text ">Монтаж кондиционеров</p>
-          </div>
-        </div>
-        <div class="item right_item">
-          <div class="services__inner">
-            <span class="blue_arrow">&#10004;</span>
-            <p class="services__text">Сервисное обслуживание и ремонт кондиционеров</p>
-          </div>
-        </div>
-        <div class="item left_item">
-          <div class="services__inner">
-            <span class="blue_arrow">&#10004;</span>
-            <p class="services__text">Демонтаж кондиционеров</p>
-          </div>
-        </div>
-        <div class="item right_item">
-          <div class="services__inner">
-            <span class="blue_arrow">&#10004;</span>
-            <p class="services__text">Монтаж систем вентиляции</p>
-          </div>
-        </div>
-        <div class="item left_item">
-          <div class="services__inner">
-            <span class="blue_arrow">&#10004;</span>
-            <p class="services__text">Оптовая и розничная продажа <br>комплектующих для кондиционеров</p>
-          </div>
-        </div>
-        <div class="item right_item">
-          <div class="services__inner">
-            <span class="blue_arrow">&#10004;</span>
-            <p class="services__text">Оптовая и розничная <br>продажа кондиционеров</p>
-          </div>
-        </div>
-        <button type="button" class="callback_btn white_bg force" data-toggle="modal" data-target="#main_modal"><span>Расчитать мощность кондиционера</button>
+<section id="service" class="split_advantages site-section site-sectionwhite">
+<div class="service-overlay"></div>
+ <video id="video_bg" src="condition.mp4" autoplay="" loop=""></video>   
+   <div class="container service_block">     
+      <h2 class="section_titlewhite">УСЛУГИ</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-4">     
+            </div>
+            <div class="col-md-4 col-sm-4">           
+               <p class="section_textwhite">Монтаж кондиционеров </p>
+            </div> 
+             <div class="col-md-4 col-sm-4">     
+
+
+           <p class="section_textwhite">Сервисное обслуживание и ремонт кондиционеров </p> 
+         </div>
+        
       </div>
 
+  <div class="row">
+         <div  class="col-md-4 col-sm-4">           
+          
+         </div>
+       
+        <div  class="col-md-4 col-sm-4">           
+           <p class="section_textwhite">Демонтаж кондиционеров </p>
+         </div>  
+         <div  class="col-md-4 col-sm-4">
+            <p class="section_textwhite">Монтаж систем вентиляции </p> 
+         </div>
 
+     </div>
+    <div class="row">
+        <div  class="col-md-4 col-sm-4">           
+          
+         </div>
+       
+        <div  class="col-md-4 col-sm-4">           
+           <p class="section_textwhite">Оптовая и розничная продажа комплектующих для кондиционеров </p>
+         </div>  
+         <div  class="col-md-4 col-sm-4">
+            <p class="section_textwhite">Оптовая и розничная продажа кондиционеров </p>
+         </div>
+
+        </div>
+
+        
+      <button type="button" class="callback_btn white_bg force" data-toggle="modal" data-target="#main_modal"><span>Расчитать мощность кондиционера</button>     
+           
     </div>
   </section>
 
 
   <!-- SPLIT CERTIFICATE -->
-  <section class="split_certificate site-section">
+  <section class="split_certificate site-section site-sectionwhite">
     <div class="container">
       <div class="wrapper">     
         <div class="certificate_swiper">
@@ -1029,7 +1037,7 @@ text-transform: uppercase;
 
   <!-- ORDER TODAY -->
 
-<section class="order_today site-section">
+<section class="order_today site-section site-sectionwhite">
     <div class="container">
       <h2 class="section_title">Оставьте заявку на сервис сегодня</h2>
       <p class="title_info">и мы заменим фильтры тонкой очистки абсолютно бесплатно!</p>
@@ -1039,7 +1047,7 @@ text-transform: uppercase;
 </section>
 
 
-<section class="container-fluid site-section">
+<section class="container-fluid site-section site-sectionwhite">
 <div class="container"> 
     <h2 class="section_title">
       Гарантия  </h2> <br>
@@ -1076,19 +1084,18 @@ text-transform: uppercase;
 
 
 
-<section class="maintenance site-section" id="about_company">
+<section class="maintenance site-section site-sectionwhite" id="about_company">
+
+<!-- <div class="fullscreen-video-wrap2">
+      <video src="condition.mp4" autoplay="" loop=""></video>
+  </div>  -->
+
 		<div class="container">
 			<h2 class="section_title">О компании</h2>					
-			<div class="wrapper">
-				<div class="item company left_item">					
-		<div class="cost-image-wrapper">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon33 "></span>
-			</span>
-			</div>
-			<div class="cost-text">
-			<div class="cost-text-inner">
-				<p class="text"><b>Компания Home Climate ЦЕНИТ СВОЮ РЕПУТАЦИЮ!</b><br>
+
+<div class="col-md-12">
+<div class="col-md-6">
+  <p class="text"><b>Компания Home Climate ЦЕНИТ СВОЮ РЕПУТАЦИЮ!</b><br>
 Нам дорого ваше время и деньги, поэтому 
 мы работаем качественно, в срок и со всеми гарантиями, которые прописаны в договоре
 Нам можно доверять, мы всегда на связи, 
@@ -1096,44 +1103,42 @@ text-transform: uppercase;
 и учитываем все нюансы. 
 Для нас важно качество и результат нашей работы, 
 а главная цель - это довольный клиент
-</p>		
+</p>    
+</div>
+
+<div class="col-md-6">
+  <p class="text"><b>Компания Home Climate ЦЕНИТ СВОЮ РЕПУТАЦИЮ!</b><br>
+Нам дорого ваше время и деньги, поэтому 
+мы работаем качественно, в срок и со всеми гарантиями, которые прописаны в договоре
+Нам можно доверять, мы всегда на связи, 
+работаем индивидуально с каждым клиентом 
+и учитываем все нюансы. 
+Для нас важно качество и результат нашей работы, 
+а главная цель - это довольный клиент
+</p>    
+</div>
+
+</div>			
+
+			<div class="col-md-12">
 			
-			</div>
-		</div>
 					
-
-				</div>
-
-				<div class="item company right_item">
-					<div class="cost-image-wrapper">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon333 "></span>
-			</span>
-			</div>
-			<div class="cost-text">
-			<div class="cost-text-inner">
+		
+					
+			
 				<p class="text "><b>В НАШЕЙ КОМАНДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ</b><br>
 Мы готовы реализовать поставленную задачу на 100% 
 с максимальной пользой для вас
 </p>
+</div>
 			
-			</div>
-
-					
-
-				</div>
-			</div>
-
-				<div class="item company left_item">
-					<div class="cost-image-wrapper">
-			<span class="icon_wrapper"> 				
-				<span class="advantages_picture main_icon icon3333 "></span>
-			</span>
-			</div>
-			<div class="cost-text">
-			<div class="cost-text-inner">
+			
+			
 				<p class="text"><b>ВЫБИРАЯ НАС, ВЫ ВЫБИРАЕТЕ НАДЕЖНОСТЬ И КАЧЕСТВО</b><br>
 Хотим быть полезными конкретно вам в вашей ситуации!</p>
+
+
+
 <div class="col-md-12">
 <div class="col-md-3">
 	<p class="short_presentation"> 8 лет на рынке </p>
@@ -1171,34 +1176,9 @@ text-transform: uppercase;
 
 	
 
-	<!-- LAST QUESTION -->
+	
 
-<!-- 	<section class="last_question roof_last_question">
-
-		<div class="bg"><div class="in"></div></div>
-
-		<div class="container">
-
-			<div class="wrapper">
-			
-
-				<h2 class="section_title">Остались вопросы <span>или вы не нашли нужной информации?</span></h2>
-
-				<p>Наш специалист с радостью ответит вам!</p>
-
-				<button type="button" class="callback_btn" data-toggle="modal" data-target="#question_modal">Получить ОТВЕТ</button>
-
-
-
-			</div>
-
-		</div>
-
-	</section> -->
-
-
-
-<!-- <article class="page-form-block wow pulse"  data-wow-iteration="1" data-wow-duration="3000ms">
+<article class="page-form-block wow pulse"  data-wow-iteration="1" data-wow-duration="3000ms">
 		<div class="container">
 		<form action="send.php" method="post" class="send-form page-form" autocomplete="off">
 
@@ -1220,25 +1200,14 @@ text-transform: uppercase;
 
 	</div>
 </div>
-</article> -->
+</article>
 
 	<!-- END LAST QUESTION -->
-
-
-
-	<!-- CONTACTS -->
-
-
-
-
-
-
 <footer class="container-fluid footer">
-<div id="map">
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-</div>
+  <div id="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+  </div>
     <div class="container">
-
       <div class="row">
           <div class="col-md-12">
             <div class="col-md-4">
@@ -1258,7 +1227,7 @@ text-transform: uppercase;
                     <a href="#catalog" >Каталог</a>
                   </li>
                   <li>
-                    <a href="##service" >Услуги</a>
+                    <a href="#service" >Услуги</a>
                   </li>
                   <li>
                     <a href="#guarantee" >Гарантии</a>
@@ -1791,6 +1760,7 @@ text-transform: uppercase;
 
 	<![endif]-->
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+  <script src="js/halfpage.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
 	<script src="js/wow.js"></script>
 		 <script>
