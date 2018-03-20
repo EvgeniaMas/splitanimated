@@ -115,44 +115,82 @@ section, .main_header, .main_footer {
   overflow: hidden; }
 
 
-#bonus {
+.site-section  {
   position: relative;
   z-index: 7;
-  background-color: red;
- 
- /* height:100vh;
- position: fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  z-index:8;
-  background:red;
-  opacity:1;*/
+  padding-top: 30px;
 
+  margin: auto;
+  text-align: center;
+ }
+.site-sectionwhite {
 
-
+background-color: #fff; 
+opacity: 0.9;
 }
 
-
-.bonus_text {
-  font-size: 20px;
-  
+.site-sectionwhite .section_text {
+  font-size: 20px; 
   line-height: 30px;
-  color: #fff;
+  color: #000;
   margin-top: 10%;
   padding: 15px;
 
 }
 
+.site-sectionwhite .section_text .advantages{
+  background-color: #fff;
+  padding: 10px;
+}
+
+.section_textwhite {
+ font-size: 20px; 
+  line-height: 30px;
+  color: #fff;
+  margin-top: 10%;
+  padding: 15px;
+}
 
 
 
 
+h2.section_titleblack 
+ {
+   font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+
+h2.section_titlewhite{
+  font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+
+.black_textdesc {
+display: block;
+  text-transform: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  padding-bottom: 25px;
+
+}
 
 
 
-
-
+ 
 
 
 
@@ -9692,10 +9730,10 @@ button.force {
 }
 
 
-.section.six .section-title .title-descr {
+/*.section.six .section-title .title-descr {
     text-transform: uppercase
 }
-
+*/
 .owl-carousel .owl-nav.disabled {
     display: block!important
 }
@@ -10389,7 +10427,7 @@ header .header-description-line {
 
  #service_process{
   min-height: 500px;
-  background-image:url(../img/air_bg.jpg);
+  background-image:url(../img/slide3.j);
   background-color: red;
   background-size: cover;
   background-position: center;
@@ -10582,13 +10620,13 @@ span.activity {
 }
 
 
-.section_title {
+/*.section_title {
   font-weight: 900;
   font-size: 25px;
   line-height: 29px;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 20px; }
+  margin-bottom: 20px; }*/
 
 span.white_textdesc {
   display: block;
