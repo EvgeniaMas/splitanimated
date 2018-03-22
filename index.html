@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="libs/selectstyle/jquery.formstyler.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="http://allfont.ru/allfont.css?fonts=roboto-bold" rel="stylesheet" type="text/css" />
+  <!-- <link href="http://allfont.ru/allfont.css?fonts=pt-mono" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="http://allfont.ru/allfont.css?fonts=bodoni" rel="stylesheet" type="text/css" /> -->
+  <link href="http://allfont.ru/allfont.css?fonts=bebas" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">   
 </head>
@@ -31,7 +34,7 @@
  <style>
   
 
-.section--purple {
+/*.section--purple {
   background-color: #9b59b6;
   height: 300px;
   position: relative;
@@ -51,7 +54,7 @@
    position: relative;
   z-index: 2;
 
-}
+*/}
 
 #main {
   text-align: center;
@@ -88,7 +91,7 @@ height: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #34b3a0;
+  background-color: #171717;
   
  }
 .square {
@@ -174,8 +177,10 @@ img.header_logo {
   left:0;
   width:100vw;
   z-index:1;
-  background:#225470;
-  opacity:0.65;
+ /* background:#225470;*/
+  /*background-color: #333;*/
+  background-color: #171717;
+  opacity:0.75;
 }
 
 .header-content{
@@ -186,18 +191,24 @@ img.header_logo {
   font-size:24px;
   display:block;
   padding-bottom:2rem;
-  font-family: 'Roboto Bold', arial;
+  /*font-family: 'Roboto Bold', arial;*/
+  font-family: 'Bodoni', arial;
+  letter-spacing: 3px;
+  
 }
 
 h1.header-description-title {
   font-size: 36px;
-    font-family: 'Roboto Bold', arial;
+    /*font-family: 'Roboto Bold', arial;*/
+    font-family: 'Bodoni', arial;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
     margin-top: 15%;
+    letter-spacing: 3px;
+
 }
 
 /*Меню сайта */
@@ -215,7 +226,7 @@ h1.header-description-title {
   cursor: pointer;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
-  z-index: 2;
+  z-index: 595955959595955959595959595;
 }
 .open:hover {
   opacity: 0.8;
@@ -256,7 +267,7 @@ h1.header-description-title {
   position: absolute;
   background-color: rgba(38, 84, 133, 0.54);
  
-  z-index: 18;
+  z-index: 9000000000000;
   overflow: hidden;
 }
 .sub-menu li {
@@ -412,7 +423,7 @@ text-transform: uppercase;
  
 <body>
 
-<!--  <div id="preloader">
+ <div id="preloader">
   <div id="pagetransition">
  
   <div class="square white"></div>
@@ -421,7 +432,7 @@ text-transform: uppercase;
   
   <div class="vic-gb"></div>
 </div>
-</div> -->
+</div>
 	
 <header class="v-header container">
   <img class="header_logo " src="img/team_logo.png" alt="Логотип">
@@ -464,6 +475,7 @@ text-transform: uppercase;
           <h1 class="header-description-title">Бесшумные кондиционеры <br>от ведущих производителей </h1><br>
            <p class="header-description-text"> Гарантия 5 лет, <br>установка в день покупки за 2 часа</p>        
            <button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Оставить заявку</span></button>
+           
       </div>      
     </div>
 </header>
@@ -471,24 +483,24 @@ text-transform: uppercase;
 
 
 
-<section id="bonus" class="container-fluid site-section   wow slideInLeft" data-wow-duration="4s"> 
+<section id="bonus" class="container-fluid site-section"   > 
   <div  class="container">    
       <h2 class="section_titlewhite">Закажите сплит-систему сейчас и бонусами для вас станут:</h2>
     
    <div class="row">
 
-    <div class="col-md-4">
+    <div class="col-md-4 wow slideInLeft" data-wow-duration="2s">
     <img class="section_image" src="img/1.jpg" alt="Кондиционер в интерьере">
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-8 wow slideInRight" data-wow-duration="2s">
       <p class="section_textwhite">Год обслуживания <br> <span>бесплатно</span> </p>
        <p class="section_textwhite">Опрессовка системы, <br>исключающая впоследствии утечку фреона </p> 
         <p class="section_textwhite">Нержавеющие кронштейны для крепления <br><span>в подарок </span></p> 
     </div>
        
 
-       <button id="bonus" type="button" class="callback_btn " data-toggle="modal" data-target="#main_modal"><span>Получить бонусы</span></button>
+       <button id="bonus" type="button" class="callback_btn wow pulse"  data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#main_modal"><span>Получить бонусы</span></button>
       
        </div>
     </div>
@@ -496,18 +508,19 @@ text-transform: uppercase;
 
 
 
-<section  class="container-fluid  site-section ">
+<section  id="advantages" class="container-fluid  site-section ">
 
   
    <!--  <div class="preload_overlay"></div> -->
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
+    
 
 
 
 
- <div  class="container">    
+ <div  class="container"> 
+ <!-- <div id='stars'></div> -->
+    <!-- <div id='stars2'></div>
+    <div id='stars3'></div>  -->  
       <h2 class="section_titlewhite">
       НАШИ ПРЕИМУЩЕСТВА </h2> <br>
       
@@ -515,28 +528,28 @@ text-transform: uppercase;
     
    <div class="row">
 
-    <div class="col-md-4 wow slideInRight">
-       <span class="white_textdesc"> Мы комплексно решаем задачи по установке<br> и обслуживанию климатического оборудования, <br>     
-      чтобы создавать для Вас комфортный климат</span>
+    <div class="col-md-4 wow slideInLeft">
+       <span class="white_textdesc"> Мы комплексно решаем задачи по установке и обслуживанию климатического оборудования,     
+      чтобы создавать для Вас <br> КОМФОРТНЫЙ КЛИМАТ</span>
     <img class="section_image" src="img/2.jpg" alt="Кондиционер в интерьере">
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-8 wow slideInRight">
       <p class="section_textwhite">
-        <b>МОНТАЖ И СЕРВИС</b> <br>
+        <b>МОНТАЖ И СЕРВИС</b> <br><br>
         Профессионалы осуществят   <br>
         монтаж любой сложности, <br>
         а также сервисное обслуживание. <br>        
           </p> 
        <p class="section_textwhite">
-        <b>БЕСПЛАТНАЯ ДОСТАВКА</b><br>
+        <b>БЕСПЛАТНАЯ ДОСТАВКА</b><br><br>
          Бесплатная доставка <br>
         по городу Находка и<br>
          Находкинскому городскому округу.<br>           
       </p>
             
         <p class="section_textwhite">
-        <b>ДОСТУПНЫЕ ЦЕНЫ</b><br>
+        <b>ДОСТУПНЫЕ ЦЕНЫ</b><br><br>
       Мы предлагаем сплит системы<br>
       в разных ценовых категориях <br>
       от недорогих до премиум класса.     
@@ -544,7 +557,7 @@ text-transform: uppercase;
     
 
      <p class="section_textwhite">
-        <b>ГАРАНТИЯ 5 ЛЕТ</b><br>
+        <b>ГАРАНТИЯ 5 ЛЕТ</b><br><br>
         Мы уверены в своем товаре, <br>
         предоставляем дополнительную <br>
         гарантию.       
@@ -600,17 +613,17 @@ text-transform: uppercase;
     <div class="container">
       <div class="col-md-12">
          <div class="col-md-5">        
-        <img class="section_image" src="img/3.jpg" alt="Кондиционер в интерьере">
+        <img class="section_image wow slideInLeft" src="img/3.jpg" alt="Кондиционер в интерьере">
     </div>
      
-      <div class="col-md-7">
+      <div class="col-md-7 wow slideInRight">
         <h2 class="section_titlewhite">Помните!</h2>
         <p class="section_textwhite">Срок службы и качество работы сплит­системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>   
         <h2 class="section_titlewhite">А ТАКЖЕ!</h2>
         <p class="section_textwhite">При выборе важно учесть множество факторов, таких как, площадь помещения, количество людей, высоту потолков, выделяющее тепло оборудование... <br>Чтобы предусмотреть все нюансы, обратитесь к профессионалам.</p>
         <h2 class="section_titlewhite"><span>Закажите выезд специалиста</span> <br><span class="section_titlewhite"> для индивидуального расчета мощности сплит-системы </span></h2>
-        <h3 class="ection_textwhite"><span>абсолютно бесплатно</span></h3>
-        <button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Заказать</span> БЕСПЛАТНЫЙ выезд</button>
+        <h3 class="section_textwhite">АБСОЛЮТНО БЕСПЛАТНО</h3>
+        <button type="button" class="callback_btn wow pulse" data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#main_modal"><span>Заказать</span> БЕСПЛАТНЫЙ выезд</button>
       </div>
       
   </div>
@@ -725,11 +738,10 @@ text-transform: uppercase;
    <div class="container">     
       <h2 class="section_titlewhite">УСЛУГИ</h2>
         <div class="row">
-            <div class="col-md-4 col-sm-4"> 
-        <img class="section_image" src="img/5.jpg" alt="Кондиционер в интерьере">
+            
 
             </div>
-            <div class="col-md-4 col-sm-4">           
+            <div class="col-md-4 col-sm-4 wow slideIneft">           
                <p class="section_textwhite">Монтаж кондиционеров </p>
                <p class="section_textwhite">Сервисное обслуживание и ремонт кондиционеров </p> 
                 <p class="section_textwhite">Демонтаж кондиционеров </p>
@@ -738,10 +750,14 @@ text-transform: uppercase;
                 <p class="section_textwhite">Монтаж систем вентиляции </p> 
                 <p class="section_textwhite">Оптовая и розничная продажа комплектующих для кондиционеров </p>
                 <p class="section_textwhite">Оптовая и розничная продажа кондиционеров </p>
-            </div>        
+                <button type="button" class="callback_btn white_bg force wow pulse"  data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#main_modal"><span>Расчитать мощность кондиционера</button>
+            </div> 
+
+            <div class="col-md-4 col-sm-4 wow slideInRight"> 
+        <img class="section_image " src="img/5.jpg" alt="Кондиционер в интерьере">       
       </div>
         
-      <button type="button" class="callback_btn white_bg force" data-toggle="modal" data-target="#main_modal"><span>Расчитать мощность кондиционера</button>     
+         
            
     </div>
   </section>
@@ -870,25 +886,21 @@ text-transform: uppercase;
   
 
   <!-- END MAINTENANCE -->
-<section class="split_advantages site-section  ">
-
-
-
-
+<section class="split_advantages site-section">
    <div class="container">     
       <h2 class="section_titlewhite">6 главных преимуществ</h2>
         <div class="row">
             <div class="col-md-4 col-sm-4"> 
-        <img class="section_image" src="img/6.jpg" alt="Кондиционер в интерьере">
+        <img class="section_image wow slideInLeft" src="img/6.jpg" alt="Кондиционер в интерьере">
 
             </div>
-            <div class="col-md-4 col-sm-4">           
+            <div class="col-md-4 col-sm-4 wow slideInRight">           
                <p class="section_textwhite">При монтаже используем штроборез с пылесосом, что минимизирует количество пыли и крошки, которую потом сложно убирать</p>
-               <p class="section_textwhite">Наши сплит­системы заправляются озонобесопасным фреоном R 410 A</p>
+                <p class="section_textwhite">Работаем только профессиональным инструментом <span>BOSCH</span> (Германия), <span>MAKITA</span> (Япония), <span>WIGAM</span> (Италия), <span>CPS</span> (США), <span>REFCO</span>(Швейцария), <span>MASTERCOOL</span> (США), что позволяет решать любые задачи и производить монтаж в любой ситуации</p>
                 <p class="section_textwhite">Используем качественные импортные материалы,включая сербскую толстостенную трубу, сверхпрочные кранштейны из нержавеющей и оцинкованной стали,которым не страшен никакой ветер</p>
             </div> 
-             <div class="col-md-4 col-sm-4">     
-                <p class="section_textwhite">Работаем только профессиональным инструментом <span>BOSCH</span> (Германия), <span>MAKITA</span> (Япония), <span>WIGAM</span> (Италия), <span>CPS</span> (США), <span>REFCO</span>(Швейцария), <span>MASTERCOOL</span> (США), что позволяет решать любые задачи и производить монтаж в любой ситуации</p>
+             <div class="col-md-4 col-sm-4 wow slideInRight">     
+               <p class="section_textwhite">Наши сплит­системы заправляются озонобесопасным фреоном R 410 A</p>
                 <p class="section_textwhite">Многолетний опыт и квалификация монтажников позволяют нам давать бессрочную гарантию на свои работы, мы знаем, что они сделают все безупречно</p>
                <p class="section_textwhite">Бесплатный выезд специалиста для подбора сплит-системы и ее доставка к месту монтажа, съэкономят не только ваши деньги, но и нервы. Отложите долгие и мучительные поиски, просто позвоните нам!</p>
             </div>        
@@ -900,91 +912,70 @@ text-transform: uppercase;
   
   <!-- END SPLIT ADVANTAGES -->
 <section class="download_section split_download site-section  ">
-      <div class="container">
-        
-          <h2 class="section_titlewhite">5 основных правил <br>надежной установки и долговечной <br>службы сплит-системы для вас</h2>
-          <p class="section_textwhite">Скачайте их здесь и уберегите себя от проблем</p>
-          <div class="paper"></div>
-          
-          <button type="button" class="callback_btn  white_bg" data-toggle="modal" data-target="#download_modal"><span>Скачать буклет</span></button>
-       
+  <div class="container">     
+      <h2 class="section_titlewhite">5 основных правил <br>надежной установки и долговечной <br>службы сплит-системы для вас</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 wow slideInLeft">
+           <p class="section_textwhite">Скачайте их здесь и уберегите себя от проблем</p>
+           <button type="button" class="callback_btn wow pulse"  data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#download_modal"><span>Скачать буклет</span></button> 
+            </div>
+          <div class="col-md-6 col-sm-6 wow slideInRight">
+            <img src="img/windows/paper.png" alt="Буклет">
+          </div>
+               
+        </div>
       </div>
-  </section>
+</section>
 
-<section class="maintenance container-fluid site-section  "> 
+
+
+
+
+<section  class="container-fluid maintenance site-section ">
+
+  
    
-    <div class="container">
+ <div  class="container">    
       <h2 class="section_titlewhite">Сервисное обслуживание</h2>
       <p class="section_textwhite"> всех систем кондиционирования <br>и вентиляции помещений</p>
       <h3 class="section_textwhite">Что входит в сервис кондиционеров и сплит-систем</h3>
-      <div class="wrapper">
-        <div class="item left_item">
-          <!-- <div class="number">
-            <p>01</p>
-          </div> -->
-          <p class="section_textwhite">Диагностика кондиционеров</p>
-        </div>
-        <div class="item right_item">
-          <!-- <div class="number">
-            <p>02</p>
-          </div> -->
-          <p class="section_textwhite">Проверка и чистка теплообменника внешнего и внутреннего блоков</p>
-        </div>
-        <div class="item left_item">
-          <!-- <div class="number">
-            <p>03</p>
-          </div> -->
-          <p class="section_textwhite">Проверка и чистка фильтров, испарителя, конденсатора</p>
-        </div>
-        <div class="item right_item">
-          <!-- <div class="number">
-            <p>04</p>
-          </div> -->
-          <p class="section_textwhite">Проверка и чистка дренажной системы кондиционера</p>
-        </div>
-        <div class="item left_item">
-          <!-- <div class="number">
-            <p>05</p>
-          </div> -->
-          <p class="section_textwhite">Измерение рабочего давления в системе</p>
-        </div>
-        <div class="item right_item">
-          <!-- <div class="number">
-            <p>06</p>
-          </div> -->
-          <p class="section_textwhite">Диагностика утечки фреона</p>
-        </div>
-        <div class="item left_item">
-        <!--  <div class="number">
-            <p>07</p>
-          </div> -->
-          <p class="section_textwhite">Дозаправка кондиционера фреоном (хладагент), если это необходимо</p>
-        </div>
-        <div class="item right_item">
-          <!-- <div class="number">
-            <p>08</p>
-          </div> -->
-          <p class="section_textwhite">Перевод кондиционера с летнего режима на зимний и наоборот</p>
-        </div>
-        <div class="item left_item">
-          <!-- <div class="number">
-            <p>09</p>
-          </div> -->
-          <p class="section_textwhite">Проверка состояния термоизоляции фреонопроводов</p>
-        </div>
-        <div class="item right_item">
-          <!-- <div class="number">
-            <p>10</p>
-          </div> -->
-          <p class="section_textwhite">Дезинфекция кондиционера</p>
-        </div>
-      </div>
-      <div class="blue_wrapper">
+      
+     
+    
+   <div class="row">
+
+    
+
+    <div class="col-md-8 wow slideInLeft">
+      <p class="section_textwhite">Диагностика кондиционеров</p>
+      <p class="section_textwhite">Проверка и чистка теплообменника внешнего и внутреннего блоков</p>
+      <p class="section_textwhite">Проверка и чистка фильтров, испарителя, конденсатора</p>
+       <p class="section_textwhite">Проверка и чистка дренажной системы кондиционера</p>
+       <p class="section_textwhite">Измерение рабочего давления в системе</p>
+       <p class="section_textwhite">Диагностика утечки фреона</p>
+        <p class="section_textwhite">Дозаправка кондиционера фреоном (хладагент), если это необходимо</p>
+        <p class="section_textwhite">Перевод кондиционера с летнего режима на зимний и наоборот</p>
+<p class="section_textwhite">Проверка состояния термоизоляции фреонопроводов</p>
+
+     <p class="section_textwhite">Дезинфекция кондиционера</p>  
+       
+
+     
+      
+       </div>
+
+       <div class="col-md-4">
+      
+    <img class="section_image wow slideInRight" src="img/7.jpg" alt="Кондиционер в интерьере">
+    </div>
+
+    </div>
+     <div class="blue_wrapper">
         <p>Чистку и сервисное обслуживание сплит-систем наши специалисты выполняют уникальным способом. Мы разработали сервисный пакет с отводом грязной воды, который крепится под внутренний блок сплита, после чего он, обработанный спецсредством , промывается насквозь напором воды из мойки высокого давления KARCHER. <br>Какими либо другими способами так тщательно вымыть сплит невозможно.</p>
       </div>
-    </div>
-</section>
+  </div>
 
+</section>
 
   <!-- ORDER TODAY -->
 
@@ -992,42 +983,43 @@ text-transform: uppercase;
     <div class="container">
       <h2 class="section_titlewhite">Оставьте заявку на сервис сегодня</h2>
       <p class="section_textwhite">и мы заменим фильтры тонкой очистки абсолютно бесплатно!</p>
-      <button type="button" class="callback_btn  white_bg" data-toggle="modal" data-target="#services_modal"><span>Вызвать сервисную службу</span></button> 
-      <p class="bottom_text">*Обращаем ваше внимание на то, что больше ни одна компания в регионе замену фильтров не производит</p>
+      <button type="button" class="callback_btn  wow pulse"  data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#services_modal"><span>Вызвать сервисную службу</span></button> 
+      <p class="section_textwhite">*Обращаем ваше внимание на то, что больше ни одна компания в регионе замену фильтров не производит</p>
     </div>
 </section>
 
 
-<section class="container-fluid site-section  ">
-<div class="container"> 
-    <h2 class="section_titlewhite">
+
+
+<section id="guarantee" class="container-fluid site-section"> 
+  <div  class="container">    
+      <h2 class="section_titlewhite">
       Гарантия  </h2> <br>
-      <!-- <span class="logo-line"></span> -->
-      <span class="white_textdesc"> Гарантии, которые исполним на 100%</span> 
-</div>
+      
+      <span class="white_textdesc"> Гарантии, которые исполним на 100%</span>
+    
+   <div class="row">
 
-<div class="col-md-12">
-  <div class="col-md-4">    
-        <p class="section_textwhite">Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>              
-    </div>
-    <div class="col-md-4">      
-        <p class="section_textwhite">Бесплатная диагностика при неисправности</p>
-    </div>
-    <div class="col-md-4">
-        <p class="section_textwhite">Обмен или бесплатный ремонт, если поломка по нашей вине   </p>
-    </div>
-</div>
-
-
-
+    <div class="col-md-6 ">
+      <div class="fullscreen-video-wrap2">
+      <video class="aux" src="condition.mp4" autoplay="" loop=""></video>
+  </div> 
    
-       
-    </div> 
-    </div>   
+    </div>
 
-  
-</div>
+    <div class="col-md-6">
+      <p class="section_textwhite">Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>  
+       <p class="section_textwhite">Бесплатная диагностика при неисправности</p>
+         <p class="section_textwhite">Обмен или бесплатный ремонт, если поломка по нашей вине   </p>
+    </div>
+       
+
+     
+      
+       </div>
+    </div>
 </section>
+
 
 
 
@@ -1058,15 +1050,10 @@ text-transform: uppercase;
 </div>
 
 <div class="col-md-6">
-  <p class="section_textwhite"><b>Компания Home Climate ЦЕНИТ СВОЮ РЕПУТАЦИЮ!</b><br>
-Нам дорого ваше время и деньги, поэтому 
-мы работаем качественно, в срок и со всеми гарантиями, которые прописаны в договоре
-Нам можно доверять, мы всегда на связи, 
-работаем индивидуально с каждым клиентом 
-и учитываем все нюансы. 
-Для нас важно качество и результат нашей работы, 
-а главная цель - это довольный клиент
-</p>    
+  <p class="section_textwhite"><b>В НАШЕЙ КОМАНДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ</b><br>
+Мы готовы реализовать поставленную задачу на 100% 
+с максимальной пользой для вас
+</p>
 </div>
 
 </div>			
@@ -1077,32 +1064,28 @@ text-transform: uppercase;
 		
 					
 			
-				<p class="section_textwhite"><b>В НАШЕЙ КОМАНДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ</b><br>
-Мы готовы реализовать поставленную задачу на 100% 
-с максимальной пользой для вас
-</p>
-</div>
+				
+
 			
 			
 			
 				<p class="section_textwhite"><b>ВЫБИРАЯ НАС, ВЫ ВЫБИРАЕТЕ НАДЕЖНОСТЬ И КАЧЕСТВО</b><br>
 Хотим быть полезными конкретно вам в вашей ситуации!</p>
-
-
+</div>
 
 <div class="col-md-12">
 <div class="col-md-3">
-	<p class="section_textwhite"> 8 лет на рынке </p>
+	<p class="section_textwhite"> 8 ЛЕТ НА РЫНКЕ </p>
 </div>
 
 <div class="col-md-3">
-	<p class="section_textwhite">реализовано более 900 проектов</p>
+	<p class="section_textwhite">РАЛИЗОВАНО БОЛЕЕ 900 ПРОЕКТОВ </p>
 </div>
 <div class="col-md-3">
-	 <p class="section_textwhite">выполним качественно и в срок проект любой сложности</p>
+	 <p class="section_textwhite">ВЫПОЛНИМ КАЧЕСТВЕННО И В СРОК ПРОЕКТ ЛЮБОЙ СЛОЖНОСТИ</p>
 </div>
 <div class="col-md-3">
-	<p class="section_textwhite">решим "под ключ" все задачи</p>
+	<p class="section_textwhite">РЕШИМ "ПОД КЛЮЧ" ВСЕ ЗАДАЧИ</p>
 </div>
 
 
@@ -1134,9 +1117,9 @@ text-transform: uppercase;
 		<form action="send.php" method="post" class="send-form page-form" autocomplete="off">
 
 			<div class="form-title">
-				<b class="big">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?
-</b>
-				<div class="page-form-line"></div>
+				<b class="section_titlewhite">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?
+</b><br>
+				
 				НАШ СПЕЦИАЛИСТ С РАДОСТЬЮ ОТВЕТИТ ВАМ!
 			</div>
 
