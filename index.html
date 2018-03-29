@@ -32,17 +32,6 @@
 
 
  <style>
-html {
-  background-color: #333;
-}
-/*#main {
-  text-align: center;
-}
-
-#more {
-  margin: 20px auto 48px;
-}
-*/
 .wrapper {
 margin:auto;
 height: 100%;    
@@ -111,6 +100,19 @@ height: 100%;
   background-size: contain;
 }
 
+
+
+div.top_headerline {
+min-height: 110px;
+background-color: rgba(0, 0, 0, 0.5);
+position: absolute;
+top: 0;
+z-index: 2;
+width: 100vw;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
 /*Видео шапка*/ 
 
 /*.v-header{
@@ -123,70 +125,36 @@ height: 100%;
 
 img.header_logo {
   display: block;
-  width: 70px;
-  position: absolute;
-  top: 40px;
+  width: 80px;
+  position: relative; 
   background-color: #fff;
   z-index: 3;
-}
-
-/*.fullscreen-video-wrap{
- position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-}
-
-
-
-
-
-
-.fullscreen-video-wrap video{
-  min-height:100%;
-  min-width:100%;
-}
-
-.header-overlay{
-  height:100vh;
- position: fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  z-index:1;*/
-                           /* background:#225470;*/
-                                /*background-color: #333;*/
-/*  background-color: #171717;
-  opacity:0.75;
-}
-
-.header-content{
-  z-index:2;
-}
-
-.header-content p{
-  font-size:24px;
-  display:block;
-  padding-bottom:2rem;
-  letter-spacing: 2px;
-  font-family: "Open Sans Semibold";
+  margin: auto;
   
 }
 
-h1.header-description-title {
-  font-size: 36px;
-  color: #fff;
+p.main_activity {
+padding-left: 20px;
+  border-left: 2px solid crimson;
+  font-size: 14px;
+}
+
+p.main_activity b {
   font-family: "Open Sans Bold";
-  text-transform: uppercase;
-  line-height: 45px;
+}
+
+p.comfort {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.model {
   text-align: left;
-  margin-top: 15%;
-  letter-spacing: 2px;
-
-}*/
-
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+}
 
 .v-header{
   height:100vh;
@@ -196,7 +164,7 @@ h1.header-description-title {
 }
 
 .fullscreen-video-wrap{
-  position:absolute;
+  position: fixed;
   top:0;
   left:0;
   width:100%;
@@ -210,71 +178,54 @@ h1.header-description-title {
 }
 
 .header-overlay{
-  height:100vh;
+  height:100%;
   position: absolute;
   top:0;
   left:0;
   width:100vw;
   z-index:1;
- /* background:#225470;*/
- background-color: #171717;
-  opacity:0.75;
+  background:#225470;
+  opacity:0.8;
 }
 
 .header-content{
   z-index:2;
+  margin-top: 15%;
 }
 
-.header-content h1{
-  font-size:50px;
-  margin-bottom:0;
+h1.header-description-title{
+font-size:40px;
+  margin-bottom:20px;
+  font-family: "Open Sans Bold";
+  letter-spacing: 3px;
 }
-
 .header-content p{
-  font-size:2rem;
+  font-size:30px;
   font-family:"Open Sans Semibold";
   display:block;
   padding-bottom:2rem;
 }
 
-.btn{
+/*.btn{
   background: #34b3a0;
   color:#fff;
   font-size:1.2rem;
   padding: 1rem 2rem;
   text-decoration: none;
-}
+}*/
 
-.section{
+/*.section{
   padding:20px 0;
 }
 
 .section-b{
   background:#333;
   color:#fff;
-}
-
-@media(max-width:960px){
-  .container{
-    padding-right:3rem;
-    padding-left:3rem;
-  }
-}
-
-
-
-
-
-
-
+}*/
 /*Меню сайта */
-
-
-
-
 .open {
   position: fixed;
-  top: 40px;
+  top: 20px;
   right: 40px;
   width: 50px;
   height: 50px;
@@ -360,7 +311,7 @@ text-transform: uppercase;
 }
 .sub-menu li a {
   color: #fff;
-  
+  font-family: "Open Sans Bold";
   font-size: 16px;
   width: 100%;
   display: block;
@@ -374,7 +325,7 @@ text-transform: uppercase;
 	min-width: 180px;
 	width: 100%;
 	color:#fff;
-	text-align:left;
+	text-align:right;
   text-decoration: none!important;
 
 }
@@ -394,6 +345,15 @@ text-transform: uppercase;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+.oppenned span:first-child {
+  background-color: #fff;
+  z/*-index: 103;
+  position: relative;*/
+}
+
+
+
 .oppenned span:nth-child(1) {
   -webkit-transform: rotate(45deg) translateY(12px) translateX(12px);
           transform: rotate(45deg) translateY(12px) translateX(12px);
@@ -469,15 +429,312 @@ text-transform: uppercase;
           transform: translateY(0);
 }
 
+.si-phone {  
+    margin-top: 15px;
+    float: right;
+    margin-left: 10px;
+
+}
+
+.si-phone .phone-link {
+    color: #fff;
+    display: inline!important;
+    font: 22 Open Sans Bold;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    
+}
+
+.si-phone .phone-link:hover {
+    color: #ddd;
+    background: none;
+    text-align: left;
+}
+
+.si-phone .modal-link {
+    color: #fff;
+    font: 16px Open Sans SemiBold;  
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    text-transform: none;
+   
+}
+
+.si-phone .modal-link:hover {
+    color: #ddd;
+    
+}
+
+
+select#userselect option {
+  width: 80%!important;
+  padding: 5px!important;
+  border: 1px solid LimeGreen;
+  margin:auto;
+  margin-top: 10px;
+  margin:bottom: 10px;
+}
 
 
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.jq-selectbox {
+  vertical-align: middle;
+  cursor: pointer;
+    width: 300px;
+}
+.jq-selectbox__select {
+  height: 30px;
+    line-height: 30px;
+  padding: 0 45px 0 10px;
+  border: 1px solid #CCC;
+  border-bottom-color: #B3B3B3;
+  border-radius: 4px;
+  background: #F5F5F5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAIAAABi9+OQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABdJREFUeNpi+v//PxM2zMDAQEtxgAADAF2uTe9L4getAAAAAElFTkSuQmCC) repeat-x;
+  box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px #FFF;
+  font-size: 16px;  
+    font-family: 'segoe ui';
+  color: #9D9D9D; 
+  background: #fff;
+  border: 1px solid #3399CC;
+}
+/*.jq-selectbox__select:hover {
+  background-color: #E6E6E6;
+  background-position: 0 -10px;
+}*/
+.jq-selectbox__select:active {
+  background: #F5F5F5;
+  box-shadow: inset 1px 1px 3px #DDD;
+}
+.jq-selectbox.focused .jq-selectbox__select {
+  border: 1px solid #5794BF;
+}
+.jq-selectbox.disabled .jq-selectbox__select {
+  border-color: #CCC;
+  background: #F5F5F5;
+  box-shadow: none;
+  color: #888;
+}
+.jq-selectbox__select-text {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jq-selectbox .placeholder {
+  color: #888;
+}
+.jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 100%; 
+}
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: 9px solid #3399CC;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.jq-selectbox__dropdown {
+  top: 33px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font: 14px/18px Arial, sans-serif;
+}
+.jq-selectbox__search {
+  margin: 5px;
+}
+.jq-selectbox__search input {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 5px 27px 6px 8px;
+  outline: none;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==) no-repeat 100% 50%;
+  box-shadow: inset 1px 1px #F1F1F1;
+  color: #333;
+  -webkit-appearance: textfield;
+}
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.jq-selectbox__not-found {
+  margin: 5px;
+  padding: 5px 8px 6px;
+  background: #F0F0F0;
+  font-size: 13px;
+}
+.jq-selectbox ul {
+  margin: 0;
+  padding: 0;
+}
+.jq-selectbox li {
+  min-height: 18px;
+  padding: 5px 10px 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+       -o-user-select: none;
+  white-space: nowrap;
+  color: #231F20;
+}
+.jq-selectbox li.selected {
+  background-color: #A3ABB1;
+  color: #FFF;
+}
+.jq-selectbox li:hover {
+  background-color: #EEEEEE;
+  color: #000;
+}
+.jq-selectbox li.disabled {
+  color: #AAA;
+}
+.jq-selectbox li.disabled:hover {
+  background: none;
+}
+.jq-selectbox li.optgroup {
+  font-weight: bold;
+}
+.jq-selectbox li.optgroup:hover {
+  background: none;
+  color: #231F20;
+  cursor: default;
+}
+.jq-selectbox li.option {
+  padding-left: 25px;
+}
+
+
+.jq-select-multiple {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1px;
+  border: 1px solid #CCC;
+  border-bottom-color: #B3B3B3;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,0.1);
+  background: #FFF;
+  color: #333;
+  font: 14px/18px Arial, sans-serif;
+  cursor: default;
+}
+.jq-select-multiple.focused {
+  border: 1px solid #5794BF;
+}
+.jq-select-multiple.disabled {
+  border-color: #CCC;
+  background: #F5F5F5;
+  box-shadow: none;
+  color: #888;
+}
+.jq-select-multiple ul {
+  margin: 0;
+  padding: 0;
+}
+.jq-select-multiple li {
+  padding: 3px 9px 4px;
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+}
+.jq-select-multiple li:first-child {
+  border-radius: 3px 3px 0 0;
+}
+.jq-select-multiple li:last-child {
+  border-radius: 0 0 3px 3px;
+}
+.jq-select-multiple li.selected {
+  background: #08C;
+  color: #FFF;
+}
+.jq-select-multiple li.disabled {
+  color: #AAA;
+}
+.jq-select-multiple.disabled li.selected,
+.jq-select-multiple li.selected.disabled {
+  background: #CCC;
+  color: #FFF;
+}
+.jq-select-multiple li.optgroup {
+  font-weight: bold;
+}
+.jq-select-multiple li.option {
+  padding-left: 25px;
+}
+
+b.price {
+  display: block;
+  font-size: 20px;
+  font-family:"Open Sans Bold";
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.color-choose {
+  display: block;
+  min-height: 40px;
+
+  margin-top: 10px;
+}
+
+.color-choose span:active,
+.color-choose span:checked{
+border: 3px solid Limegreen;
+box-shadow: none;
+}
 
 
   </style>
 
 </head>
  
+
+
+
 <body>
 
  <div id="preloader">
@@ -493,8 +750,22 @@ text-transform: uppercase;
 
 
 
-<header class="v-header container">
-     <img class="header_logo " src="img/team_logo.png" alt="Логотип">
+<header id="main" class="v-header ">
+  <div class="container-fluid top_headerline">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="col-md-2">
+          <img class="header_logo " src="img/team_logo.png" alt="Логотип">
+          <p class="comfort">С нами комфортно</p>
+         </div>
+      <div class="col-md-4">
+          <p class="main_activity"><b>Продажа и установка <br> кондиционеров</b><br> в городе Находка и<br> Находкинском<br> городском округе</p>
+      </div>
+
+    
+      </div>    
+  </div>
+</div>
     <div class="fullscreen-video-wrap">
            <video src="split.1.mp4" autoplay="" loop="">
     </video>
@@ -521,7 +792,7 @@ text-transform: uppercase;
           </li>
           <li> 
             <div class="si-phone">
-              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a><br>
+              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a>
               <a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
               <a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
             </div>   
@@ -530,7 +801,7 @@ text-transform: uppercase;
     </span>
     <span class="cls"></span>
   </div>
-    <div class="header-content text-md-center">
+    <div class="header-content container">
     
       <div class="header-description">       
           <h1 class="header-description-title">Бесшумные кондиционеры <br>от ведущих производителей </h1><br>
@@ -633,7 +904,7 @@ text-transform: uppercase;
     </div>
 </header>
  -->
-
+ 
 
 
 <section id="bonus" class="container-fluid site-section"   > 
@@ -650,9 +921,9 @@ text-transform: uppercase;
       <span class="page_icons icon1"></span>
       <p class="section_textwhite ">Год обслуживания <br> <span>бесплатно</span> </p>
       <span class="page_icons icon1"></span>
-       <p class="section_textwhite">Опрессовка системы, <br>исключающая впоследствии утечку фреона </p> 
+       <p class="section_textwhite">Опрессовка системы, <br>исключающая впоследствии <br>утечку фреона </p> 
        <span class="page_icons icon1"></span>
-        <p class="section_textwhite">Нержавеющие кронштейны для крепления <br><span>в подарок </span></p> 
+        <p class="section_textwhite">Нержавеющие кронштейны <br>для крепления <br><span>в подарок </span></p> 
     </div>
        
 
@@ -682,9 +953,7 @@ text-transform: uppercase;
 
 
  <div  class="container"> 
- <!-- <div id='stars'></div> -->
-    <!-- <div id='stars2'></div>
-    <div id='stars3'></div>  -->  
+  
       <h2 class="section_titlewhite">
       НАШИ ПРЕИМУЩЕСТВА </h2> <br>
       
@@ -693,16 +962,19 @@ text-transform: uppercase;
    <div class="row">
 
     <div class="col-md-4 wow slideInLeft">
-       <span class="white_textdesc"> Мы комплексно решаем задачи по установке и обслуживанию климатического оборудования,     
-      чтобы создавать для Вас <br> КОМФОРТНЫЙ КЛИМАТ</span>
+       <!-- <span class="white_textdesc"> Мы комплексно решаем задачи по установке и обслуживанию климатического оборудования,     
+      чтобы создавать для Вас <br> КОМФОРТНЫЙ КЛИМАТ</span> -->
     <img class="section_image" src="img/2.jpg" alt="Кондиционер в интерьере">
     </div>
 
     <div class="col-md-8 wow slideInRight">
-     <span class="page_icons icon2"></span>
+      <div class="advantages_title">
+     
      <p class="section_textwhitetitle">
+      <span class="page_icons icon2"></span>
       Монтаж и сервис 
      </p>
+   </div>
         
       <p class="section_textwhite ">
        
@@ -710,10 +982,13 @@ text-transform: uppercase;
         монтаж любой сложности, <br>
         а также сервисное обслуживание. <br>        
           </p> 
- <span class="page_icons icon3"></span>
+          <div class="advantages_title">
+ 
           <p class="section_textwhitetitle">
+            <span class="page_icons icon3"></span>
       Бесплатная доставка
      </p>
+   </div>
 
 
 
@@ -723,23 +998,26 @@ text-transform: uppercase;
         по городу Находка и<br>
          Находкинскому городскому округу.<br>           
       </p>
-            
-<span class="page_icons icon4"></span>
+        <div class="advantages_title">    
+
           <p class="section_textwhitetitle">
+            <span class="page_icons icon4"></span>
       Доступные цены 
      </p>
-
+</div>
         <p class="section_textwhite ">
        
       Мы предлагаем сплит системы<br>
       в разных ценовых категориях <br>
       от недорогих до премиум класса.     
       </p>
-    
-<span class="page_icons icon5"></span>
+    <div class="advantages_title">
+         
           <p class="section_textwhitetitle">
+            <span class="page_icons icon5"></span>
       Гарантия 5 лет
      </p>
+   </div>
      <p class="section_textwhite">
         
         Мы уверены в своем товаре, <br>
@@ -809,7 +1087,7 @@ text-transform: uppercase;
         <h2 class="section_titlewhite">Помните!</h2>
         <p class="section_textwhite">Срок службы и качество работы сплит­системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>   
         <h2 class="section_titlewhite">А ТАКЖЕ!</h2>
-        <p class="section_textwhite">При выборе важно учесть множество факторов, таких как, площадь помещения, количество людей, высоту потолков, выделяющее тепло оборудование... <br>Чтобы предусмотреть все нюансы, обратитесь к профессионалам.</p>
+        <p class="section_textwhite">При выборе важно учесть множество факторов, таких как, площадь помещения, количество людей, высоту потолков, выделяющее тепло оборудование... Чтобы предусмотреть все нюансы, обратитесь к профессионалам.</p>
         <h2 class="section_titlewhite"><span>Закажите выезд специалиста</span> <br><span class="section_titlewhite"> для индивидуального расчета мощности сплит-системы </span></h2>
         <h3 class="section_textwhite">АБСОЛЮТНО БЕСПЛАТНО</h3>
 
@@ -929,16 +1207,12 @@ text-transform: uppercase;
    <div class="container">     
       <h2 class="section_titlewhite">УСЛУГИ</h2>
         <div class="row">
-            
-
             </div>
-            <div class="col-md-4 col-sm-4 wow slideIneft"> 
-
+            <div class="col-md-3 col-sm-3 wow slideIneft">
               <div class="col-md-12">
-
                 <div class="col-md-2">
                    <span class="page_icons icon11"></span>
-                 </div>
+                  </div>
                   <div class="col-md-10">
                      <p class="section_textwhite">Монтаж кондиционеров </p>
                   </div> 
@@ -948,7 +1222,8 @@ text-transform: uppercase;
                    <span class="page_icons icon11"></span>
                  </div>
                   <div class="col-md-10">
-                     <p class="section_textwhite">Сервисное обслуживание и ремонт кондиционеров </p>
+                     <p class="section_textwhite">Монтаж систем вентиляции
+                      </p>
               </div>
 
               <div class="col-md-2">
@@ -960,14 +1235,14 @@ text-transform: uppercase;
             </div>
           </div>
              
-             <div class="col-md-4 col-sm-4"> 
+             <div class="col-md-5 col-sm-5"> 
 
              <div class="col-md-12">
                 <div class="col-md-2">
                    <span class="page_icons icon11"></span>
                  </div>
                   <div class="col-md-10">
-                     <p class="section_textwhite">Монтаж систем вентиляции </p>
+                     <p class="section_textwhite">Сервисное обслуживание и ремонт кондиционеров </p>
                   
                   </div> 
               
@@ -976,7 +1251,7 @@ text-transform: uppercase;
                    <span class="page_icons icon11"></span>
                  </div>
                   <div class="col-md-10">
-                     <p class="section_textwhite">Оптовая и розничная продажа комплектующих для кондиционеров </p>                  
+                     <p class="section_textwhite">Оптовая и розничная продажа кондиционеров </p>                  
                  
               </div>
 
@@ -984,13 +1259,13 @@ text-transform: uppercase;
                    <span class="page_icons icon11"></span>
                  </div>
                   <div class="col-md-10">
-                     <p class="section_textwhite">Оптовая и розничная продажа кондиционеров </p>
+                     <p class="section_textwhite">Оптовая и розничная продажа комплектующих для кондиционеров </p>
                   
                   </div> 
               </div>
 
 
-          <button type="button" class="callback_btn"  data-toggle="modal" data-target="#main_modal">Расчитать мощность кондиционера</button>
+          <a href="test.html" class="callback_btn">Расчитать мощность кондиционера</a>
             </div> 
 
             <div class="col-md-4 col-sm-4 wow slideInRight"> 
@@ -1001,6 +1276,9 @@ text-transform: uppercase;
            
     </div>
   </section>
+
+
+
 
 
   <!-- SPLIT CERTIFICATE -->
@@ -1041,12 +1319,15 @@ text-transform: uppercase;
             </div>            
           </div>                
           <!-- Add Pagination -->
-          <div class="pagination_block">
-            <button type="button" class="prev_certificate">Предыдущий</button>
-            <div class="swiper-pagination"></div>
-            <button type="button" class="next_certificate">Следующий</button>
+</div>
+         <!--  <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+          <div class="pagination_block container">
+            <button type="button" class="prev_certificate"></button>
+           <!--  <div class="swiper-pagination"></div> -->
+            <button type="button" class="next_certificate"></button>
           </div>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -1073,55 +1354,55 @@ text-transform: uppercase;
                     <img data-image="white" src="catalog/low/AUX серия FJ ASW-H07A4FJ-WR1/main.jpg" alt="">
                     
                 </div>
-                <div class="color-choose">
-               
+              <div class="color-choose">               
                  <input  data-image="black" type="radio" id="black" name="color" value="black" checked>
                  <label name="black" for="black"><span></span></label>
-
-                  <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>
-              
-              
-                 <input  data-image="white" type="radio" id="white" name="color" value="white">
-                <label name="white" for="white"><span></span></label>
-              
-               
+                 <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
+                <label name="grey" for="grey"><span></span></label>      
+                <input  data-image="white" type="radio" id="white" name="color" value="white">
+                <label name="white" for="white"><span></span></label>    
              </div>
+
+           <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
             <select name="model" class="userselect">
-              <option value="<b>Модель: ASW-H07A4/FJ-WR1 </b><br>    
+              <option name="Модель: ASW-H07A4/FJ-WR1" value="
                 Бесшумный<br>   
                 Биофильтр<br>   
                 Осушение воздуха<br>    
-                <b>Наличие: Есть в наличии </b> <br>  
-                <b>14 300 руб.</b>  <br>  
+                <b>Наличие:</b> Есть в наличии  <br>  
+                <b class='price'>14 300 руб.</b>  <br>  
                 Был заказан 106 раз">20 м²
                 </option>
 
-              <option value="<b>Модель: ASW-H07A4/FJ-SR1</b> <br>    
+              <option name="Модель: ASW-H07A4/FJ-SR1" value="   
                 Бесшумный<br>   
                 Биофильтр <br>  
                 Осушение воздуха  <br>  
                 <b>Наличие</b> : Есть в наличии  <br> 
-                <b>14 300 руб.  </b> <br> 
+                <b class='price'>14 300 руб.  </b> <br> 
                 Был заказан 98 раз ">20 м²
                 </option> 
 
-               <option value="<b>Модель: ASW-H07A4/FJ-BR1</b> <br>     
+               <option name="Модель: ASW-H07A4/FJ-BR1" value="     
                 Бесшумный <br>  
                 Биофильтр <br>  
                 Осушение воздуха <br>   
                 <b>Наличие</b> : Есть в наличии <br>  
-                <b>14 300 руб.</b> <br>   
+                <b class='price'>14 300 руб.</b> <br>   
                 Был заказан 91 раз">20 м²
                 </option> 
             </select>
-           <div class="model"></div>         
+             
+           <div class="model"></div>
+           <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
           <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+        </div>
      </div>
    </div>
+
 
 
  <div class="col-md-4 one_product"> 
@@ -1132,68 +1413,72 @@ text-transform: uppercase;
                     <!-- <img data-image="brown" src="catalog/medium/AUX серия LV Design Inverter ASW-H09A4LV-700R1DI/main.png" alt="">
                     <img data-image="grey" class="active" src="catalog/premium/AUX серия LA Exclusive Inverter ASW-H09A4LA600R1DI/main.jpg" alt="">  -->
                 </div>
-               <!--  <div class="color-choose  ">
+                
+                <div class="color-choose">
                
-                 <input data-image="white" type="radio" id="white" name="color" value="white" checked>
+                 <!-- <input data-image="white" type="radio" id="white" name="color" value="white" checked>
                  <label name="white" for="white"><span></span></label>
               
                  <input data-image="brown" type="radio" id="brown" name="color" value="brown">
                 <label name="brown" for="brown"><span></span></label>
              
                 <input data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>
+                <label name="grey" for="grey"><span></span></label> -->
               
-             </div> -->
+             </div>
+               <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
 
             <select id="users" name="model" class="userselect">                 
-                 <option selected="selected"  value="<b>Модель: ASW-H07A4/LK-700R1</b><br>
+                 <option selected="selected"  name="Модель: ASW-H07A4/LK-700R1" value="
                     Бесшумный <br>  
                     Угольный фильтр с ионами серебра <br>   
                     Автоматические вертикальные жалюзи <br>   
                     <b>Наличие</b>: Есть в наличии <br>  
-                    <b>17 900 руб.</b> <br>  
+                    <b class='price'>17 900 руб.</b> <br>  
                     Был заказан 105 раз">21м²
                 </option>
-                 <option value="<b>Модель: ASW-H09A4/LK-700R1</b> <br>
+                 <option name="Модель: ASW-H09A4/LK-700R1 " value="
                     Бесшумный <br>
                     Угольный фильтр с ионами серебра <br> 
                     Автоматические вертикальные жалюзи <br> 
-                    <b>Наличие: Есть в наличии <br>
-                    <b>19 300 руб. <br>
+                    <b>Наличие</b>: Есть в наличии <br>
+                    <b class='price'>19 300 руб. <br>
                     Был заказан 56 раз  
                     ">25м²</option>
-                 <option value="<b>Модель: ASW-H12A4/LK-700R1</b> <br> 
+                 <option name="Модель: ASW-H12A4/LK-700R1 " value=" 
                     Бесшумный <br>  
                     Угольный фильтр с ионами серебра  <br>  
                     Автоматические вертикальные жалюзи <br>   
                     <b>Наличие:</b> Есть в наличии  <br> 
-                    <b>22 800 руб.</b><br>   
+                    <b class='price'>22 800 руб.</b><br>   
                     Был заказан 56 раз">35м²
                 </option>
-               <option value="<b>Модель: ASW-H18A4/LK-700R1</b> <br>
+               <option name="Модель: ASW-H18A4/LK-700R1 " value="
                   Бесшумный <br>
                   Угольный фильтр с ионами серебра  <br>
                   Автоматические вертикальные жалюзи <br> 
                   <b>Наличие:</b> Есть в наличии <br>
-                  <b>35 000 руб.</b> <br>
+                  <b class='price'>35 000 руб.</b> <br>
                   Был заказан 53 раз  
                   ">50²
                 </option>
 
-                <option value="<b>Модель: ASW-H24A4/LK-700R1</b><br> 
+                <option name="Модель: ASW-H24A4/LK-700R1 " value=" 
                   Бесшумный   <br>
                   Угольный фильтр с ионами серебра <br>   
                   Автоматические вертикальные жалюзи <br>   
                   <b>Наличие</b>: Есть в наличии <br>  
-                  <b>42 500 руб.</b> <br>  
+                  <b class='price'>42 500 руб.</b> <br>  
                   Был заказан 39 раз">70²
                 </option>
           </select>
-           <div class="model"></div>         
+           <div class="model"></div> 
+           <div class="buttons_group">          
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
           <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+        </div>
      </div>
    </div>
 
@@ -1206,66 +1491,70 @@ text-transform: uppercase;
                 <div class="product_card">                   
                     <!-- <img data-image="white" src="catalog/low/AUX серия LK ASW-H07A4LK-700R1/main.jpg" alt="">
                     <img data-image="brown" src="catalog/medium/AUX серия LK Standard Inverter ASW-H12A4LK-700R1DI/main.jpg" alt=""> -->
-                    <img data-image="grey" class="active" src="catalog/medium/AUX серия LK Standard Inverter ASW-H09A4LK-700R1DI/main.jpg" alt=""> 
+                    <img data-image="grey" class="active" src="catalog/low/AUX серия LK ASW-H07A4LK-700R1/main.jpg" alt=""> 
                 </div>
-               <!--  <div class="color-choose">
+
+                 
+                <div class="color-choose">
                
-                 <input  data-image="white" type="radio" id="white" name="color" value="white" checked>
+                 <!-- <input  data-image="white" type="radio" id="white" name="color" value="white" checked>
                  <label name="white" for="white"><span></span></label>
               
                  <input  data-image="brown" type="radio" id="brown" name="color" value="brown">
                 <label name="brown" for="brown"><span></span></label>
               
                 <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>
+                <label name="grey" for="grey"><span></span></label> -->
               
-             </div> -->
+             </div>
+             <p class="model_title"></p>
+             
             <p class="select_square">Выбрать площадь помещения</p>
 
             <select name="model" class="userselect">
-              <option value="<b>Модель: ASW-H09A4/LK-700R1DI</b><br>      
+              <option name="Модель: ASW-H09A4/LK-700R1DI" value="
  
 DC-инвертор <br>    
 Угольный фильтр с ионами серебра<br>      
 Ионизатор  <br>   
 Автоматические вертикальные жалюзи<br>      
 <b>Наличие</b>: Есть в наличии <br>    
-28 000 руб.<br>     
+<b class='price'>28 000 руб.</b><br>     
 Был заказан 131 раз">25 м²
                 </option>
 
-              <option value="<b>Модель: ASW-H12A4/LK-700R1DI    
+              <option name="Модель:ASW-H12A4/LK-700R1DI" value="    
 
-DC-инвертор   
-Угольный фильтр с ионами серебра    
-Ионизатор   
-Автоматические вертикальные жалюзи    
-Наличие: Есть в наличии   
-31 600 руб.   
+DC-инвертор  <br>  
+Угольный фильтр с ионами серебра <br>    
+Ионизатор   <br> 
+Автоматические вертикальные жалюзи <br>    
+<b> Наличие</b>: Есть в наличии <br>   
+<b class='price'>31 600 руб.</b> <br>   
 Был заказан 99 раз    
 ">35 м²
                 </option> 
 
                <option value="<b>Модель: ASW-H18A4/LK-700R1DI   
    
-DC-инвертор   
-Угольный фильтр с ионами серебра    
-Ионизатор   
-Автоматические вертикальные жалюзи    
-Наличие: Есть в наличии   
-50 700 руб.   
+DC-инвертор<br>    
+Угольный фильтр с ионами серебра <br>    
+Ионизатор  <br>  
+Автоматические вертикальные жалюзи <br>    
+<b>Наличие</b>: Есть в наличии <br>   
+<b class='price'>50 700 руб.</b> <br>   
 Был заказан 52 раз    
 ">50 м²
                 </option> 
 
-               <option value="<b>Модель: ASW-H24A4/LK-700R1DI   
+               <option name="Модель: ASW-H24A4/LK-700R1DI" value="   
   
-DC-инвертор   
+DC-инвертор  <br>  
 Угольный фильтр с ионами серебра    
-Ионизатор   
-Автоматические вертикальные жалюзи    
-Наличие: Есть в наличии   
-60 000 руб.   
+Ионизатор  <br>  
+Автоматические вертикальные жалюзи <br>    
+<b>Наличие</b>: Есть в наличии  <br>  
+<b class='price'>60 000 руб.</b>  <br>  
 Был заказан 71 раз    
  
 ">70 м²
@@ -1274,9 +1563,12 @@ DC-инвертор
 
 
             </select>
-           <div class="model"></div>         
+           
+           <div class="model"></div>   
+           <div class="buttons_group">        
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
           <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+        </div>
      </div>
    </div>
 
@@ -1303,62 +1595,67 @@ DC-инвертор
                 <label name="grey" for="grey"><span></span></label>
               
              </div>
+
+             <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
 
             <select id="users" name="model" class="userselect">                 
-                 <option selected="selected"  value="<b>Модель: ASW-H09A4/LV-800R1DI</b> <br>   
+                 <option name="Модель: ASW-H09A4/LV-800R1DI" selected="selected"  value="  
   
 DC-инвертор  <br> 
 Биофильтр <br>  
 Бесшумный <br>  
 Ионизатор <br>  
 <b>Наличие</b>: Есть в наличии <br>  
-<b>44 300 руб. </b>  <br>
+<b class='price'>44 300 руб. </b>  <br>
 Был заказан 99 раз    
 ">25м²
                 </option>
 
-<option value="<b>Модель: ASW-H09A4\LV-700R1DI<br> 
+<option name=" Модель: ASW-H09A4\LV-700R1DI" value="
  
 DC-инвертор<br> 
 Биофильтр <br>
 Бесшумный <br>
 Ионизатор<br> 
-Наличие: Есть в наличии <br>
-44 300 руб.<br> 
+<b>Наличие</b>: Есть в наличии <br>
+<b class='price'>44 300 руб.</b><br> 
 Был заказан 99 раз
 
                   ">25²
                 </option>
 
-                 <option value="<b>Модель: ASW-H12A4/LV-800R1DI </b>  
+                 <option name="Модель:ASW-H12A4/LV-800R1DI " value="  
   
 DC-инвертор   <br>
 Биофильтр  <br> 
 Бесшумный <br>  
 Ионизатор  <br> 
-Наличие: Есть в наличии  <br> 
-47 000 руб.   <br>
+<b>Наличие</b>: Есть в наличии  <br> 
+<b class='price'>47 000 руб. </b>  <br>
 Был заказан 64 раз    
 
                     ">35м²</option>
             
 
-                <option value="<b>Модель: ASW-H12A4\LV-700R1DI </b><br>   
+                <option name="Модель: ASW-H12A4\LV-700R1DI" value="
 DC-инвертор <br>  
 Биофильтр <br>  
 Бесшумный <br>  
 Ионизатор <br>  
 <b>Наличие</b>: Есть в наличии  <br> 
-<b>47 000 руб.</b> <br>  
+<b class='price'>47 000 руб.</b> <br>  
 Был заказан 64 раз    
 ">35²
                 </option>
           </select>
-           <div class="model"></div>         
+          
+           <div class="model"></div>  
+           <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
           <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+        </div>
      </div>
    </div>
 
@@ -1384,10 +1681,12 @@ DC-инвертор <br>
                 <label name="grey" for="grey"><span></span></label>
               
              </div>
+
+              <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
             <select name="model" class="userselect">
-              <option value="<b>Модель: ASW-H09A4\LA800R1DI </b> <br>   
+              <option name="Модель: ASW-H09A4\LA800R1DI" value="   
    
 DC-инвертор  <br> 
 Управление через WI-FI <br>   
@@ -1396,12 +1695,12 @@ DC-инвертор  <br>
 Бесшумный  <br> 
 Ионизатор <br>  
 <b>Наличие</b>: Есть в наличии <br>  
-<b>51 900 руб.</b> <br>  
+<b class='price'>51 900 руб.</b> <br>  
 Был заказан 64 раз    
 ">25 м²
                 </option>
 
-              <option value="<b>Модель: ASW-H12A4/LA800R1DI</b> <br>  
+              <option name="Модель: ASW-H12A4/LA800R1DI" value="  
   
 DC-инвертор<br>   
 Управление через WI-FI <br>   
@@ -1410,16 +1709,19 @@ DC-инвертор<br>
 Бесшумный <br>  
 Ионизатор <br>  
 <b>Наличие</b>: Есть в наличии<br>   
-<b>57 900 руб.</b> <br>  
+<b class='price'>57 900 руб.</b> <br>  
 Был заказан 64 раз    
 ">35 м²
                 </option> 
 
                
             </select>
-           <div class="model"></div>         
+           
+           <div class="model"></div>  
+            <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
           <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+        </div>
      </div>
    </div>
 
@@ -1444,6 +1746,8 @@ DC-инвертор<br>
                 <label name="blue" for="blue"><span></span></label>
               
              </div>
+
+              <p class="model_title">Модель: AWB-H09BC/R1DI</p>
             <!-- <p class="select_square">Выбрать площадь помещения</p>
 
             <select name="model" class="userselect">
@@ -1462,20 +1766,23 @@ DC-инвертор   <br>
 
 
             </select> -->
+           
            <div class="model">
-<b>Модель: AWB-H09BC/R1DI</b> <br>   
+   
 Площадь помещения: 25м² <br>   
 DC-инвертор   <br> 
 Режим 'Детский сон' <br>   
 Бесшумная работа  <br>   
 Ионизатор   <br> 
 <b>Наличие</b>: Есть в наличии <br>   
-<b>49 700 руб.</b><br>    
+<b class="price">49 700 руб.</b><br>    
 Был заказан 64 раз
 
-           </div>         
+           </div>  
+           <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
           <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+        </div>
      </div>
    </div>
 
@@ -1493,14 +1800,17 @@ DC-инвертор   <br>
   
 
   <!-- END MAINTENANCE -->
-<section class="split_advantages site-section">
+<section id="split_advantages" class="site-section">
    <div class="container">     
       <h2 class="section_titlewhite">6 главных преимуществ</h2>
         <div class="row">
             <div class="col-md-4 col-sm-4"> 
                <img class="section_image wow slideInLeft" src="img/6.jpg" alt="Кондиционер в интерьере">
             </div>
-            <div class="col-md-4 col-sm-4 wow slideInRight"> 
+
+
+
+            <div class="col-md-8 col-sm-8 wow slideInRight"> 
              <div class="col-md-12">
                 <div class="col-md-2">
                  <span class="page_icons icon12"></span>
@@ -1508,35 +1818,21 @@ DC-инвертор   <br>
                  <div class="col-md-10">
                     <p class="section_textwhite">При монтаже используем штроборез с пылесосом, что минимизирует количество пыли и крошки, которую потом сложно убирать</p>
                   </div> 
-               </div>
-
-              <!-- <div class="col-md-12"> -->
+               </div>             
                  <div class="col-md-2">
                    <span class="page_icons icon12"></span>
                  </div>
               <div class="col-md-10">
                 <p class="section_textwhite">Работаем только профессиональным инструментом <span>BOSCH</span> (Германия), <span>MAKITA</span> (Япония), <span>WIGAM</span> (Италия), <span>CPS</span> (США), <span>REFCO</span>(Швейцария), <span>MASTERCOOL</span> (США), что позволяет решать любые задачи и производить монтаж в любой ситуации</p>
-              </div> 
-             <!--  </div>   -->
-
-            <!-- <div class="col-md-12"> -->
+              </div>            
               <div class="col-md-2">
                <span class="page_icons icon12"></span>
               </div>
               <div class="col-md-10">
                 <p class="section_textwhite">Используем качественные импортные материалы,включая сербскую толстостенную трубу, сверхпрочные кранштейны из нержавеющей и оцинкованной стали,которым не страшен никакой ветер</p>
-              </div> 
-              </div>                
+              </div>
 
-
-
-
-
-
-             <div class="col-md-4 col-sm-4 wow slideInRight"> 
-
-              <div class="col-md-12">
-                <div class="col-md-2">
+              <div class="col-md-2">
                    <span class="page_icons icon12"></span>
                  </div>
                   <div class="col-md-10">
@@ -1557,11 +1853,10 @@ DC-инвертор   <br>
               </div>
               <div class="col-md-10">
                 <p class="section_textwhite">Бесплатный выезд специалиста для подбора сплит-системы и ее доставка к месту монтажа, съэкономят не только ваши деньги, но и нервы. Отложите долгие и мучительные поиски, просто позвоните нам!</p>
-              </div> 
-              </div> 
-          </div>        
-      </div>
+              </div>
+        </div>
     </div>
+  </div>
 </section>
 
 
@@ -1602,7 +1897,7 @@ DC-инвертор   <br>
  <div  class="container">    
       <h2 class="section_titlewhite">Сервисное обслуживание</h2>
       <p class="section_textwhite"> всех систем кондиционирования <br>и вентиляции помещений</p>
-      <h3 class="section_textwhite">Что входит в сервис кондиционеров и сплит-систем</h3>
+    
       
      
     
@@ -1677,12 +1972,12 @@ DC-инвертор   <br>
                      <p class="section_textwhite">Проверка состояния термоизоляции фреонопроводов</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <!-- <div class="col-md-2">
                    <span class="page_icons icon13"></span>
                  </div>
                   <div class="col-md-10">
                      <p class="section_textwhite">Дезинфекция кондиционера</p>
-                  </div> 
+                  </div>  -->
       </div>
 
       
@@ -1694,9 +1989,9 @@ DC-инвертор   <br>
     </div>
 
     </div>
-     <div class="blue_wrapper">
+     <!-- <div class="blue_wrapper">
         <p>Чистку и сервисное обслуживание сплит-систем наши специалисты выполняют уникальным способом. Мы разработали сервисный пакет с отводом грязной воды, который крепится под внутренний блок сплита, после чего он, обработанный спецсредством , промывается насквозь напором воды из мойки высокого давления KARCHER. <br>Какими либо другими способами так тщательно вымыть сплит невозможно.</p>
-      </div>
+      </div> -->
   </div>
 
 </section>
@@ -1721,9 +2016,9 @@ DC-инвертор   <br>
 <section id="guarantee" class="container-fluid site-section"> 
   <div  class="container">    
       <h2 class="section_titlewhite">
-      Гарантия  </h2> <br>
+      Гарантия  <br><span class="white_textdesc"> Гарантии, которые исполним на 100%</span></h2> <br>
       
-      <span class="white_textdesc"> Гарантии, которые исполним на 100%</span>
+      
     
    <div class="row">
 
@@ -1735,12 +2030,12 @@ DC-инвертор   <br>
     </div>
 
     <div class="col-md-6">
-      <span class="page_icons icon14"></span>
-      <p class="section_textwhite">Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>
-      <span class="page_icons icon15"></span>  
-       <p class="section_textwhite">Бесплатная диагностика при неисправности</p>
-       <span class="page_icons icon16"></span>
-         <p class="section_textwhite">Обмен или бесплатный ремонт, если поломка по нашей вине   </p>
+      
+      <p class="section_textwhite"><span class="page_icons icon14"></span>Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>
+     
+       <p class="section_textwhite"> <span class="page_icons icon15"></span>  Бесплатная диагностика <br>при неисправности</p>
+       
+         <p class="section_textwhite"><span class="page_icons icon16"></span>Обмен или бесплатный ремонт,<br> если поломка по нашей вине   </p>
     </div>
        
 
@@ -1757,7 +2052,7 @@ DC-инвертор   <br>
 
 
 
-<section class="maintenance site-section  " id="about_company">
+<section class="site-section" id="about_company">
 
 <!-- <div class="fullscreen-video-wrap2">
       <video src="condition.mp4" autoplay="" loop=""></video>
@@ -1767,13 +2062,13 @@ DC-инвертор   <br>
 			<h2 class="section_titlewhite">О компании</h2>					
 
 <div class="col-md-12">
-<div class="col-md-6">
+<div class="col-md-7">
 
   <div class="col-md-12">
-                <div class="col-md-2">
+                <div class="col-md-1">
                    <span class="page_icons icon17"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-11">
                      <p class="section_textwhitetitle">
                      Компания Home Climate ЦЕНИТ СВОЮ РЕПУТАЦИЮ!
                       </p>
@@ -1792,12 +2087,12 @@ DC-инвертор   <br>
   
 </div>
 
-<div class="col-md-6">
+<div class="col-md-5">
  <div class="col-md-12">
-                <div class="col-md-2">
+                <div class="col-md-1">
                    <span class="page_icons icon18"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-11">
                      <p class="section_textwhitetitle">
                      В НАШЕЙ КОМАНДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ
                       </p>
@@ -1813,39 +2108,48 @@ DC-инвертор   <br>
 
 </div>			
 
-			<div class="col-md-12">
+
+      <div class="col-md-12">
+        <div class="col-md-2"></div>
+			<div class="col-md-8 company_single_block">
 			
 					
 		
-					<div class="col-md-2">
+					<div class="col-md-1">
                    <span class="page_icons icon19"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-11">
                      <p class="section_textwhitetitle">
-                     ВЫБИРАЯ НАС, ВЫ ВЫБИРАЕТЕ НАДЕЖНОСТЬ И КАЧЕСТВО
+                     ВЫБИРАЯ НАС, ВЫ ВЫБИРАЕТЕ <br>НАДЕЖНОСТЬ И КАЧЕСТВО
                       </p>
                   <p class="section_textwhite">
-                     Хотим быть полезными конкретно вам в вашей ситуации!</p>
+                     Хотим быть полезными конкретно Вам в Вашей ситуации!</p>
                   </p>
                   </div> 
 			
 				
 
-			
+			</div>
 			</div>
 
 <div class="col-md-12">
 <div class="col-md-3">
+  <span class="page_icons icon20"></span>
 	<p class="section_textwhitetitle2"> 8 ЛЕТ <br> НА РЫНКЕ </p>
 </div>
 
 <div class="col-md-3">
+  <span class="page_icons icon21"></span>
 	<p class="section_textwhitetitle2">РЕАЛИЗОВАНО БОЛЕЕ 900 ПРОЕКТОВ </p>
 </div>
 <div class="col-md-3">
+  <span class="page_icons icon22"></span>
 	 <p class="section_textwhitetitle2">ВЫПОЛНИМ КАЧЕСТВЕННО И В СРОК ПРОЕКТ ЛЮБОЙ СЛОЖНОСТИ</p>
 </div>
 <div class="col-md-3">
+
+
+<span class="page_icons icon23"></span>
 	<p class="section_textwhitetitle2">РЕШИМ "ПОД КЛЮЧ" ВСЕ ЗАДАЧИ</p>
 </div>
 
@@ -1868,8 +2172,10 @@ DC-инвертор   <br>
 
 
 
-
-	
+<!-- <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div> 
+	 -->
 
 	
 
@@ -1907,17 +2213,32 @@ DC-инвертор   <br>
 </div>
 </article>
 
+ 
+
+
 	<!-- END LAST QUESTION -->
 <footer class="container-fluid footer">
   <div id="map">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+    <!--  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+   
+    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> -->
+     <script src="libs/map.js"></script>
   </div>
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img id="img_logo" src="img/team_logo.png" alt="Логотип">          
              <p class="social">Мы в социальных сетях</p>
+              <a href="https://www.instagram.com/h_climat/" target="_blank" class="instagram"><span class="page_icons icon27"></span></a>
+               <a href="https://api.whatsapp.com/send?phone=79140756154&text=Здравствуйте!%20У%20меня%20есть%20вопрос%20насчет%20кондиционеров%20HomeClimate,%20напишите%20мне%20на%20этот%20номер,%20пожалуйста." target="_blank"><span class="page_icons icon28"></span></a>
+
+              
+
+
+
+
+
             </div>
             <div class="col-md-4">
               <p class="footer__sections">Навигация</p>
@@ -1939,26 +2260,30 @@ DC-инвертор   <br>
                   </li>                       
               </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
               <p id="contacts" class="footer__sections">Контакты</p>
               <div class="col-md-2 col-xs-2">
-                 <span><img class="footer_icon" src="img/footer_icon1.png" alt="Иконка"></span>
+                 <!-- <span><img class="footer_icon" src="img/footer_icon1.png" alt="Иконка"></span> -->
+                 <!-- <span class="page_icons icon24"></span> -->
                </div>
                <div class="col-md-10 col-xs-10">
-                 <span class="footer__contactsText">г. Находка, <br> Угольная 61, база ТМТ</span>
+                
+                 <p class="footer__contactsText"><span class="page_icons icon24"></span>г. Находка, Угольная 61, база ТМТ</p>
                 </div>
                 <div class="col-md-2 col-xs-2">
-                 <span><img class="footer_icon" src="img/footer_icon2.png" alt="Иконка"></span>
+                 <!-- <span><img class="footer_icon" src="img/footer_icon2.png" alt="Иконка"></span> -->
+                 
                </div>
                <div class="col-md-10 col-xs-10">
-                 <span class="footer__contactsText">+7 (4236) 799-766 
-                     </span>
+                
+                 <p class="footer__contactsText"><span class="page_icons icon25"></span>+7 (4236) 799-766 <br> +7 (964) 431 66 43
+                     </p>                      
                 </div>
                 <div class="col-md-2 col-xs-2">
-                <span><img class="footer_icon" src="img/footer_icon2.png" alt="Иконка"></span>
+                
                </div>
                <div class="col-md-10 col-xs-10">
-                 <span class="footer__contactsText">+7 914 069-02-28</span>
+                 <span class="footer__contactsText"><span class="page_icons icon26"></span>info@h-climat.ru</span>
                 </div>
             </div>          
         </div>
@@ -1967,6 +2292,8 @@ DC-инвертор   <br>
 </footer>
 <!-- END FOOTER -->
 	
+
+
 
 	</div><!-- END PAGE WRAPPER -->
 
@@ -2051,7 +2378,7 @@ DC-инвертор   <br>
 
 						</label>
 
-						<button type="submit" class="submit_btn">Отправить</button>
+						<button type="submit" class="callback_btn">Отправить</button>
 
 						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
 
@@ -2081,7 +2408,7 @@ DC-инвертор   <br>
 
 				<div class="modal-body">
 
-					<h5 class="modal_title">Заказать <span></span></h5>
+					<h5 class="modal_title buy_condition"></h5>
 
 					<p>Введите свои данные чтобы <br>оформить заявку:</p> 
 
@@ -2113,7 +2440,7 @@ DC-инвертор   <br>
 
 						</label>
 
-						<button type="submit" class="submit_btn">Заказать</button>
+						<button type="submit" class="callback_btn">Заказать</button>
 
 						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
 
@@ -2175,7 +2502,7 @@ DC-инвертор   <br>
 
 						</label>
 
-						<button type="submit" class="submit_btn">Отправить</button>
+						<button type="submit" class="callback_btn">Отправить</button>
 
 						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
 
@@ -2237,7 +2564,7 @@ DC-инвертор   <br>
 
 						</label>
 
-						<button type="submit" class="submit_btn">Отправить</button>
+						<button type="submit" class="callback_btn">Отправить</button>
 
 						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
 
@@ -2299,7 +2626,7 @@ DC-инвертор   <br>
 
 						</label>
 
-						<button type="submit" class="submit_btn">Скачать</button>
+						<button type="submit" class="callback_btn">Скачать</button>
 
 						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
 
@@ -2363,7 +2690,7 @@ DC-инвертор   <br>
 
 						</label>
 
-						<button type="submit" class="submit_btn">Получить ответ</button>
+						<button type="submit" class="callback_btn">Получить ответ</button>
 
 						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
 
@@ -2385,18 +2712,163 @@ DC-инвертор   <br>
     <div class="modal-content big">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
       <div class="row">
-        <div class="col-md-5">
-          <div class="big_img">
-            <img alt="Кондиционер" src="img/split/Ballu-BSLI-07HN1-NEW/1.jpg">
-          </div>          
+        <div class="col-md-6">
+
+<!-- Карусель -->
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+   
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    
+    <!-- <li data-target="#myCarousel" data-slide-to="1"></li> -->
+    
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>   
+  
+  <div class="carousel-inner">
+    
+    <div class="active item">
+    <img src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/1.jpg">     
+    </div>
+    
+    <!-- <div class="item">
+      
+      <div class="carousel-caption">
+        <img src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/2.png">  
+      </div>
+    </div> -->
+    
+    <div class="item">
+     <img src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/3.jpg">  
+      <div class="carousel-caption">
+      
+      </div>
+    </div>
+  </div>
+  
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+      
         </div>
-        <div class="col-md-7">
-          <div class="title"></div>
-          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
-          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
-          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
-          <!-- <a target="_blank" class="projects__link" href="https://yandex.ru">https://yandex.ru</a> -->
-          </div>
+        <div class="col-md-6">
+         
+
+<div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: AUX серия FJ</p>          
+                <div class="product_card">                   
+                    <img data-image="black" class="active" src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/main.png" alt="">
+                    <img data-image="grey"  src="catalog/low/AUX серия FJ ASW-H07A4FJ-SR1/main.png" alt=""> 
+                    <img data-image="white" src="catalog/low/AUX серия FJ ASW-H07A4FJ-WR1/main.jpg" alt="">
+                    
+                </div>
+                <div class="color-choose">
+               
+                 <input  data-image="black" type="radio" id="black" name="color" value="black" checked>
+                 <label name="black" for="black"><span></span></label>
+
+                  <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
+                <label name="grey" for="grey"><span></span></label>
+              
+              
+                 <input  data-image="white" type="radio" id="white" name="color" value="white">
+                <label name="white" for="white"><span></span></label>
+              
+               
+             </div>
+            <!-- <p class="select_square">Выбрать площадь помещения</p> -->
+
+           <!--  <select name="model" class="userselect"> -->
+             <!--  <option value="   AUX <br>      
+14 300 руб.   <br>    
+Тип: on/off сплит-система <br>    
+Тип монтажа: настенный  <br>    
+Режимы: охлаждение/обогрев/осушение <br>    
+Рекомендуемая площадь: до 20 м² <br>    
+Мощность охлаждения: 2100 Вт <br>     
+Мощность обогрева: 2200Вт  <br>   
+Потребляемая мощность: 650 Вт <br>    
+Уровень шума (max/min): 33/24 дБ <br>     
+Тип хладагента: R410А <br>    
+Гарантия: 3 года<br>
+Производитель: AUX серия FJ <br>    
+Модель: ASW-H07A4/FJ-WR1 <br>     
+Наличие: Есть в наличии"     
+>20 м²
+                </option> -->
+
+             <!--  <option value="AUX <br>     
+14 300 руб. <br>      
+Тип: on/off сплит-система  <br>   
+Тип монтажа: настенный   <br>   
+Режимы: охлаждение/обогрев/осушение  <br>   
+Рекомендуемая площадь: до 20 м²  <br>   
+Мощность охлаждения: 2100 Вт <br>     
+Мощность обогрева: 2200Вт <br>    
+Потребляемая мощность: 650 Вт<br>     
+Уровень шума (max/min): 33/24 дБ  <br>    
+Тип хладагента: R410А  <br>   
+Гарантия: 3 года  <br>    
+      
+Производитель: AUX серия FJ  <br>   
+Модель: ASW-H07A4/FJ-SR1 <br>     
+Наличие: Есть в наличии <br>    
+">30 м²
+                </option>  -->
+
+<!--                <option value="AUX <br>      
+14 300 руб. <br>      
+Тип: on/off сплит-система  <br>   
+Тип монтажа: настенный   <br>   
+Режимы: охлаждение/обогрев/осушение   <br>  
+Рекомендуемая площадь: до20 м² <br>     
+Мощность охлаждения: 2100 Вт <br>     
+Мощность обогрева: 2200Вт  <br>   
+Потребляемая мощность: 650 Вт <br>    
+Уровень шума (max/min): 33/24 дБ   <br>   
+Тип хладагента: R410А   <br>  
+Гарантия: 3 года  <br>    
+      
+Производитель: AUX серия FJ <br>    
+Модель: ASW-H07A4/FJ-BR1 <br>     
+Наличие: Есть в наличии <br>    
+">35 м² -->
+                </option> 
+            </select>
+            
+           <div class="model">AUX <br>      
+14 300 руб.   <br>    
+Тип: on/off сплит-система <br>    
+Тип монтажа: настенный  <br>    
+Режимы: охлаждение/обогрев/осушение <br>    
+Рекомендуемая площадь: до 20 м² <br>    
+Мощность охлаждения: 2100 Вт <br>     
+Мощность обогрева: 2200Вт  <br>   
+Потребляемая мощность: 650 Вт <br>    
+Уровень шума (max/min): 33/24 дБ <br>     
+Тип хладагента: R410А <br>    
+Гарантия: 3 года<br>
+Производитель: AUX серия FJ <br>    
+Модель: ASW-H07A4/FJ-WR1 <br>     
+Наличие: Есть в наличии"     </div>         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          
+     </div>
+   </div>
+
+
+
+
+
+         
       </div>
     </div>
   </div>
@@ -2405,53 +2877,7 @@ DC-инвертор   <br>
 
 
 
-	<!-- THANK MODAL -->
 
-	<div class="modal fade thank_modal" id="thank_modal">
-
-		<div class="modal-dialog modal-md">
-
-			<div class="modal-content">
-
-				<button class="close" type="button" data-dismiss="modal"></button>
-
-				<div class="modal-body">
-
-					<div class="right_block">
-
-						<div class="in">
-
-							<div class="text">
-
-								<h5 class="modal_title">Спасибо <br>за оказанное доверие!</h5>
-
-								<p>Мы свяжемся с Вами в течении 4 минут.</p>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="left_block">
-
-						<img src="img/shef.png" alt="img" class="photo"></img>
-
-						<!-- <p>С уважением к Вам, <span>Юрий Белоус</span>, <br>руководитель компании “LEVEL”</p> -->
-
-						<!-- <img src="img/belous.png" alt="img"> -->
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- END THANK MODAL -->
 	<div id="to_top"></div>
 
 	<!--[if lt IE 9]>
@@ -2505,6 +2931,9 @@ DC-инвертор   <br>
 	
 	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
 	<script src="libs/selectstyle/jquery.formstyler.min.js"></script>
+  <script type="text/javascript">$('#userselect').styler({
+  selectSearch: true
+});</script>
 	<script src="js/common.js"></script>
 	<script src="js/calculate.js"></script>
 	<script src="js/plugins_all.js" type="text/javascript"> </script>
