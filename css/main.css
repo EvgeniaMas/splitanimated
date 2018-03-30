@@ -96,7 +96,7 @@ button, a {
 a:hover, a:focus {
   outline: none;
   text-decoration: none; 
-color: #fff;}
+color: crimson;}
 
 .page_wrapper {
   position: relative;
@@ -152,12 +152,13 @@ font-size: 22px;
   font-family: "Open Sans Bold";
   margin-top: 20px;
   padding-bottom: 10px;
-  text-align:center;
-  
+  text-align:left;
+  text-transform: none!important; 
 }
 
 
-.section_textwhite span { text-transform: uppercase;font-family: "Open Sans Semibold";}  
+.section_textwhite span { text-transform: uppercase;
+	font-family: "Open Sans Semibold";}  
 
 
 
@@ -565,7 +566,7 @@ display: block;
     padding-bottom: 60px;
     text-align: center;
     border: 3px solid crimson;
-z-index:10000000000000000000000;
+
      }
     .main_modal .modal-dialog .modal-content .modal-body {
       position: relative;
@@ -3008,15 +3009,15 @@ span.advantages_picture {
 
 button.more_button{text-decoration:none; text-align:center; 
  padding:11px 15px; 
- border:solid 2px LimeGreen; 
+ border:solid 2px #225470; 
  -webkit-border-radius:4px;
  -moz-border-radius:4px; 
  border-radius: 4px; 
  height: 48px;
  font:18px Open Sans Regular; 
  font-weight:bold; 
- color:LimeGreen; 
- background-color:transparent; 
+ color:#fff; 
+ background-color:#225470; 
   margin-top: 10px;
   margin-bottom: 10px; 
   
@@ -3025,30 +3026,30 @@ button.more_button{text-decoration:none; text-align:center;
 
   button.more_button:hover{
  padding:11px 15px; 
- border:solid 1px LimeGreen; 
+ border:solid 1px #1c445b; 
  -webkit-border-radius:4px;
  -moz-border-radius:4px; 
  border-radius: 4px; 
  font:18px Open Sans Regular; 
  font-weight:bold; 
- color:#ffffff; 
- background-color:LimeGreen; 
+ color:#ddd; 
+ background-color:#1c445b; 
  
  margin-right: 5px;  
-  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+  transition: background-color 1s linear;
  }
 
  button.more_button:active{
  padding:11px 15px; 
- border:solid 2px LimeGreen; 
+ border:solid 2px #1c445b; 
  -webkit-border-radius:4px;
  -moz-border-radius:4px; 
  border-radius: 4px; 
  font:18px Open Sans Regular; 
  font-weight:bold; 
- color:#ffffff; 
- background-color:LimeGreen; 
-  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+ color:#ddd; 
+ background-color:#1c445b; 
+  transition: background-color 1s linear;
   
  }
 
@@ -3065,8 +3066,8 @@ button.buy_btn{text-decoration:none; text-align:center;
  height: 48px;
  font:18px Open Sans Regular; 
  font-weight:bold; 
- color:crimson; 
- background-color:transparent; 
+ color:#fff; 
+ background-color:#dc143c; 
   
   
   }
@@ -3074,30 +3075,30 @@ button.buy_btn{text-decoration:none; text-align:center;
 
   button.buy_btn:hover{
  padding:11px 15px; 
- border:solid 1px crimson; 
+ border:solid 1px #c01537; 
  -webkit-border-radius:4px;
  -moz-border-radius:4px; 
  border-radius: 4px; 
  font:18px Open Sans Regular; 
  font-weight:bold; 
- color:#ffffff; 
- background-color:crimson; 
+ color:#ddd; 
+ background-color:#c01537; 
  
  margin-right: 5px;  
-  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+  transition: background-color 1s linear;
  }
 
  button.buy_btn:active{
  padding:11px 15px; 
- border:solid 2px crimson; 
+ border:solid 2px #c01537; 
  -webkit-border-radius:4px;
  -moz-border-radius:4px; 
  border-radius: 4px; 
  font:18px Open Sans Regular; 
  font-weight:bold; 
- color:#ffffff; 
- background-color:crimson; 
-  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+ color:#ddd; 
+ background-color:#c01537; 
+  transition: background-color 1s linear;
   
  }
 
@@ -3204,7 +3205,7 @@ flex-wrap: wrap;
   margin:auto;
   padding: 20px;
   margin-bottom: 20px;
-  min-height: 830px;
+  min-height: 880px;
 /*
 
 
@@ -3298,8 +3299,8 @@ p.select_square {
 
 .color-choose input[type="radio"] + label span {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   margin: -1px 4px 0 0;
   vertical-align: middle;
   cursor: pointer;
@@ -3307,9 +3308,11 @@ p.select_square {
 }
 
 .color-choose input[type="radio"] + label span {
-  border: 2px solid #FFFFFF;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 }
+
+
 
 .color-choose input[type="radio"]#white + label span {
   background-color: #fff;
@@ -3333,12 +3336,8 @@ p.select_square {
   background-color: #C0DFE8;
 }
 
-
-
-
-
 /*.color-choose input[type="radio"]:checked + label span {
-  background-image: url(images/check-icn.svg);
+  background-image: url(../img/check-icn.svg);
   background-repeat: no-repeat;
   background-position: center;
 }*/
@@ -3657,9 +3656,9 @@ svg .site_buttons {
 
    text-align: right; 
  }
-#bonus .page_icons {
+/*#bonus .page_icons {
 display: block;
-}
+}*/
 span.icon1:before {
     content: "\f06b";
     font-family: "FontAwesome";
@@ -3773,22 +3772,23 @@ span.icon19:before {
 
 span.icon20:before {
   content: "\f275";
-          font-family: "FontAwesome";
+          font-family: "FontAwesome"; font-size: 28px;
 }
 
 span.icon21:before {
   content: "\f1c6";
-          font-family: "FontAwesome";
+          font-family: "FontAwesome"; font-size: 28px;
 }
 
 span.icon22:before {
   content: "\f005";
-          font-family: "FontAwesome";
+          font-family: "FontAwesome"; font-size: 28px;
 }
 
 span.icon23:before {
   content: "\f084";
           font-family: "FontAwesome";
+          font-size: 28px;
 }
 
 span.icon24:before {
@@ -3890,13 +3890,13 @@ button.prev_certificate:hover {
 #advantages p.section_textwhite,
 p.section_textwhitetitle,
 #guarantee p.section_textwhite{
-  text-align:right;
+  text-align:left;
 }
 
 #order_specialist p.section_textwhite,
 #split_advantages  p.section_textwhite
  {
-  text-indent: 20px;
+  
   text-align:justify;
   
 }
@@ -3928,9 +3928,12 @@ p.model_title {
   font-size: 18px;
   text-align:center;
   margin-top: 20px;
+  padding-top: 10px;
+  
+  padding-bottom:10px;
   margin-bottom:20px;
-  border-top: 1px solid LimeGreen;
-  border-bottom: 1px solid LimeGreen;
+  border-top: 1px solid crimson;
+  border-bottom: 1px solid crimson;
 
 }
 
@@ -3941,4 +3944,27 @@ div.buttons_group {
   bottom: 30px;
   right:0;
   left:0;
+}
+
+select,
+option {
+  min-width:40px!important;
+  padding: 8px!important;
+  font-family: "Open Sans SemiBold";
+  margin:auto;
+  margin-top: 10px;
+  margin:bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #225470;
+  border-radius: 4px;
+}
+
+select.userselect:active,
+select.userselect option:active,
+select.userselect:focus,
+select.userselect option:focus,
+select.userselect:hover,
+select.userselect option:hover {
+  border: 1px solid crimson!important;
 }

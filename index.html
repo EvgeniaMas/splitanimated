@@ -7,6 +7,7 @@
 	<meta name="keywords" content="Home Climate, бесшумные кондиционеры от ведущих производителей">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
@@ -104,7 +105,7 @@ height: 100%;
 
 div.top_headerline {
 min-height: 110px;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: #fff;
 position: absolute;
 top: 0;
 z-index: 2;
@@ -127,7 +128,7 @@ img.header_logo {
   display: block;
   width: 80px;
   position: relative; 
-  background-color: #fff;
+  background-color: transparent;
   z-index: 3;
   margin: auto;
   
@@ -137,16 +138,19 @@ p.main_activity {
 padding-left: 20px;
   border-left: 2px solid crimson;
   font-size: 14px;
+  color: #000;
 }
 
 p.main_activity b {
   font-family: "Open Sans Bold";
+  color: #000;
 }
 
 p.comfort {
   font-size: 13px;
   text-align: center;
   margin-top: 10px;
+  color: #000;
 }
 
 div.model {
@@ -223,6 +227,27 @@ font-size:40px;
   color:#fff;
 }*/
 /*Меню сайта */
+
+.close_menu {
+  
+ display: none;
+  
+  
+}
+
+.close_visible {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: transparent;
+  color: transparent;
+  
+  z-index: 150;
+}
+
 .open {
   position: fixed;
   top: 20px;
@@ -245,7 +270,7 @@ font-size:40px;
   height: 4px;
   width: 40px;
  
-  background-color: #fff;
+  background-color: crimson;
   position: absolute;
   right: 3px;
   top: 3px;
@@ -259,10 +284,28 @@ font-size:40px;
 }
 .open span:nth-child(2) {
   margin-top: 25px;
+  
 }
+
+
 .open span:nth-child(3) {
   margin-top: 40px;
+  margin-bottom: 40px;
+
+  
 }
+
+/*.*//*open span:nth-child(3):hover{
+ width: 80px;
+ height: 80px;
+ background-color: transparent;
+
+}*/
+
+/*span.cls:hover {
+z-index: 800;
+background-color: red;
+}*/
 
 .sub-menu {
   -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -346,9 +389,17 @@ text-transform: uppercase;
           transform: rotate(45deg);
 }
 
+.oppenned span:nth-child(3) {
+  background-color: #fff;
+
+  
+}
+
+
+
 .oppenned span:first-child {
   background-color: #fff;
-  z/*-index: 103;
+  /*z-index: 103;
   position: relative;*/
 }
 
@@ -436,14 +487,62 @@ text-transform: uppercase;
 
 }
 
-.si-phone .phone-link {
+.header_phoneblock{
+   text-align: right;
+}
+
+
+.header_phone {
+    color: #000;
+    font-size: 20px;
+    display: inline;
+    margin-bottom: 13px;
+   
+    font-family: "Open Sans SemiBold";
+
+}
+
+span.icon0:before {
+  content: "\f095";
+          font-family: "FontAwesome";
+          font-size: 19px;
+          color:#000;
+}
+
+
+
+
+
+
+
+
+b.price {
+  display: block;
+  font-size: 20px;
+  font-family:"Open Sans Bold";
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.color-choose {
+  display: block;
+  min-height: 40px;
+  margin-top: 10px;
+}
+
+
+
+
+.si-phone a.phone-link {
     color: #fff;
     display: inline!important;
-    font: 22 Open Sans Bold;
+    font: 22 Open Sans Bold!important;
     -webkit-transition: all 0.2s ease-out 0s;
     -moz-transition: all 0.2s ease-out 0s;
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
+
     
 }
 
@@ -461,271 +560,15 @@ text-transform: uppercase;
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
     text-transform: none;
-   
+    text-align: left;
+    padding: 10px;
 }
 
 .si-phone .modal-link:hover {
     color: #ddd;
-    
+    text-align: left;
 }
 
-
-select#userselect option {
-  width: 80%!important;
-  padding: 5px!important;
-  border: 1px solid LimeGreen;
-  margin:auto;
-  margin-top: 10px;
-  margin:bottom: 10px;
-}
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
-.jq-selectbox {
-  vertical-align: middle;
-  cursor: pointer;
-    width: 300px;
-}
-.jq-selectbox__select {
-  height: 30px;
-    line-height: 30px;
-  padding: 0 45px 0 10px;
-  border: 1px solid #CCC;
-  border-bottom-color: #B3B3B3;
-  border-radius: 4px;
-  background: #F5F5F5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAIAAABi9+OQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABdJREFUeNpi+v//PxM2zMDAQEtxgAADAF2uTe9L4getAAAAAElFTkSuQmCC) repeat-x;
-  box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,0.1);
-  text-shadow: 1px 1px #FFF;
-  font-size: 16px;  
-    font-family: 'segoe ui';
-  color: #9D9D9D; 
-  background: #fff;
-  border: 1px solid #3399CC;
-}
-/*.jq-selectbox__select:hover {
-  background-color: #E6E6E6;
-  background-position: 0 -10px;
-}*/
-.jq-selectbox__select:active {
-  background: #F5F5F5;
-  box-shadow: inset 1px 1px 3px #DDD;
-}
-.jq-selectbox.focused .jq-selectbox__select {
-  border: 1px solid #5794BF;
-}
-.jq-selectbox.disabled .jq-selectbox__select {
-  border-color: #CCC;
-  background: #F5F5F5;
-  box-shadow: none;
-  color: #888;
-}
-.jq-selectbox__select-text {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.jq-selectbox .placeholder {
-  color: #888;
-}
-.jq-selectbox__trigger {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 34px;
-  height: 100%; 
-}
-.jq-selectbox__trigger-arrow {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  border-top: 9px solid #3399CC;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-}
-.jq-selectbox:hover .jq-selectbox__trigger-arrow {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-}
-.jq-selectbox__dropdown {
-  top: 33px;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  background: #FFF;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  font: 14px/18px Arial, sans-serif;
-}
-.jq-selectbox__search {
-  margin: 5px;
-}
-.jq-selectbox__search input {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 5px 27px 6px 8px;
-  outline: none;
-  border: 1px solid #CCC;
-  border-radius: 3px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==) no-repeat 100% 50%;
-  box-shadow: inset 1px 1px #F1F1F1;
-  color: #333;
-  -webkit-appearance: textfield;
-}
-.jq-selectbox__search input::-webkit-search-cancel-button,
-.jq-selectbox__search input::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-.jq-selectbox__not-found {
-  margin: 5px;
-  padding: 5px 8px 6px;
-  background: #F0F0F0;
-  font-size: 13px;
-}
-.jq-selectbox ul {
-  margin: 0;
-  padding: 0;
-}
-.jq-selectbox li {
-  min-height: 18px;
-  padding: 5px 10px 6px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-       -o-user-select: none;
-  white-space: nowrap;
-  color: #231F20;
-}
-.jq-selectbox li.selected {
-  background-color: #A3ABB1;
-  color: #FFF;
-}
-.jq-selectbox li:hover {
-  background-color: #EEEEEE;
-  color: #000;
-}
-.jq-selectbox li.disabled {
-  color: #AAA;
-}
-.jq-selectbox li.disabled:hover {
-  background: none;
-}
-.jq-selectbox li.optgroup {
-  font-weight: bold;
-}
-.jq-selectbox li.optgroup:hover {
-  background: none;
-  color: #231F20;
-  cursor: default;
-}
-.jq-selectbox li.option {
-  padding-left: 25px;
-}
-
-
-.jq-select-multiple {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 1px;
-  border: 1px solid #CCC;
-  border-bottom-color: #B3B3B3;
-  border-radius: 4px;
-  box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,0.1);
-  background: #FFF;
-  color: #333;
-  font: 14px/18px Arial, sans-serif;
-  cursor: default;
-}
-.jq-select-multiple.focused {
-  border: 1px solid #5794BF;
-}
-.jq-select-multiple.disabled {
-  border-color: #CCC;
-  background: #F5F5F5;
-  box-shadow: none;
-  color: #888;
-}
-.jq-select-multiple ul {
-  margin: 0;
-  padding: 0;
-}
-.jq-select-multiple li {
-  padding: 3px 9px 4px;
-  list-style: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-          user-select: none;
-  white-space: nowrap;
-}
-.jq-select-multiple li:first-child {
-  border-radius: 3px 3px 0 0;
-}
-.jq-select-multiple li:last-child {
-  border-radius: 0 0 3px 3px;
-}
-.jq-select-multiple li.selected {
-  background: #08C;
-  color: #FFF;
-}
-.jq-select-multiple li.disabled {
-  color: #AAA;
-}
-.jq-select-multiple.disabled li.selected,
-.jq-select-multiple li.selected.disabled {
-  background: #CCC;
-  color: #FFF;
-}
-.jq-select-multiple li.optgroup {
-  font-weight: bold;
-}
-.jq-select-multiple li.option {
-  padding-left: 25px;
-}
-
-b.price {
-  display: block;
-  font-size: 20px;
-  font-family:"Open Sans Bold";
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-div.color-choose {
-  display: block;
-  min-height: 40px;
-
-  margin-top: 10px;
-}
-
-.color-choose span:active,
-.color-choose span:checked{
-border: 3px solid Limegreen;
-box-shadow: none;
-}
 
 
   </style>
@@ -737,7 +580,7 @@ box-shadow: none;
 
 <body>
 
- <div id="preloader">
+ <!-- <div id="preloader">
   <div id="pagetransition">
  
   <div class="square white"></div>
@@ -747,7 +590,7 @@ box-shadow: none;
   <div class="vic-gb"></div>
 </div>
 </div>
-
+ -->
 
 
 <header id="main" class="v-header ">
@@ -755,11 +598,17 @@ box-shadow: none;
     <div class="container">
       <div class="col-md-12">
         <div class="col-md-2">
-          <img class="header_logo " src="img/team_logo.png" alt="Логотип">
+          <img class="header_logo " src="img/blank_logo.png" alt="Логотип">
           <p class="comfort">С нами комфортно</p>
          </div>
       <div class="col-md-4">
           <p class="main_activity"><b>Продажа и установка <br> кондиционеров</b><br> в городе Находка и<br> Находкинском<br> городском округе</p>
+      </div>
+      <div class="col-md-6">
+           <p class="header_phoneblock"><span class="page_icons icon0"></span>
+            <a href="tel:84236799766" class="header_phone">+7 (4236) 799-766  </a>
+              <a href="tel:89140690228" class="header_phone">+7 914 069-02-28  </a><br>
+          </p> 
       </div>
 
     
@@ -767,14 +616,23 @@ box-shadow: none;
   </div>
 </div>
     <div class="fullscreen-video-wrap">
-           <video src="split.1.mp4" autoplay="" loop="">
+    <video src="split.1.mp4" autoplay="" loop="">
     </video>
     </div>
     <div class="header-overlay"></div>
+     <div class="close_menu"></div>
      <div  class="open">
+
       <span class="cls"></span>
       <span>
         <ul class="sub-menu sitesmenu">
+          <li> 
+            <div class="si-phone">
+              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a>
+              <a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
+              <a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
+            </div>   
+          </li>
           <li>
             <a href="#main">Главная</a>
           </li>
@@ -790,13 +648,7 @@ box-shadow: none;
           <li>
             <a href="#guarantee" >Гарантии</a>
           </li>
-          <li> 
-            <div class="si-phone">
-              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a>
-              <a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
-              <a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
-            </div>   
-          </li>
+          
         </ul>
     </span>
     <span class="cls"></span>
@@ -824,106 +676,23 @@ box-shadow: none;
 
   </header>
 
-
-
-
-
-
-
-
-
-
-	
-<!-- <header class="v-header container">
-  <img class="header_logo " src="img/team_logo.png" alt="Логотип">
-  <div class="fullscreen-video-wrap">
-      <video src="split.1.mp4" autoplay="" loop=""></video>
-  </div>  
-    <div class="header-overlay"></div>
-    <div  class="open">
-      <span class="cls"></span>
-      <span>
-        <ul class="sub-menu sitesmenu">
-          <li>
-            <a href="#main">Главная</a>
-          </li>
-          <li>
-            <a href="#advantages" >Преимущества</a>
-          </li>
-          <li>
-            <a href="#catalog" >Каталог</a>
-          </li>
-          <li>
-            <a href="#service" >Услуги</a>
-          </li>
-          <li>
-            <a href="#guarantee" >Гарантии</a>
-          </li>
-          <li> 
-            <div class="si-phone">
-              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a><br>
-              <a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
-              <a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
-            </div>   
-          </li>
-        </ul>
-    </span>
-    <span class="cls"></span>
-  </div>
-  <div class="header-content text-md-center">    
-      <div class="header-description">       
-          <h1 class="header-description-title">Бесшумные кондиционеры <br>от ведущих производителей </h1><br>
-           <p class="header-description-text"> Гарантия 5 лет, <br>установка в день покупки за 2 часа</p>         -->
-
-
-
-
-           <!-- <button type="button" class="callback_btn white_bg" data-toggle="modal" data-target="#main_modal"><span>Оставить заявку</span></button> -->
-
-<!-- <div class="svg">
-    <a class="button_svg" href="#" data-toggle="modal" data-target="#main_modal">
-        <svg>
-            <rect height="50" width="250" fill="transparent" />
-        </svg>
-        <span>Оставить заявку</span>
-    </a> -->
-   
-
-    <!-- <a class="button_svg" href="#">
-        <svg>
-            <rect height="50" width="250" fill="transparent" />
-        </svg>
-        <span>Button</span>
-    </a> -->
-    
-<!-- </div>
-
-
-           
-      </div>      
-    </div>
-</header>
- -->
- 
-
-
 <section id="bonus" class="container-fluid site-section"   > 
   <div  class="container">    
       <h2 class="section_titlewhite">Закажите сплит-систему сейчас и бонусами для вас станут:</h2>
     
    <div class="row">
 
-    <div class="col-md-4 wow slideInLeft" data-wow-duration="2s">
+    <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
     <img class="section_image" src="img/1.jpg" alt="Кондиционер в интерьере">
     </div>
 
-    <div class="col-md-8 wow slideInRight" data-wow-duration="2s">
-      <span class="page_icons icon1"></span>
-      <p class="section_textwhite ">Год обслуживания <br> <span>бесплатно</span> </p>
-      <span class="page_icons icon1"></span>
-       <p class="section_textwhite">Опрессовка системы, <br>исключающая впоследствии <br>утечку фреона </p> 
-       <span class="page_icons icon1"></span>
-        <p class="section_textwhite">Нержавеющие кронштейны <br>для крепления <br><span>в подарок </span></p> 
+    <div class="col-md-6 wow slideInRight" data-wow-duration="2s">
+      
+      <p class="section_textwhite "><span class="page_icons icon1"></span>Год обслуживания <br> <span>бесплатно</span> </p>
+     
+       <p class="section_textwhite"> <span class="page_icons icon1"></span>Опрессовка системы, <br>исключающая впоследствии <br>утечку фреона </p> 
+      
+        <p class="section_textwhite"> <span class="page_icons icon1"></span>Нержавеющие кронштейны <br>для крепления <br><span>в подарок </span></p> 
     </div>
        
 
@@ -961,13 +730,13 @@ box-shadow: none;
     
    <div class="row">
 
-    <div class="col-md-4 wow slideInLeft">
+    <div class="col-md-6 wow slideInLeft">
        <!-- <span class="white_textdesc"> Мы комплексно решаем задачи по установке и обслуживанию климатического оборудования,     
       чтобы создавать для Вас <br> КОМФОРТНЫЙ КЛИМАТ</span> -->
     <img class="section_image" src="img/2.jpg" alt="Кондиционер в интерьере">
     </div>
 
-    <div class="col-md-8 wow slideInRight">
+    <div class="col-md-6 wow slideInRight">
       <div class="advantages_title">
      
      <p class="section_textwhitetitle">
@@ -1869,8 +1638,10 @@ DC-инвертор   <br>
             <div class="col-md-6 col-sm-6 wow slideInLeft">
            <p class="section_textwhite">Скачайте их здесь и уберегите себя от проблем</p>
            <!-- <button type="button" class="callback_btn wow pulse"  data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#download_modal"><span>Скачать буклет</span></button>  -->
+
+
 <div class="svg">
-           <a class="button_svg" href="#" data-toggle="modal" data-target="#download_modal">
+           <a class="button_svg" href="buklet.PDF" target="_blank">
         <svg class="site_buttons">
             <rect height="50" width="250" fill="transparent" />
         </svg>
@@ -2134,23 +1905,23 @@ DC-инвертор   <br>
 
 <div class="col-md-12">
 <div class="col-md-3">
-  <span class="page_icons icon20"></span>
-	<p class="section_textwhitetitle2"> 8 ЛЕТ <br> НА РЫНКЕ </p>
+  
+	<p class="section_textwhitetitle2"><span class="page_icons icon20"></span> 8 лет <br> на рынке </p>
 </div>
 
 <div class="col-md-3">
-  <span class="page_icons icon21"></span>
-	<p class="section_textwhitetitle2">РЕАЛИЗОВАНО БОЛЕЕ 900 ПРОЕКТОВ </p>
+  
+	<p class="section_textwhitetitle2"><span class="page_icons icon21"></span>Реализовано более 900 проектов </p>
 </div>
 <div class="col-md-3">
-  <span class="page_icons icon22"></span>
-	 <p class="section_textwhitetitle2">ВЫПОЛНИМ КАЧЕСТВЕННО И В СРОК ПРОЕКТ ЛЮБОЙ СЛОЖНОСТИ</p>
+  
+	 <p class="section_textwhitetitle2"><span class="page_icons icon22"></span>Выполним качественно и в срок проект любой сложности</p>
 </div>
 <div class="col-md-3">
 
 
-<span class="page_icons icon23"></span>
-	<p class="section_textwhitetitle2">РЕШИМ "ПОД КЛЮЧ" ВСЕ ЗАДАЧИ</p>
+
+	<p class="section_textwhitetitle2"><span class="page_icons icon23"></span>Решим "под ключ" все задачи</p>
 </div>
 
 
@@ -2323,7 +2094,7 @@ DC-инвертор   <br>
 						</label>
 
 						<button type="submit" class="callback_btn">Отправить</button>
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
 					</form>
 				</div>
 			</div>
@@ -2380,7 +2151,7 @@ DC-инвертор   <br>
 
 						<button type="submit" class="callback_btn">Отправить</button>
 
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
 
 					</form>
 
@@ -2442,7 +2213,7 @@ DC-инвертор   <br>
 
 						<button type="submit" class="callback_btn">Заказать</button>
 
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
 
 					</form>
 
@@ -2504,7 +2275,7 @@ DC-инвертор   <br>
 
 						<button type="submit" class="callback_btn">Отправить</button>
 
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
 
 					</form>
 
@@ -2566,7 +2337,7 @@ DC-инвертор   <br>
 
 						<button type="submit" class="callback_btn">Отправить</button>
 
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
 
 					</form>
 
@@ -2628,9 +2399,9 @@ DC-инвертор   <br>
 
 						<button type="submit" class="callback_btn">Скачать</button>
 
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
 
-						<a href="/docs/5_pravil.pdf" id="download_file" download></a>
+						<!-- <a href="/docs/5_pravil.pdf" id="download_file" download></a> -->
 
 					</form>
 
