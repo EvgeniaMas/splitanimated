@@ -1,2353 +1,392 @@
-/*==========  Desktop First Method  ==========*/
-@media screen and (min-width: 2000px) {
-  .main_section .decor {
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%; }
-    .main_section .decor:before {
-      -webkit-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      background-size: 100% 100%; }
-  .card_section .hand_block {
-    background-position: left top; } }
+@media screen and (max-width: 1100px) {
+.open {
+    width: 40px;
+    height: 40px;
+    
+}
+.header_phone {
+    
+    font-size: 18px;
+    
+}
 
-/*@media screen and (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    width: 100%; } }*/
+.header_phoneblock {
+    text-align: center;
+}
+
+
+h1.header-description-title {
+    font-size: 36px;
+   
+}
+    
+.header-content p {
+    font-size: 26px;
+    
+}
+
+
+.page_icons {
+   font-size: 32px;
+    
+}
+
+img.header_logo {
+   
+    width: 65px;
+   
+}
+h2.section_titlewhite {
+    font-size: 22px;
+    line-height: 26px;   
+    margin-bottom: 20px;
+    margin-top: 15px;
+   
+}
+#steps {
+    padding: 70px 0 80px;
+}
+.section_textwhite {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-width: 360px;
+    padding: 15px;
+    margin:auto;
+}
+
+div.model, div .model_fixed {
+    text-align: left;
+    font-size: 18px;
+    
+}
+.product_card {
+   
+    height: 189px;
+}
+.product_card img {
+    width: 180px;   
+    
+}
+button.buy_btn,
+button.more_btn {
+    padding: 8px 12px;
+    font: 16px Open Sans Regular;
+    }
+    .productor {
+    font-family: "Open Sans Bold";
+    font-size: 15px;
+}
+.page-form .form-title {
+    font: 20px Open Sans SemiBold;
+    
+    line-height: 34px;
+}
+}
+
+
+
+@media screen and (max-width: 1040px) {
+a.header_phone {
+    font-size: 16px;
+
+}
+}
+
+
+@media screen and (max-width: 991px) {
+a.header_phone {
+    font-size: 16px;
+    
+    margin-bottom: 5px;
+    line-height: 16px;
+}
+a.second_phone {
+    display: block;
+    padding-left: 35px;
+}
+
+#img_logo
+ {
+    display: block;
+    margin:auto;
+}
+
+div.social_icons {
+    width: 100px;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+
+p.social {
+   text-align: center;
+}
+
+.product_item {
+    
+    min-height: auto;
+}
+
+
+.product_item.long {
+    min-height: auto;
+}
+
+div.buttons_group {
+  position:relative;
+  padding-bottom: 10px;
+  
+}
+
+div.color-choose {
+    display: block;
+    min-height: auto;
+   
+}
+p.productor {
+    
+    font-size: 19px;
+}
+
+.product_card img {
+    width: 220px;
+}
+
+.header_phoneblock {
+   /* max-width: 40%;*/
+    margin-right: 0;
+    display: inline-block;
+
+}
+
+.sub-menu {
+   background-color: rgb(38, 84, 133);
+   opacity: 1;
+   
+}
+
+.open span:nth-child(3) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+span.icon0:before {
+    
+   /* visibility: hidden;*/
+   }
+
+   #steps li.steps_description {
+     height: auto;
+     width: 33%;
+     min-height: 100px;
+   
+   
+}
+#steps {
+    padding: 30px 0 30px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+h1.header-description-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+   
+}
+h2.section_titlewhite {
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+a.callback_btn, button.callback_btn {
+    color: #fff;  
+    
+    padding: 8px 18px;   
+    
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+
+
+.section_textwhitetitle2 {
+    font-size: 17px;
+    line-height: 24px;
+    
+    text-align: center;
+   
+}
+
+
+.site-section {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+    
+.header-content p {
+    font-size: 20px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 360px;
+    padding: 10px;
+    margin:auto;
+}
+.footer__sections {
+    font-size: 17px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+#about_company p.section_textwhite {
+    font-size: 16px;
+    line-height: 20px;    
+    margin-top: 18px;
+    margin-bottom: 18px;
+   
+}
+.sub-menu li a {
+    color: #fff;
+    font-family: "Open Sans Bold";
+    font-size: 15px;    
+    line-height: 36px;
+    
+}
+#bonus p.section_textwhite, #advantages p.section_textwhite, p.section_textwhitetitle, #guarantee p.section_textwhite {
+    text-align: center;
+    font-size: 17px;
+}
+
+.order_today {
+    position: relative;
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.page-form {
+    padding: 20px 0 20px;
+}
+
+.certificate_swiper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.split_partners .title_info {
+    font-weight: 400;
+    
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    
+    margin-bottom: 20px;
+}
+}
+
+
+@media screen and (max-width: 630px) {
+p.main_activity {
+    display: none;
+}
+
+a.header_phone {
+    text-align: center;
+}
+
+.page_icons {
+    font-size: 28px;
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 280px;
+    padding: 10px;
+    margin:auto;
+    float: none;
+}
+#steps li.steps_description {
+  width: 75%;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+
+
+.page_icons {
+    font-size: 22px;
+}
+
+h1.header-description-title {
+    font-size: 20px;
+    
+   
+}
+h2.section_titlewhite {
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+
+.section_textwhitetitle2 {
+    font-size: 16px;
+    line-height: 20px;
+    
+    text-align: center;
+   
+}
 
     
-
-@media screen and (max-width: 1599px) {
-  .roof_reviews .bg .in {
-    background-position: center center; }
-  .repairs_main_section .shadow {
-    min-height: 400px; }
-  .repairs_main_section p {
-    margin-bottom: 160px; }
-  .repair_list, .repairs_advantages, .repairs_special_offer, .certificate_section {
-    background: #FFF; }
-  .insurance {
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  #parallax {
-    display: none; } }
-
-@media screen and (max-width: 1199px) {
-  .main_section .shadow {
-    padding-top: 170px; }
-  .reputation .item .photo {
-    margin-left: 5px; }
-  .reputation .second_item:before {
-    width: 240px;
-    height: 54px;
-    top: -30px; }
-  .reputation .second_item .photo {
-    margin-right: 5px;
-    margin-left: 22px; }
-  .repairs_main_section .shadow {
-    padding-top: 210px; }
-  .split_main_section .shadow {
-    min-height: 900px;
-    padding-top: 260px;
-    padding-bottom: 200px; }
-  .split_main_section .for_title {
-    margin-bottom: 120px; }
-  .split_specialist .bottom_wrapper {
-    right: 0px; } }
-
-/* Medium Devices, Desktops */
-@media screen and (max-width: 991px) {
-  .main_header .bottom_wrapper .navbar .callback_btn {
-    width: 200px;
-    margin-left: 0px; }
-  .main_header .bottom_wrapper .navbar .navbar-nav li a {
-    padding-left: 11px;
-    padding-right: 11px; }
-  .main_footer .logo_block {
-    margin-right: 25px; }
-    .main_footer .logo_block .tel_block {
-      position: relative;
-      top: auto;
-      right: auto;
-      text-align: left;
-      padding-top: 0px;
-      margin-bottom: 20px; }
-      .main_footer .logo_block .tel_block a {
-        font-size: 21px; }
-    .main_footer .logo_block .social_block {
-      text-align: center; }
-      .main_footer .logo_block .social_block .soc_list {
-        width: 100%; }
-        .main_footer .logo_block .social_block .soc_list li {
-          float: none;
-          display: inline-block;
-          vertical-align: top;
-          margin: 0 10px; }
-        .main_footer .logo_block .social_block .soc_list li:last-of-type {
-          margin: 0 10px; }
-  .main_footer .contacts_block {
-    width: 260px; }
-    .main_footer .contacts_block p {
-      font-size: 16px; }
-  .main_section .shadow {
-    min-height: 820px; }
-  .main_section .decor {
-    height: 300px; }
-  .main_section .container {
-    background-position: left -70px top; }
-  .card_section {
-    margin-top: -180px; }
-    .card_section .hand_block {
-      background-position: left center;
-      -webkit-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 100%; }
-    .card_section .wrapper {
-      margin-right: 0px; }
-  .services .item {
-    height: 294px; }
-  .reputation .item .photo {
-    margin-left: 5px;
-    width: 350px; }
-    .reputation .item .photo:before {
-      width: 100px; }
-    .reputation .item .photo:after {
-      height: 150px; }
-  .reputation .item p {
+.header-content p {
+    font-size: 16px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 220px;
+    
+}
+.footer__sections {
     font-size: 15px;
-    padding-top: 20px;
-    line-height: 1.2;
-    margin-bottom: 20px; }
-    .reputation .item p br {
-      display: none; }
-  .reputation .second_item:before {
-    width: 240px;
-    height: 54px;
-    top: -30px; }
-  .reputation .second_item .photo {
-    margin-right: 5px;
-    margin-left: 22px; }
-  .reputation .second_item p {
-    padding-top: 30px; }
-  .question_section .text_block {
-    max-width: 380px; }
-  .question_section .yellow_btn {
-    margin-top: 15px; }
-  .team_section .wrapper {
-    left: -50px; }
-  .special_offer {
-    margin-top: -80px; }
-  .windows_calculate .windows_type {
-    margin-bottom: 40px; }
-    .windows_calculate .windows_type .item {
-      margin-right: 0px; }
-    .windows_calculate .windows_type .scroll_block {
-      width: 270px;
-      height: 160px; }
-      .windows_calculate .windows_type .scroll_block .img_block {
-        width: 240px;
-        height: 126px; }
-    .windows_calculate .windows_type .scroll_block .height_scroll .ui-widget-content {
-      height: 150px; }
-    .windows_calculate .windows_type .scroll_block .width_scroll .ui-widget-content {
-      width: 200px; }
-  .windows_calculate .checkbox_block {
-    max-width: 350px; }
-    .windows_calculate .checkbox_block ul {
-      width: 100%; }
-      .windows_calculate .checkbox_block ul li {
-        font-size: 14px; }
-        .windows_calculate .checkbox_block ul li span {
-          top: -2px; }
-    .windows_calculate .checkbox_block ul:first-of-type {
-      max-width: 100%; }
-  .windows_calculate .open_form {
-    margin-left: 0;
-    margin-top: 70px; }
-  .yellow_section .wrapper {
-    max-width: 540px; }
-  .window_section .problem_list {
-    padding-left: 0px; }
-    .window_section .problem_list:nth-of-type(2) {
-      padding-right: 0px; }
-    .window_section .problem_list .item_2 {
-      margin-bottom: 80px; }
-  .window_section .wrapper {
-    min-height: 420px; }
-    .window_section .wrapper .window {
-      left: -30px;
-      max-width: 540px; }
-  .accessories .item {
-    margin-left: 5px;
-    margin-right: 5px; }
-  .download_section .paper {
-    left: 330px; }
-  .download_section .section_title {
-    max-width: 400px; }
-  .download_section .title_info {
-    max-width: 400px; }
-  .window_partners .partner {
-    float: left;
-    width: 50%; }
-    .window_partners .partner .inner {
-      margin: 0 auto; }
-  .window_partners .partner:nth-of-type(2) {
-    margin: 0px;
-    margin-bottom: 20px; }
-  .window_partners .partner:nth-of-type(5) {
-    margin-right: 0px;
-    margin-top: 0px; }
-  .windows_services .wrapper .swiper-button-prev {
-    left: -5px; }
-  .windows_services .wrapper .swiper-button-next {
-    right: -5px; }
-  .reviews .wrapper .prev_review {
-    left: -5px; }
-  .reviews .wrapper .next_review {
-    right: -5px; }
-  .propositions .section_title {
-    font-size: 24px; }
-  .propositions .house_block .item_1 {
-    left: 420px; }
-  .propositions .house_block .item_2 {
-    left: 500px; }
-  .propositions .banks_block p {
-    display: block;
-    width: 100%;
-    margin: 0px;
-    margin-bottom: 15px;
+    
+}
+
+
+#bonus p.section_textwhite, #advantages p.section_textwhite, p.section_textwhitetitle, #guarantee p.section_textwhite {
     text-align: center;
-    max-width: 100%; }
-    .propositions .banks_block p br {
-      display: none; }
-  .last_question .wrapper {
-    padding-top: 100px; }
-  .last_question .question_btn {
-    margin-right: 0px;
-    float: none;
-    display: block;
-    margin: 0 auto; }
-  .last_question .photo {
-    top: 60px; }
-  .roof_main_section .shadow {
-    min-height: 770px;
-    padding-bottom: 150px; }
-  .roof_special_offer {
-    margin-top: -60px; }
-  .genri_ford .text_block {
-    padding-left: 20px;
-    max-width: 530px;
-    padding-right: 0px; }
-    .genri_ford .text_block:before {
-      left: -10px; }
-  .roof_advantages .item:nth-of-type(1), .roof_advantages .item:nth-of-type(4) {
-    padding-right: 70px;
-    padding-top: 40px; }
-  .roof_advantages .item:nth-of-type(3), .roof_advantages .item:nth-of-type(6) {
-    padding-left: 70px;
-    padding-top: 40px; }
-  .roof_advantages .item .inner .text {
-    font-size: 14px; }
-  .products_section {
-    padding-top: 60px;
-    padding-bottom: 30px; }
-    .products_section .item {
-      padding-left: 0px; }
-      .products_section .item .item_info .text_block {
-        float: none;
-        width: 100%;
-        padding-right: 0px;
-        margin-bottom: 25px; }
-        .products_section .item .item_info .text_block p br {
-          display: none; }
-      .products_section .item .item_info .img_block {
-        padding-left: 0px;
-        float: none;
-        width: 100%; }
-      .products_section .item .item_list ul {
-        width: 50%;
-        max-width: 50%;
-        padding-right: 15px;
-        margin: 0px;
-        margin-bottom: 30px; }
-        .products_section .item .item_list ul li br {
-          display: none; }
-      .products_section .item .item_list ul:nth-of-type(2) {
-        width: 50%;
-        max-width: 50%;
-        padding-right: 0px; }
-      .products_section .item .item_list .open_form {
-        clear: both;
-        position: relative;
-        display: block;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        margin: 0 auto; }
-    .products_section .item_2 .item_info .img_block {
-      text-align: center; }
-      .products_section .item_2 .item_info .img_block .img {
-        float: none;
-        display: inline-block;
-        vertical-align: top;
-        max-width: 140px;
-        width: 100%;
-        margin: 0 2px; }
-    .products_section .item_2 .item_list ul {
-      float: left;
-      width: 50%; }
-    .products_section .item_2 .item_list .open_form {
-      left: auto; }
-    .products_section .item_3 .text_block {
-      padding-right: 370px; }
-      .products_section .item_3 .text_block p br {
-        display: none; }
-  .roof_form .form_wrapper .block_1 {
-    padding-left: 120px; }
-  .roof_form .form_wrapper .block_2 {
-    padding-left: 140px;
-    padding-right: 0px; }
-  .roof_form .form_wrapper .block_3 {
-    padding-left: 130px; }
-    .roof_form .form_wrapper .block_3 .input_block {
-      width: 178px;
-      margin-right: 10px; }
-    .roof_form .form_wrapper .block_3 .input_block:last-of-type {
-      margin-right: 0px; }
-  .discounts .wrapper {
-    width: 150%;
-    margin-left: -25%; }
-  .discounts .item {
-    width: 340px;
-    height: 340px; }
-  .discounts .open_form {
-    margin-top: 5px; }
-  .design .wrapper {
-    padding-top: 80px; }
-  .design p {
-    margin-bottom: 40px; }
-  .roof_last_question {
-    padding-top: 120px; }
-  .why_us .col {
-    padding-left: 0px;
-    padding-right: 20px; }
-  .why_us .col:last-of-type {
-    padding-left: 20px;
-    padding-right: 0px; }
-  .why_us .item p br {
-    display: none; }
-  .repairs .item .item_title {
-    font-size: 18px; }
-  .roof_gallery_swiper {
-    height: 480px; }
-  .roof_gallery .slider_nav .open_form {
-    left: 30px; }
-  .roof_gallery .slider_nav .arrows {
-    right: 30px; }
-  .repairs_main_section .shadow {
-    min-height: 400px;
-    padding-top: 210px; }
-  .repairs_main_section p {
-    margin-bottom: 110px; }
-  .repairs_special_offer {
-    margin-top: 0px; }
-  .repairs_special_offer .designer_block .text_block {
-    max-width: 340px; }
-  .repairs_special_offer .designer_block .offer_form .little_text br {
-    display: none; }
-  .repairs_special_offer .designer_block .offer_form .form_title {
-    font-size: 14px; }
-  .repairs_special_offer .designer_block .offer_form label {
-    max-width: 276px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px; }
-  .repairs_special_offer .top_wrapper .text_block {
-    max-width: 480px; }
-  .repairs_special_offer .top_wrapper .modal_btn {
-    right: 0px; }
-  .repairs_advantages .item {
-    min-height: 180px; }
-  .repairs_advantages .form_wrapper .img {
-    right: -15px; }
-  .repair_list .item {
-    max-width: 240px;
-    margin-left: 0px;
-    margin-right: 0px; }
-  .repairs_reviews .reviews_swiper .info_block .top {
-    padding-top: 0px; }
-    .repairs_reviews .reviews_swiper .info_block .top .slogan br {
-      display: none; }
-    .repairs_reviews .reviews_swiper .info_block .top .name {
-      padding-right: 10px; }
-  .insurance .item .printing {
-    width: 180px;
-    height: 141px;
-    right: -30px;
-    top: -30px; }
-  .insurance .gray_block {
-    text-align: center; }
-    .insurance .gray_block .wrapper .modal_btn {
-      position: relative;
-      right: auto;
-      top: auto;
-      bottom: auto;
-      margin: 0 auto;
-      margin-top: 20px; }
-  .certificate_section .item {
-    height: auto; }
-    .certificate_section .item .text_block .title {
-      font-size: 42px; }
-    .certificate_section .item .text_block .price {
-      font-size: 60px; }
-  .split_special_offer {
-    margin-top: -50px; }
-    .split_special_offer .top_wrapper ul {
-      max-width: 440px; }
-  .split_services .item {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 50px;
-    max-width: 320px; }
-    .split_services .item .text_block.long_text {
-      max-width: 100%; }
-  .split_specialist:before {
-    top: 0px;
-    opacity: .5; }
-  .split_download .title_info {
-    max-width: 340px; }
-  .split_download .paper {
-    top: 0px; } }
+    font-size: 17px;
+}
+#img_logo {
+    max-width: 55px;
+}
 
-@media screen and (max-width: 799px) {
-  .thank_modal .modal-dialog {
-    margin-top: 20px;
-    max-width: 400px; }
-    .thank_modal .modal-dialog .modal-content {
-      height: auto; }
-      .thank_modal .modal-dialog .modal-content .modal-body .right_block {
-        float: none;
-        width: 100%;
-        margin-bottom: 40px; }
-        .thank_modal .modal-dialog .modal-content .modal-body .right_block:after {
-          display: none; }
-      .thank_modal .modal-dialog .modal-content .modal-body .left_block {
-        float: none;
-        width: 100%; }
-      .thank_modal .modal-dialog .modal-content .close {
-        right: 5px; }
-  .service_modal .modal-dialog {
-    margin-top: 20px;
-    max-width: 400px; }
-    .service_modal .modal-dialog .modal-content {
-      height: auto; }
-      .service_modal .modal-dialog .modal-content .top_modal {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 0px; }
-        .service_modal .modal-dialog .modal-content .top_modal p {
-          font-size: 15px; }
-        .service_modal .modal-dialog .modal-content .top_modal .modal_title {
-          text-align: center; }
-          .service_modal .modal-dialog .modal-content .top_modal .modal_title:before {
-            left: 0px;
-            right: 0px;
-            margin: 0 auto; }
-        .service_modal .modal-dialog .modal-content .top_modal .img_block {
-          position: relative;
-          margin: 0 auto;
-          display: block;
-          left: 0px;
-          margin-bottom: 20px; }
-        .service_modal .modal-dialog .modal-content .top_modal .form_title {
-          position: relative;
-          right: auto;
-          left: auto;
-          bottom: auto;
-          text-align: center;
-          padding-top: 20px; }
-      .service_modal .modal-dialog .modal-content .close {
-        right: 5px; }
-  .modal_service_form {
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center; }
-    .modal_service_form .submit_btn {
-      margin: 0px;
-      margin-bottom: 15px; }
-  .service_modal .modal-dialog .modal-content .modal_advantages .item p {
-    font-size: 12px; }
-  .service_modal .modal-dialog .modal-content .little_text {
-    text-align: center;
-    padding: 0px; } }
+ul.footer__menu li a, .footer__contactsText {
+    
+    font-size: 14px;
+   
+}
+.open {
+    width: 30px;
+    height: 30px;
+}
+}
 
-/* Small Devices, Tablets */
-@media screen and (max-width: 767px) {
-  .main_header .top_wrapper .logo {
-    margin-left: 0px; }
-  .main_header .top_wrapper .slogan {
-    display: none; }
-  .main_header .navbar-header {
-    float: right; }
-  .main_header .bottom_wrapper .container {
-    padding: 0px; }
-  .main_header .bottom_wrapper .navbar-toggle {
-    margin: 0px;
-    width: 59px;
-    height: 62px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    border: none;
-    margin-left: 2px;
-    background: #fecc00; }
-    .main_header .bottom_wrapper .navbar-toggle:hover {
-      background: #111; }
-      .main_header .bottom_wrapper .navbar-toggle:hover .icon-bar {
-        background: #fecc00; }
-    .main_header .bottom_wrapper .navbar-toggle .icon-bar {
-      width: 100%;
-      background: #FFF;
-      height: 3px; }
-    .main_header .bottom_wrapper .navbar-toggle .icon-bar + .icon-bar {
-      margin-top: 7px; }
-  .main_header .bottom_wrapper .navbar .navbar-collapse {
-    width: 100%;
-    float: none;
-    padding: 0px;
-    border-color: #FEE57F; }
-  .main_header .bottom_wrapper .navbar .navbar-nav {
-    background: #FFF;
-    margin: 0px;
-    width: 100%; }
-    .main_header .bottom_wrapper .navbar .navbar-nav li {
-      float: none;
-      width: 100%;
-      border-bottom: 1px solid #fee57f; }
-      .main_header .bottom_wrapper .navbar .navbar-nav li a {
-        padding: 15px 15px; }
-        .main_header .bottom_wrapper .navbar .navbar-nav li a:before {
-          display: none; }
-        .main_header .bottom_wrapper .navbar .navbar-nav li a:hover {
-          color: #FFF;
-          background: #fecc00; }
-    .main_header .bottom_wrapper .navbar .navbar-nav .dropdown .dropdown-toggle {
-      display: none; }
-    .main_header .bottom_wrapper .navbar .navbar-nav .dropdown .dropdown-menu {
-      position: relative;
-      display: block;
-      float: none;
-      width: 100%;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-right: 0px; }
-      .main_header .bottom_wrapper .navbar .navbar-nav .dropdown .dropdown-menu li {
-        margin-bottom: 0px; }
-        .main_header .bottom_wrapper .navbar .navbar-nav .dropdown .dropdown-menu li a {
-          width: 100%;
-          overflow: hidden;
-          font-size: 13px;
-          padding-right: 0px; }
-      .main_header .bottom_wrapper .navbar .navbar-nav .dropdown .dropdown-menu li:last-of-type {
-        margin-bottom: 0px;
-        border: none; }
-  .main_footer {
-    padding-bottom: 20px; }
-    .main_footer .logo_block {
-      margin-right: 0px;
-      float: none;
-      width: 100%; }
-      .main_footer .logo_block:after {
-        content: "";
-        display: table;
-        clear: both; }
-      .main_footer .logo_block .logo_and_slogan {
-        float: left;
-        width: 50%;
-        position: relative;
-        z-index: 2; }
-      .main_footer .logo_block .logo {
-        max-width: 300px;
-        margin: 0 auto;
-        margin-bottom: 10px; }
-      .main_footer .logo_block .tel_block {
-        position: relative;
-        float: left;
-        width: 50%;
-        max-width: 100%;
-        text-align: right;
-        top: auto;
-        right: auto;
-        padding-top: 50px;
-        margin-bottom: 20px; }
-        .main_footer .logo_block .tel_block a {
-          font-size: 21px; }
-      .main_footer .logo_block .social_block {
-        text-align: right; }
-        .main_footer .logo_block .social_block .soc_list {
-          width: 100%; }
-          .main_footer .logo_block .social_block .soc_list li {
-            float: none;
-            display: inline-block;
-            vertical-align: top;
-            margin: 0 10px; }
-          .main_footer .logo_block .social_block .soc_list li:last-of-type {
-            margin: 0 10px; }
-    .main_footer .contacts_block {
-      padding-top: 0px;
-      width: 50%;
-      float: left;
-      padding-right: 10px;
-      margin-bottom: 30px; }
-      .main_footer .contacts_block p {
-        font-size: 14px; }
-    .main_footer .nav_block {
-      padding-top: 0px;
-      float: left;
-      width: 50%;
-      margin-bottom: 30px; }
-    .main_footer .marketing_time {
-      position: relative;
-      bottom: auto;
-      right: auto;
-      text-align: center;
-      clear: both; }
-  .main_section .container {
-    background-position: left -110px top; }
-  .main_section .shadow {
-    padding-top: 150px; }
-  .main_section .yellow_text {
-    font-size: 22px; }
-  .main_section .main_swiper .swiper-slide {
-    padding-left: 70px;
-    padding-right: 40px;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 90%; }
-    .main_section .main_swiper .swiper-slide .number {
-      position: absolute;
-      top: 0px;
-      left: 5px; }
-  .card_section {
-    margin-top: -210px;
-    padding-top: 350px;
-    padding-bottom: 30px; }
-    .card_section .hand_block {
-      background-position: left top;
-      -webkit-background-size: 150%;
-      -o-background-size: 150%;
-      background-size: 150%; }
-    .card_section .wrapper {
-      margin-right: 0px;
-      text-align: center;
-      max-width: 100%; }
-  .services {
-    padding-bottom: 20px; }
-    .services .item {
-      width: 49%;
-      float: left;
-      height: 315px;
-      display: block; }
-      .services .item .item_title {
-        display: table;
-        height: 100px; }
-        .services .item .item_title span {
-          display: table-cell;
-          vertical-align: middle; }
-    .services .item.active .icon:before {
-      right: 5px;
-      width: 20px;
-      height: 32px; }
-    .services .item:nth-child(2n+1) {
-      margin-right: 2%; }
-  .reputation {
-    padding-bottom: 20px; }
-    .reputation .item {
-      margin-bottom: 40px; }
-      .reputation .item .photo {
-        margin-left: 0px;
-        width: 100%;
-        max-width: 440px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        float: none; }
-        .reputation .item .photo:before {
-          width: 100px; }
-        .reputation .item .photo:after {
-          height: 150px; }
-      .reputation .item p {
-        font-size: 17px;
-        padding-top: 0px;
-        line-height: 1.3;
-        margin-bottom: 30px; }
-      .reputation .item .name:after {
-        position: relative;
-        top: auto;
-        right: auto; }
-    .reputation .second_item {
-      text-align: left;
-      margin-bottom: 0px; }
-      .reputation .second_item:before {
-        display: none; }
-      .reputation .second_item .photo {
-        margin-left: 0px;
-        width: 100%;
-        max-width: 440px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        float: none; }
-      .reputation .second_item p {
-        padding-top: 0px; }
-      .reputation .second_item .name span {
-        position: static;
-        padding-bottom: 125px; }
-        .reputation .second_item .name span:after {
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-          top: auto;
-          right: auto; }
-  .advantages .item_1 .inner {
-    text-align: center; }
-  .advantages .item_1 .big_text {
-    font-size: 20px; }
-    .advantages .item_1 .big_text span {
-      font-size: 30px; }
-  .advantages .item_1 p {
-    font-size: 18px; }
-  .advantages .item_2 .inner {
-    background-position: center 40px; }
-    .advantages .item_2 .inner .big_text span {
-      font-size: 24px; }
-    .advantages .item_2 .inner p {
-      font-size: 20px; }
-  .advantages .item_3 .inner p {
-    font-size: 12px;
-    line-height: 1.3; }
-  .question_section {
-    text-align: center; }
-    .question_section .wrapper .text_block {
-      width: 100%;
-      float: none;
-      max-width: 100%; }
-    .question_section .wrapper .yellow_btn {
-      float: none;
-      margin-top: 15px; }
-  .office_gallery {
-    padding-bottom: 20px; }
-    .office_gallery .section_title {
-      font-size: 24px; }
-    .office_gallery .title_info {
-      font-size: 16px; }
-  .team_section {
-    padding-bottom: 20px; }
-    .team_section .wrapper {
-      background: none;
-      height: auto;
-      width: 100%;
-      left: auto; }
-    .team_section .title_info br {
-      display: none; }
-    .team_section .desktop_photo, .team_section .hover_btns {
-      display: none; }
-    .team_section .mobile_photo {
-      display: block; }
-  .windows_main_section .main_title {
-    font-size: 26px; }
-  .windows_main_section .title_info {
-    font-size: 22px; }
-  .windows_main_section .surprise {
-    font-size: 16px; }
-    .windows_main_section .surprise:before {
-      top: -30px; }
-  .windows_main_section .window {
-    right: auto;
-    left: 400px;
-    z-index: -1;
-    opacity: .8; }
-  .special_offer .section_title {
-    text-shadow: 0px 0px 5px #fff; }
-    .special_offer .section_title span {
-      text-shadow: none; }
-  .special_form label {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 15px; }
-  .special_form button {
-    margin-bottom: 15px; }
-  .windows_calculate .section_title {
-    font-size: 22px; }
-  .windows_calculate .windows_type {
-    margin-bottom: 20px; }
-    .windows_calculate .windows_type p {
-      text-align: left; }
-    .windows_calculate .windows_type .left_block {
-      position: relative;
-      z-index: 10;
-      width: 100%;
-      float: none;
-      text-align: center;
-      margin-bottom: 30px; }
-    .windows_calculate .windows_type .item {
-      margin: 0 7px;
-      display: inline-block;
-      float: none;
-      vertical-align: top; }
-    .windows_calculate .windows_type .right_block {
-      float: none;
-      position: relative;
-      top: auto;
-      right: auto;
-      width: 100%;
-      text-align: center; }
-    .windows_calculate .windows_type .inputs_block {
-      position: relative;
-      display: inline-block;
-      vertical-align: top;
-      float: none; }
-    .windows_calculate .windows_type .scroll_block {
-      width: 270px;
-      display: inline-block;
-      position: relative;
-      float: none;
-      vertical-align: top; }
-      .windows_calculate .windows_type .scroll_block .img_block {
-        width: 240px;
-        height: 126px; }
-    .windows_calculate .windows_type .scroll_block .height_scroll .ui-widget-content {
-      height: 150px; }
-    .windows_calculate .windows_type .scroll_block .width_scroll .ui-widget-content {
-      width: 200px; }
-  .windows_calculate .checkbox_block {
-    max-width: 100%;
-    float: none;
-    width: 100%; }
-    .windows_calculate .checkbox_block ul {
-      width: 40%; }
-      .windows_calculate .checkbox_block ul li {
-        font-size: 14px; }
-        .windows_calculate .checkbox_block ul li span {
-          top: -2px; }
-    .windows_calculate .checkbox_block ul:first-of-type {
-      max-width: 100%;
-      width: 60%; }
-  .windows_calculate .open_form {
-    margin: 0 auto;
-    display: block;
-    float: none;
-    margin-top: 20px;
-    position: relative;
-    top: auto;
-    left: auto; }
-  .windows_calculate .form_wrapper .strong {
-    font-size: 20px;
-    line-height: 1.3;
-    margin-bottom: 10px; }
-  .windows_calculate .form_wrapper p {
-    line-height: 1.3; }
-    .windows_calculate .form_wrapper p a:before {
-      top: 0px; }
-  .yellow_section .container:before {
-    opacity: .5; }
-  .yellow_section p {
-    padding-left: 0px; }
-  .yellow_section .wrapper {
-    max-width: 540px; }
-  .window_section .section_title {
-    text-align: center; }
-  .window_section .absolute_text {
-    text-align: center;
-    right: 0px;
-    left: 0px;
-    margin: 0 auto; }
-  .window_section .container .wrapper {
-    padding-top: 60px; }
-    .window_section .container .wrapper .problem_list {
-      float: none;
-      width: 100%;
-      text-align: center; }
-      .window_section .container .wrapper .problem_list:nth-of-type(2) {
-        float: none;
-        width: 100%;
-        text-align: center; }
-      .window_section .container .wrapper .problem_list li {
-        float: none;
-        width: 100%;
-        margin-bottom: 30px;
-        margin-top: 0px;
-        font-size: 18px;
-        text-shadow: 0px 0px 10px #fff; }
-        .window_section .container .wrapper .problem_list li span:after {
-          display: none; }
-        .window_section .container .wrapper .problem_list li br {
-          display: none; }
-  .window_section .wrapper {
-    min-height: 420px; }
-    .window_section .wrapper .window {
-      opacity: .5;
-      left: 0px;
-      max-width: 540px;
-      width: 100%; }
-  .download_section .bg {
-    padding-bottom: 50px; }
-  .download_section .paper {
-    z-index: 0;
-    left: 260px;
-    width: 460px;
-    height: 298px;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%; }
-  .download_section .section_title {
-    max-width: 300px;
-    font-size: 20px; }
-  .download_section .title_info {
-    max-width: 300px;
-    font-size: 16px; }
-  .key_advantages .item {
-    display: table;
-    padding: 10px; }
-    .key_advantages .item .inner {
-      display: table-cell;
-      vertical-align: middle;
-      padding: 0px;
-      text-align: center; }
-      .key_advantages .item .inner p {
-        position: relative;
-        text-align: center;
-        padding: 0px;
-        font-size: 18px; }
-      .key_advantages .item .inner .first_p {
-        position: relative;
-        left: auto;
-        top: auto; }
-        .key_advantages .item .inner .first_p span {
-          font-size: 42px; }
-  .key_advantages .item_1 .first_p {
-    margin-bottom: 5px; }
-  .certificate .fancybox {
-    width: 100px;
-    height: 140px;
-    margin: 0 20px;
-    margin-bottom: 20px; }
-  .services_swiper {
-    max-width: 460px; }
-  .reviews .section_title {
-    font-size: 24px; }
-  .reviews_swiper p {
-    font-size: 16px; }
-  .propositions .section_title {
-    font-size: 22px;
-    text-align: center; }
-  .propositions .house_block {
-    text-align: center; }
-    .propositions .house_block .house {
-      left: 0px;
-      right: 0px;
-      margin: 0 auto; }
-    .propositions .house_block .item {
-      left: auto;
-      top: auto;
-      max-width: 49%;
-      position: relative;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 90px; }
-      .propositions .house_block .item .text p {
-        font-size: 15px; }
-      .propositions .house_block .item .elips {
-        width: 80px;
-        height: 80px;
-        top: 0px;
-        bottom: 0px;
-        margin: auto; }
-    .propositions .house_block .yellow_text {
-      max-width: 90%;
-      margin: 0 auto;
-      font-size: 15px;
-      padding-left: 30px;
-      margin-bottom: 20px;
-      text-align: left; }
-  .propositions .banks_block {
-    margin-bottom: 10px; }
-    .propositions .banks_block .item {
-      margin-bottom: 20px; }
-    .propositions .banks_block p {
-      display: block;
-      width: 100%;
-      margin: 0px;
-      margin-bottom: 15px;
-      text-align: center;
-      max-width: 100%; }
-      .propositions .banks_block p br {
-        display: none; }
-  .last_question {
-    text-align: center;
-    padding-bottom: 100px; }
-    .last_question .wrapper {
-      padding-top: 70px;
-      max-width: 100%;
-      width: 100%;
-      padding-left: 0px; }
-    .last_question .question_btn {
-      margin-right: 0px;
-      float: none;
-      display: block;
-      margin: 0 auto; }
-    .last_question .photo {
-      top: auto;
-      position: relative;
-      margin: 0 auto;
-      margin-bottom: 50px; }
-      .last_question .photo p {
-        -webkit-transform: rotate(-7deg);
-        -moz-transform: rotate(-7deg);
-        -ms-transform: rotate(-7deg);
-        -o-transform: rotate(-7deg);
-        transform: rotate(-7deg); }
-  .roof_main_section .shadow {
-    min-height: 700px;
-    padding-bottom: 160px; }
-  .roof_main_section .main_title {
-    font-size: 26px;
-    line-height: 1.3; }
-    .roof_main_section .main_title .small_text {
-      font-size: 22px; }
-  .roof_main_section .title_info {
-    font-size: 20px; }
-  .roof_main_section .surprise {
-    margin-left: 0px;
-    font-size: 16px;
-    line-height: 1.3;
-    padding-left: 75px; }
-    .roof_main_section .surprise:before {
-      width: 60px;
-      height: 60px;
-      top: 0px;
-      bottom: 0px;
-      margin: auto;
-      -webkit-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      background-size: 100% 100%; }
-    .roof_main_section .surprise br {
-      display: none; }
-  .roof_main_section .main_swiper .swiper-slide {
-    padding-left: 0px;
-    padding-right: 0px; }
-  .roof_special_offer {
-    margin-top: -40px; }
-  .genri_ford {
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .genri_ford .wrapper {
-      height: auto;
-      padding-top: 60px;
-      padding-bottom: 40px; }
-    .genri_ford .photo_block {
-      position: relative;
-      top: auto;
-      right: auto;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0px; }
-      .genri_ford .photo_block .photo {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin: 0 auto;
-        margin-bottom: 20px; }
-    .genri_ford .text_block {
-      padding-left: 20px;
-      max-width: 100%;
-      padding-right: 20px;
-      padding-top: 50px;
-      padding-bottom: 30px; }
-      .genri_ford .text_block:before {
-        width: 90px;
-        height: 65px;
-        top: 20px;
-        left: 0px; }
-      .genri_ford .text_block:after {
-        right: 0px;
-        width: 90px;
-        height: 65px;
-        bottom: 0px;
-        top: auto; }
-      .genri_ford .text_block p {
-        font-size: 22px;
-        line-height: 1.3; }
-  .roof_advantages {
-    text-align: center; }
-    .roof_advantages .line_1, .roof_advantages .line_2 {
-      display: none; }
-    .roof_advantages .item:nth-of-type(1), .roof_advantages .item:nth-of-type(4) {
-      padding-right: 0px;
-      padding-top: 0px; }
-    .roof_advantages .item:nth-of-type(3), .roof_advantages .item:nth-of-type(6) {
-      padding-left: 0px;
-      padding-top: 0px; }
-    .roof_advantages .item:nth-of-type(2) .inner, .roof_advantages .item:nth-of-type(5) .inner {
-      padding-top: 0px;
-      padding-bottom: 0px; }
-    .roof_advantages .item:nth-of-type(2) .ball, .roof_advantages .item:nth-of-type(5) .ball {
-      position: relative;
-      top: auto;
-      bottom: auto;
-      left: auto;
-      right: auto;
-      margin-top: 0px; }
-    .roof_advantages .item {
-      width: 49%;
-      display: inline-block;
-      vertical-align: top;
-      height: auto;
-      float: none; }
-      .roof_advantages .item .inner .text {
-        font-size: 16px; }
-    .roof_advantages .item:nth-of-type(2) .inner, .roof_advantages .item:nth-of-type(5) .inner {
-      -webkit-animation-delay: 0s;
-      -moz-animation-delay: 0s;
-      -o-animation-delay: 0s;
-      animation-delay: 0s; }
-    .roof_advantages .item:nth-of-type(2) .text, .roof_advantages .item:nth-of-type(5) .text {
-      -webkit-animation-delay: 0s;
-      -moz-animation-delay: 0s;
-      -o-animation-delay: 0s;
-      animation-delay: 0s; }
-    .roof_advantages .item:nth-of-type(3) .inner, .roof_advantages .item:nth-of-type(6) .inner {
-      -webkit-animation-delay: 0s;
-      -moz-animation-delay: 0s;
-      -o-animation-delay: 0s;
-      animation-delay: 0s; }
-    .roof_advantages .item:nth-of-type(3) .text, .roof_advantages .item:nth-of-type(6) .text {
-      -webkit-animation-delay: 0s;
-      -moz-animation-delay: 0s;
-      -o-animation-delay: 0s;
-      animation-delay: 0s; }
-  .products_section .section_title {
-    font-size: 24px; }
-  .products_section .item .item_info .text_block {
-    float: none;
-    width: 100%;
-    padding-right: 0px;
-    margin-bottom: 25px; }
-    .products_section .item .item_info .text_block p br {
-      display: none; }
-  .products_section .item .item_info .img_block {
-    padding-left: 0px;
-    float: none;
-    width: 100%; }
-  .products_section .item .item_list ul {
-    width: 50%;
-    max-width: 50%;
-    padding-right: 15px;
-    margin: 0px;
-    margin-bottom: 30px; }
-  .products_section .item .item_list ul:nth-of-type(2) {
-    width: 50%;
-    max-width: 50%; }
-  .products_section .item .item_list .open_form {
-    clear: both;
-    position: relative;
-    display: block;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    margin: 0 auto; }
-  .products_section .item_3 {
-    padding-bottom: 0px;
-    margin-bottom: 0px; }
-    .products_section .item_3 .text_block {
-      padding-right: 0px; }
-      .products_section .item_3 .text_block .open_form {
-        margin: 0 auto;
-        display: block; }
-    .products_section .item_3 .img {
-      position: relative;
-      right: auto;
-      top: auto;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 350px;
-      margin-bottom: 30px; }
-  .roof_form .form_wrapper {
-    max-width: 480px; }
-    .roof_form .form_wrapper .block_1, .roof_form .form_wrapper .block_2 {
-      float: none;
-      width: 100%;
-      margin-bottom: 30px;
-      padding-left: 140px; }
-    .roof_form .form_wrapper .block_3 {
-      width: 100%;
-      padding-left: 140px;
-      padding-right: 20px; }
-      .roof_form .form_wrapper .block_3 .input_block {
-        margin-right: 0px;
-        width: 100%; }
-  .discounts .section_title {
-    font-size: 20px; }
-  .discounts .wrapper {
-    width: 100%;
-    margin-left: 0px;
-    -webkit-border-radius: 20%;
-    border-radius: 20%;
-    min-height: 100px;
-    padding-top: 40px; }
-  .discounts .item {
-    margin-left: 0px;
-    width: 250px;
-    height: 250px; }
-    .discounts .item:before {
-      width: 90px;
-      height: 90px; }
-  .discounts .item_2 {
-    margin-right: 0px; }
-  .discounts .open_form {
-    clear: both;
-    margin-top: 25px; }
-  .design {
-    text-align: center; }
-    .design .wrapper {
-      padding-top: 60px;
-      max-width: 100%;
-      width: 100%;
-      padding-left: 0px;
-      padding-bottom: 40px; }
-    .design .open_btn {
-      margin-right: 0px;
-      float: none;
-      display: block;
-      margin: 0 auto; }
-    .design .photo {
-      top: auto;
-      position: relative;
-      margin: 0 auto;
-      margin-bottom: 50px; }
-  .why_us .section_title {
-    font-size: 25px; }
-  .why_us .col {
-    padding-right: 15px; }
-  .why_us .col:last-of-type {
-    padding-left: 15px; }
-  .why_us .item .item_title {
-    font-size: 18px;
-    line-height: 1.2; }
-  .why_us .item p {
-    font-size: 16px;
-    line-height: 1.25; }
-  .repairs .section_title {
-    font-size: 24px; }
-  .repairs .item .photo {
-    margin-right: 25px;
-    width: 200px;
-    margin-bottom: 10px;
-    margin-top: 0px; }
-  .repairs .item .item_title {
-    padding-top: 0px; }
-  .roof_gallery_swiper {
-    height: 400px; }
-  .roof_gallery .section_title {
-    line-height: 1.2;
-    font-size: 24px; }
-  .roof_gallery .slider_nav {
-    height: auto;
-    padding-top: 40px; }
-    .roof_gallery .slider_nav .open_form {
-      left: 10px;
-      max-width: 180px; }
-    .roof_gallery .slider_nav .arrows {
-      right: 10px; }
-  .repairs_main_section .shadow {
-    padding-top: 210px; }
-  .repairs_main_section p {
-    margin-bottom: 110px; }
-  .repairs_main_section .main_title {
-    font-size: 30px;
-    line-height: 1.2;
-    margin-bottom: 10px; }
-    .repairs_main_section .main_title span {
-      font-size: 82px;
-      line-height: 1.2; }
-  .repairs_special_offer .designer_block .photo {
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 20px; }
-  .repairs_special_offer .designer_block .text_block {
-    max-width: 100%;
-    float: none;
-    text-align: center; }
-  .repairs_special_offer .designer_block .offer_form label {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .repairs_special_offer .top_wrapper .section_title {
-    margin-bottom: 20px; }
-  .repairs_special_offer .top_wrapper .text_block {
-    max-width: 100%;
-    margin-bottom: 20px; }
-  .repairs_special_offer .top_wrapper .modal_btn {
-    position: relative;
-    margin: 0 auto;
-    display: block; }
-  .repairs_advantages .item {
-    min-height: 90px;
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
-    padding-left: 100px;
-    background-position: left center; }
-  .repairs_advantages .item_3 {
-    background-position: 10px center; }
-  .repairs_advantages .form_wrapper {
-    text-align: center; }
-    .repairs_advantages .form_wrapper .form_title {
-      text-align: center;
-      max-width: 100%; }
-    .repairs_advantages .form_wrapper .title_info {
-      text-align: center;
-      max-width: 100%;
-      margin-bottom: 15px; }
-    .repairs_advantages .form_wrapper .img {
-      right: auto;
-      top: auto;
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 30px; }
-  .repair_list .item {
-    display: block;
-    max-width: 400px;
-    margin: 0 auto;
-    margin-bottom: 30px; }
-    .repair_list .item .item_header {
-      height: 172px;
-      margin-bottom: 15px; }
-  .repair_list .item_1 .item_header {
-    background: url("../img/repairs/mobile_header_1.jpg") no-repeat top left;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .repair_list .item_2 .item_header {
-    background: url("../img/repairs/mobile_header_2.jpg") no-repeat top left;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .repair_list .item_3 .item_header {
-    background: url("../img/repairs/mobile_header_3.jpg") no-repeat top left;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .repairs_reviews .reviews_swiper .info_block {
-    float: none;
-    width: 100%; }
-    .repairs_reviews .reviews_swiper .info_block .top {
-      padding-right: 0px;
-      text-align: center; }
-      .repairs_reviews .reviews_swiper .info_block .top .photo {
-        position: relative;
-        right: auto;
-        top: auto; }
-      .repairs_reviews .reviews_swiper .info_block .top .slogan br {
-        display: none; }
-      .repairs_reviews .reviews_swiper .info_block .top .name {
-        padding-right: 10px; }
-  .repairs_reviews .reviews_swiper .img_block {
-    float: none;
-    width: 100%; }
-    .repairs_reviews .reviews_swiper .img_block .address, .repairs_reviews .reviews_swiper .img_block .work {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 20px;
-      margin-bottom: 10px; }
-  .repairs_reviews .wrapper .next_review {
-    top: 10px;
-    right: 5px;
-    z-index: 10; }
-  .repairs_reviews .wrapper .prev_review {
-    top: 10px;
-    left: 5px;
-    z-index: 10; }
-  .insurance .item {
-    padding-right: 15px; }
-    .insurance .item p br {
-      display: none; }
-    .insurance .item .printing {
-      display: none; }
-  .certificate_section .item {
-    height: auto;
-    margin-bottom: 40px; }
-    .certificate_section .item .col {
-      float: none;
-      width: 100%; }
-    .certificate_section .item .text_block {
-      padding-top: 0px;
-      margin-bottom: 20px; }
-  .repair_list .item_2 {
-    animation-delay: 0s; }
-  .repair_list .item_3 {
-    animation-delay: 0s; }
-  .repair_list .triangles_block .item:nth-of-type(2), .repair_list .triangles_block .item:nth-of-type(3), .repair_list .triangles_block .item:nth-of-type(4), .repair_list .triangles_block .item:nth-of-type(5) {
-    animation-delay: 0s; }
-  .split_main_section .shadow {
-    min-height: 700px;
-    padding-top: 210px;
-    padding-bottom: 200px; }
-  .split_main_section .for_title {
-    margin-bottom: 80px; }
-  .split_main_section .main_title {
-    font-size: 31px; }
-    .split_main_section .main_title span {
-      font-size: 38px; }
-  .split_special_offer .top_wrapper .section_title {
-    font-size: 26px;
-    line-height: 1.3; }
-  .split_special_offer .top_wrapper ul {
-    max-width: 100%;
-    margin-bottom: 40px; }
-  .split_special_offer .top_wrapper .modal_btn {
-    position: relative;
-    top: auto;
-    display: block;
-    margin: 0 auto; }
-  .split_services .item {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    max-width: 100%;
-    margin-bottom: 40px; }
-    .split_services .item .ball {
-      left: 0px;
-      right: 0px;
-      margin: 0 auto; }
-    .split_services .item .text_block {
-      text-align: center;
-      max-width: 400px;
-      margin: 0 auto;
-      min-height: 0px; }
-      .split_services .item .text_block p br {
-        display: none; }
-  .split_services .button_item .modal_btn {
-    margin-top: 20px; }
-  .split_specialist:before {
-    opacity: .2; }
-  .split_specialist .blue_wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 120px;
-    padding-right: 20px;
-    background-position: 10px center; }
-  .split_specialist .section_title {
-    line-height: 1.3;
-    font-size: 17px; }
-    .split_specialist .section_title span {
-      font-size: 21px; }
-  .split_specialist .second_title {
-    font-size: 21px; }
-  .split_specialist .bottom_wrapper {
-    padding-left: 20px;
-    padding-right: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-position: right 10px center; }
-  .split_advantages {
-    padding-top: 30px;
-    padding-bottom: 60px; }
-    .split_advantages .section_title {
-      font-size: 22px;
-      line-height: 1.3; }
-    .split_advantages .item {
-      margin-bottom: 30px;
-      padding-bottom: 30px; }
-  .split_download .section_title {
-    line-height: 1.3; }
-  .split_partners .section_title {
-    font-size: 24px;
-    line-height: 1.3; }
-  .split_partners .title_info {
-    font-size: 19px; } }
+.container{
+    min-width: 400px!important;
 
-@media screen and (max-width: 599px) {
-  .card_section {
-    padding-top: 300px; }
-  .windows_calculate .form_wrapper label {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    max-width: 320px; }
-  .windows_calculate .form_wrapper .submit_btn {
-    max-width: 320px; }
-  .discounts .item {
-    margin-left: 0px;
-    width: 210px;
-    height: 210px; }
-  .repairs .repairs_form label {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    max-width: 320px; }
-  .repairs .repairs_form .submit_btn {
-    max-width: 320px; }
-  .split_special_offer .top_wrapper .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-    .split_special_offer .top_wrapper .section_title:before {
-      width: 60px;
-      height: 60px; }
-  .split_special_offer .top_wrapper ul li {
-    margin-bottom: 20px; } }
-
-@media screen and (max-width: 529px) {
-  .card_section {
-    padding-top: 270px; }
-    .card_section .hand_block {
-      background-position: left top;
-      -webkit-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 170%; }
-  .yellow_section .section_title {
-    font-size: 24px; }
-  .yellow_section .cleaning_form label {
-    max-width: 300px;
-    margin: 0px;
-    margin-bottom: 15px; }
-  .yellow_section .cleaning_form .submit_btn {
-    max-width: 300px; }
-  .window_section .section_title {
-    font-size: 22px; }
-  .window_section .absolute_text {
-    font-size: 20px; }
-  .window_section .container .wrapper {
-    padding-top: 20px;
-    min-height: 350px; }
-    .window_section .container .wrapper .window {
-      opacity: .5;
-      left: 0px;
-      max-width: 440px;
-      width: 100%; }
-  .window_advantages .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .offer_form label {
-    max-width: 300px;
-    margin: 0px;
-    margin-bottom: 15px; }
-  .offer_form .submit_btn {
-    max-width: 300px;
-    margin-left: 0px; } }
-
-/* Extra Small Devices, Phones */
-@media screen and (max-width: 479px) {
-  .main_header .top_wrapper .tel_block {
-    max-width: 170px; }
-    .main_header .top_wrapper .tel_block > span {
-      display: none; }
-    .main_header .top_wrapper .tel_block a {
-      font-size: 16px;
-      padding-left: 20px; }
-      .main_header .top_wrapper .tel_block a:before {
-        font-size: 16px; }
-    .main_header .top_wrapper .tel_block table td:first-of-type {
-      display: none; }
-    .main_header .top_wrapper .tel_block table td {
-      padding-top: 3px; }
-  .main_header .bottom_wrapper .navbar .callback_btn {
-    width: 160px;
-    font-size: 15px; }
-  .main_footer {
-    padding-top: 20px; }
-    .main_footer .logo_block .logo_and_slogan {
-      float: none;
-      width: 100%; }
-    .main_footer .logo_block .tel_block {
-      float: none;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-      padding-top: 0px;
-      text-align: center;
-      margin-bottom: 20px; }
-      .main_footer .logo_block .tel_block a {
-        font-size: 21px; }
-    .main_footer .logo_block .social_block {
-      text-align: center;
-      margin-bottom: 40px; }
-      .main_footer .logo_block .social_block p {
-        margin-bottom: 15px; }
-    .main_footer .contacts_block {
-      width: 100%;
-      float: none;
-      padding-right: 0px;
-      text-align: center; }
-      .main_footer .contacts_block p {
-        font-size: 16px;
-        line-height: 1.4; }
-    .main_footer .footer_title {
-      margin-bottom: 20px; }
-    .main_footer .nav_block {
-      float: none;
-      width: 100%;
-      text-align: center; }
-      .main_footer .nav_block .footer_nav {
-        margin: 0 auto;
-        max-width: 100%; }
-        .main_footer .nav_block .footer_nav li {
-          margin-bottom: 10px; }
-          .main_footer .nav_block .footer_nav li a {
-            font-size: 16px; }
-    .main_footer .marketing_time {
-      position: relative;
-      bottom: auto;
-      right: auto;
-      text-align: center; }
-  .main_section .shadow {
-    padding-top: 140px;
-    min-height: 800px; }
-  .main_section .yellow_text {
-    font-size: 20px;
-    margin-bottom: 60px; }
-  .main_section .list_title {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 20px; }
-  .main_section ul {
-    padding-left: 0px; }
-    .main_section ul li {
-      font-size: 15px; }
-  .main_section .main_swiper .swiper-slide .number {
-    position: absolute;
-    top: 0px;
-    left: 5px; }
-  .card_section {
-    padding-top: 270px; }
-    .card_section .hand_block {
-      background-position: left top;
-      -webkit-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 170%; }
-    .card_section .section_title br {
-      display: none; }
-    .card_section p br {
-      display: none; }
-    .card_section .little_text {
-      margin-bottom: 35px; }
-    .card_section .countdown li span {
-      font-size: 42px;
-      min-width: 60px; }
-    .card_section .countdown li p {
-      font-size: 16px; }
-    .card_section .countdown li + li {
-      margin-left: 20px; }
-      .card_section .countdown li + li span:before {
-        width: 8px;
-        height: 8px;
-        top: -12px;
-        left: -17px; }
-      .card_section .countdown li + li span:after {
-        width: 8px;
-        height: 8px;
-        top: 12px;
-        left: -17px; }
-  .yellow_btn {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 18px; }
-  .section_title {
-    font-size: 23px; }
-  .services .section_title {
-    font-size: 23px; }
-  .services .item {
-    float: none;
-    width: 100%;
-    height: auto; }
-    .services .item .item_title {
-      height: auto;
-      font-size: 16px; }
-  .services .item:nth-child(2n+1) {
-    margin-right: 0px; }
-  .reputation {
-    padding-bottom: 10px; }
-    .reputation .section_title {
-      font-size: 20px; }
-  .advantages {
-    padding-bottom: 10px; }
-    .advantages .section_title {
-      font-size: 22px; }
-    .advantages .item {
-      float: none;
-      width: 100%;
-      margin-bottom: 0px; }
-      .advantages .item .inner {
-        padding-top: 20px;
-        padding-bottom: 50px; }
-    .advantages .item_1 .inner {
-      text-align: center; }
-    .advantages .item_1 .big_text {
-      font-size: 24px; }
-      .advantages .item_1 .big_text span {
-        font-size: 40px; }
-    .advantages .item_1 p {
-      font-size: 24px; }
-    .advantages .item_2 .inner {
-      background-position: center 0px; }
-      .advantages .item_2 .inner .big_text span {
-        font-size: 30px; }
-      .advantages .item_2 .inner p {
-        font-size: 24px; }
-    .advantages .item_3 .inner p {
-      font-size: 14px;
-      line-height: 1.3; }
-  .question_section .wrapper .section_title {
-    font-size: 24px; }
-  .partners .section_title {
-    font-size: 23px;
-    line-height: 1.2; }
-  .partners .wrapper {
-    padding-left: 38px;
-    padding-right: 38px; }
-    .partners .wrapper .swiper-button-prev {
-      left: -7px; }
-    .partners .wrapper .swiper-button-next {
-      right: -7px; }
-  .office_gallery .section_title {
-    font-size: 22px; }
-  .office_gallery .left_block, .office_gallery .right_block {
-    float: none;
-    width: 100%; }
-  .office_gallery .item {
-    margin-bottom: 10px !important; }
-  .team_section .wrapper {
-    width: auto;
-    margin-left: -10px;
-    margin-right: -10px; }
-  .team_section .section_title {
-    font-size: 22px; }
-  .team_section .title_info {
-    font-size: 16px; }
-  .team_section .mobile_photo {
-    display: block; }
-    .team_section .mobile_photo li {
-      width: 140px;
-      height: 140px;
-      margin: 0px 2px;
-      margin-bottom: 10px;
-      border-width: 3px; }
-      .team_section .mobile_photo li .text_block {
-        padding-top: 50px; }
-  .contacts #map {
-    height: 600px; }
-  .windows_main_section .main_title {
-    font-size: 24px; }
-  .windows_main_section .title_info {
-    font-size: 18px;
-    font-weight: 500; }
-  .windows_main_section .surprise {
-    font-size: 16px;
-    max-width: 385px;
-    margin-bottom: 70px; }
-    .windows_main_section .surprise:before {
-      top: -22px; }
-  .windows_main_section .main_swiper .swiper-slide {
-    padding-right: 15px; }
-  .special_offer {
-    margin-top: -80px; }
-    .special_offer .italic_p br {
-      display: none; }
-  .special_form label {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 15px; }
-  .special_form button {
-    margin-bottom: 15px; }
-  .windows_calculate {
-    padding-top: 40px; }
-    .windows_calculate .section_title {
-      line-height: 1.3; }
-    .windows_calculate .windows_type .left_block {
-      margin-bottom: 10px; }
-      .windows_calculate .windows_type .left_block:after {
-        content: "";
-        display: table;
-        clear: both; }
-    .windows_calculate .windows_type .item {
-      margin: 0px 5px;
-      margin-bottom: 15px; }
-      .windows_calculate .windows_type .item ul {
-        display: inline-block;
-        vertical-align: top;
-        display: block; }
-        .windows_calculate .windows_type .item ul:hover {
-          z-index: 50; }
-    .windows_calculate .windows_type .inputs_block {
-      padding-top: 0px;
-      width: 100%;
-      max-width: 100%;
-      position: relative;
-      float: none;
-      margin-bottom: 30px; }
-      .windows_calculate .windows_type .inputs_block label {
-        display: inline-block;
-        width: auto;
-        vertical-align: top;
-        margin: 0 20px; }
-  .windows_calculate .checkbox_block ul {
-    width: 100%;
-    float: none; }
-    .windows_calculate .checkbox_block ul li {
-      font-size: 14px; }
-      .windows_calculate .checkbox_block ul li span {
-        top: -2px; }
-  .windows_calculate .checkbox_block ul:first-of-type {
-    max-width: 100%;
-    width: 100%; }
-  .windows_calculate .open_form {
-    margin: 0 auto;
-    display: block;
-    float: none;
-    margin-top: 20px;
-    position: relative;
-    top: auto;
-    left: auto; }
-  .yellow_section .container:before {
-    opacity: .3; }
-  .yellow_section .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .window_section .container .wrapper {
-    padding-top: 10px;
-    min-height: 250px; }
-    .window_section .container .wrapper .window {
-      opacity: .12;
-      left: 0px;
-      max-width: 340px;
-      width: 100%; }
-  .window_section .container .wrapper .problem_list li {
-    margin-bottom: 15px; }
-  .accessories .section_title {
-    font-size: 21px; }
-  .accessories .item {
-    margin-left: 2px;
-    margin-right: 2px;
-    width: 140px; }
-    .accessories .item .img_block {
-      height: 150px; }
-  .download_section {
-    text-align: center; }
-    .download_section .wrapper {
-      text-align: center; }
-    .download_section .paper {
-      z-index: 0;
-      left: -20px;
-      opacity: .5;
-      width: 460px;
-      height: 298px;
-      -webkit-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      background-size: 100% 100%; }
-    .download_section .section_title {
-      position: relative;
-      max-width: 100%;
-      z-index: 2;
-      font-size: 20px; }
-    .download_section .title_info {
-      z-index: 2;
-      max-width: 100%;
-      font-size: 16px; }
-    .download_section .donwload_btn {
-      margin: 0 auto; }
-  .key_advantages .section_title {
-    font-size: 22px; }
-  .key_advantages .title_info span {
-    font-size: 20px; }
-  .key_advantages .item .inner p {
-    position: relative;
-    text-align: center;
-    padding: 0px;
-    font-size: 15px; }
-  .key_advantages .item .inner .first_p {
-    position: relative;
-    left: auto;
-    top: auto; }
-    .key_advantages .item .inner .first_p span {
-      font-size: 36px; }
-  .key_advantages .item_1 .first_p {
-    margin-bottom: 5px; }
-  .window_partners {
-    float: none;
-    width: 100%;
-    border: none;
-    padding-right: 0px; }
-    .window_partners:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .certificate {
-    padding-left: 0px;
-    float: none;
-    width: 100%; }
-    .certificate p {
-      margin-bottom: 30px; }
-    .certificate .fancybox {
-      width: 120px;
-      height: 168px;
-      margin: 0 10px;
-      margin-bottom: 20px; }
-  .windows_services .section_title {
-    font-size: 22px; }
-  .services_swiper {
-    max-width: 200px; }
-  .reviews .wrapper {
-    padding-left: 20px;
-    padding-right: 20px; }
-  .reviews .section_title {
-    font-size: 22px; }
-  .reviews_swiper .fancybox {
-    float: none;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px; }
-  .propositions {
-    padding-bottom: 30px; }
-    .propositions .section_title {
-      font-size: 19px;
-      line-height: 1.3; }
-    .propositions .house_block {
-      margin-bottom: 30px; }
-      .propositions .house_block .house {
-        left: -80px; }
-      .propositions .house_block .yellow_text {
-        line-height: 1.2;
-        padding-left: 20px;
-        padding-right: 25px;
-        text-align: center; }
-      .propositions .house_block .item {
-        width: 100%;
-        float: none;
-        max-width: 100%;
-        margin-left: 20px; }
-    .propositions .banks_block {
-      margin-bottom: 30px; }
-  .last_question .section_title {
-    font-size: 22px;
-    line-height: 1.3;
-    font-weight: bold; }
-  .last_question .photo p {
-    padding-right: 0px;
-    padding-left: 10px;
-    padding-top: 5px; }
-  .no_title_contacts #map {
-    height: 660px; }
-  .main_modal .modal-dialog {
-    margin-top: 20px; }
-    .main_modal .modal-dialog .modal-content {
-      padding-left: 20px;
-      padding-right: 20px; }
-      .main_modal .modal-dialog .modal-content .close {
-        right: 5px; }
-  .roof_main_section .shadow {
-    min-height: 700px;
-    padding-bottom: 160px; }
-  .roof_main_section .decor:before {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none; }
-  .roof_main_section .main_title {
-    font-size: 24px; }
-    .roof_main_section .main_title .small_text {
-      font-size: 20px; }
-  .roof_main_section .title_info {
-    font-size: 18px; }
-    .roof_main_section .title_info span {
-      font-size: 26px; }
-  .roof_main_section .surprise {
-    font-size: 15px;
-    padding-left: 70px; }
-    .roof_main_section .surprise:before {
-      width: 60px;
-      height: 60px;
-      top: -12px;
-      left: -5px;
-      -webkit-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      background-size: 100% 100%; }
-    .roof_main_section .surprise br {
-      display: none; }
-  .roof_special_offer {
-    margin-top: -40px; }
-  .genri_ford .photo_block p {
-    font-size: 20px;
-    line-height: 1.2; }
-    .genri_ford .photo_block p span {
-      font-size: 17px; }
-  .genri_ford .text_block {
-    padding-left: 10px;
-    padding-right: 10px; }
-    .genri_ford .text_block p {
-      font-size: 20px; }
-  .roof_advantages {
-    text-align: center;
-    padding-top: 30px; }
-    .roof_advantages .section_title {
-      font-size: 22px;
-      line-height: 1.3; }
-    .roof_advantages .item {
-      width: 100%;
-      display: block;
-      vertical-align: top;
-      height: auto;
-      float: none;
-      margin-bottom: 30px; }
-      .roof_advantages .item .inner {
-        max-width: 100%; }
-        .roof_advantages .item .inner .text {
-          font-size: 16px; }
-          .roof_advantages .item .inner .text br {
-            display: none; }
-        .roof_advantages .item .inner .ball {
-          width: 100px;
-          height: 100px; }
-          .roof_advantages .item .inner .ball p {
-            font-size: 50px; }
-  .products_section .section_title {
-    font-size: 20px;
-    line-height: 1.3; }
-  .products_section .item .item_title {
-    font-size: 20px;
-    text-align: center; }
-  .products_section .item .item_info .text_block {
-    float: none;
-    width: 100%;
-    padding-right: 0px;
-    margin-bottom: 25px; }
-    .products_section .item .item_info .text_block p br {
-      display: none; }
-  .products_section .item .item_info .img_block {
-    padding-left: 0px;
-    float: none;
-    width: 100%; }
-    .products_section .item .item_info .img_block .img {
-      width: 32%;
-      margin-left: 0px;
-      margin-right: 0px; }
-      .products_section .item .item_info .img_block .img .fancybox {
-        width: 100%; }
-      .products_section .item .item_info .img_block .img .img_type {
-        font-size: 14px; }
-      .products_section .item .item_info .img_block .img p {
-        font-size: 12px; }
-  .products_section .item .item_list ul {
-    width: 100%;
-    max-width: 100%;
-    padding-right: 0px;
-    margin: 0px;
-    margin-bottom: 20px; }
-    .products_section .item .item_list ul li {
-      min-height: 32px;
-      margin-bottom: 20px; }
-  .products_section .item .item_list ul:nth-of-type(2) {
-    width: 100%;
-    max-width: 100%; }
-  .products_section .item .item_list .open_form {
-    clear: both;
-    position: relative;
-    display: block;
-    top: auto;
-    right: auto;
-    left: auto;
-    bottom: auto;
-    margin: 0 auto; }
-  .roof_form_section {
-    padding-top: 50px; }
-    .roof_form_section .section_title {
-      font-size: 22px; }
-  .roof_form .form_wrapper {
-    max-width: 320px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    .roof_form .form_wrapper .block_1, .roof_form .form_wrapper .block_2 {
-      float: none;
-      width: 100%;
-      margin-bottom: 30px;
-      padding-left: 0px; }
-      .roof_form .form_wrapper .block_1:before, .roof_form .form_wrapper .block_2:before {
-        left: auto;
-        right: 0px;
-        margin: auto;
-        width: 130px;
-        opacity: .5; }
-    .roof_form .form_wrapper .block_3 {
-      width: 100%;
-      padding-left: 0px;
-      padding-right: 0px; }
-      .roof_form .form_wrapper .block_3:before {
-        display: none; }
-      .roof_form .form_wrapper .block_3 .input_block {
-        margin-right: 0px;
-        width: 100%; }
-  .discounts .wrapper {
-    -webkit-border-radius: 0px;
-    border-radius: 0px; }
-  .discounts .item {
-    float: none;
-    margin: 0 auto; }
-    .discounts .item:hover:before {
-      left: 0px;
-      right: 0px; }
-    .discounts .item:before {
-      width: 60px;
-      height: 60px;
-      left: 0px;
-      right: 0px;
-      margin: 0 auto; }
-  .discounts .item_1 {
-    margin-bottom: 30px; }
-  .design .section_title {
-    font-size: 19px; }
-    .design .section_title span {
-      font-size: 21px; }
-  .why_us .section_title {
-    font-size: 22px; }
-  .why_us .col {
-    float: none;
-    width: 100%;
-    padding-right: 0px; }
-  .why_us .col:last-of-type {
-    padding-left: 0px; }
-  .why_us .item {
-    min-height: 0px; }
-    .why_us .item .item_title {
-      font-size: 18px;
-      line-height: 1.2; }
-    .why_us .item p {
-      font-size: 16px;
-      line-height: 1.25; }
-  .products_section .item .item_title {
-    line-height: 1.3; }
-  .repairs .section_title {
-    font-size: 22px;
-    margin-bottom: 40px; }
-  .repairs .item .photo {
-    float: none;
-    width: 220px;
-    margin: 0 auto;
-    margin-bottom: 20px; }
-  .repairs .item .item_title {
-    padding-top: 0px;
-    font-size: 17px; }
-  .roof_gallery_swiper {
-    height: 300px; }
-  .roof_gallery {
-    padding-bottom: 60px; }
-    .roof_gallery .section_title {
-      font-size: 22px; }
-    .roof_gallery .slider_nav {
-      height: auto;
-      padding-top: 40px; }
-      .roof_gallery .slider_nav .open_form {
-        left: 5px;
-        max-width: 160px;
-        font-size: 14px; }
-      .roof_gallery .slider_nav .arrows {
-        right: 5px; }
-        .roof_gallery .slider_nav .arrows .prev_roof, .roof_gallery .slider_nav .arrows .next_roof {
-          width: 46px; }
-  .repairs_main_section .shadow {
-    padding-top: 190px;
-    min-height: 400px; }
-  .repairs_main_section p {
-    margin-bottom: 80px; }
-  .repairs_main_section .main_title {
-    font-size: 24px;
-    line-height: 1.2;
-    margin-bottom: 10px; }
-    .repairs_main_section .main_title span {
-      font-size: 62px;
-      line-height: 1.2; }
-  .repairs_main_section .title_info {
-    font-size: 22px; }
-  .repairs_special_offer {
-    margin-top: 0px; }
-  .repairs_special_offer .bottom_wrapper .designer_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .repairs_special_offer .designer_block .text {
-    font-size: 16px; }
-    .repairs_special_offer .designer_block .text br {
-      display: none; }
-  .repairs_special_offer .top_wrapper .section_title {
-    max-width: 100%;
-    margin-bottom: 20px; }
-    .repairs_special_offer .top_wrapper .section_title span {
-      font-size: 25px; }
-  .repairs_advantages .form_wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 25px; }
-    .repairs_advantages .form_wrapper .modal_form label {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-bottom: 15px; }
-    .repairs_advantages .form_wrapper .modal_form .submit_btn {
-      margin-left: 0px;
-      margin-right: 0px; }
-  .repair_list .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .repair_list .item {
-    display: block;
-    max-width: 260px; }
-  .repair_list .materials_wrapper .materials_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .repair_list .materials_wrapper p {
-    font-size: 16px; }
-  .reviews .wrapper {
-    padding-left: 0px;
-    padding-right: 0px; }
-  .repairs_reviews .reviews_swiper .img_block .address, .repairs_reviews .reviews_swiper .img_block .work {
-    margin: 0px;
-    margin-bottom: 10px;
-    display: block; }
-  .insurance .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .insurance .item {
-    height: auto;
-    min-height: 96px;
-    margin-bottom: 50px;
-    padding-left: 70px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px; }
-    .insurance .item p {
-      font-size: 16px;
-      line-height: 1.3; }
-    .insurance .item .number {
-      width: 60px;
-      top: 0px;
-      bottom: 0px;
-      display: block;
-      height: auto;
-      top: -15px;
-      bottom: -15px; }
-      .insurance .item .number h5 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        margin: auto;
-        height: 30px;
-        font-size: 32px; }
-  .insurance {
-    padding-bottom: 40px; }
-    .insurance .gray_block .wrapper .block_title {
-      font-size: 22px;
-      line-height: 1.3; }
-  .certificate_section .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-    .certificate_section .section_title br {
-      display: none; }
-  .certificate_section .item .text_block .title {
-    font-size: 32px; }
-  .certificate_section .item .text_block .price {
-    font-size: 44px; }
-  .repairs_last_question {
-    padding-bottom: 80px; }
-    .repairs_last_question .wrapper {
-      padding-top: 100px; }
-  .repair_list .triangles_block .item {
-    width: 100%;
-    height: 140px; }
-  .split_main_section .shadow {
-    min-height: 700px;
-    padding-top: 210px;
-    padding-bottom: 160px; }
-  .split_main_section .for_title {
-    margin-bottom: 80px; }
-  .split_main_section .main_title {
-    font-size: 26px; }
-    .split_main_section .main_title span {
-      font-size: 32px; }
-  .split_special_offer {
-    margin-top: -40px; }
-    .split_special_offer .section_title {
-      padding-left: 75px;
-      max-width: 100%; }
-      .split_special_offer .section_title br {
-        display: none; }
-  .split_specialist .blue_wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #01518E; }
-  .split_specialist .section_title {
-    line-height: 1.3;
-    font-size: 17px; }
-    .split_specialist .section_title span {
-      font-size: 21px; }
-  .split_specialist .bottom_wrapper {
-    padding-right: 20px;
-    background: #FFF; }
-    .split_specialist .bottom_wrapper p br {
-      display: none; }
-  .split_specialist .section_title span {
-    font-size: 20px; }
-  .split_download .section_title {
-    font-size: 20px; }
-  .split_download .paper {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    margin: 0 auto;
-    width: 300px;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%; }
-  .split_partners .section_title {
-    font-size: 22px;
-    line-height: 1.5; }
-  .split_partners .title_info {
-    font-size: 18px; }
-  .maintenance .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  .maintenance .blue_wrapper {
-    padding-left: 20px;
-    padding-right: 20px; }
-    .maintenance .blue_wrapper:before {
-      display: none; }
-  .order_today .section_title {
-    font-size: 22px;
-    line-height: 1.3; }
-  #to_top {
-    width: 38px;
-    height: 38px; } }
-
-@media screen and (max-width: 399px) {
-  .main_header .bottom_wrapper .navbar .callback_btn {
-    width: 110px;
-    font-size: 14px; }
-  .card_section {
-    padding-top: 240px; }
-    .card_section .hand_block {
-      background-position: left top;
-      -webkit-background-size: 180%;
-      -o-background-size: 180%;
-      background-size: 180%; }
-  .special_offer .section_title {
-    max-width: 240px; }
-  .roof_special_offer .section_title {
-    max-width: 100%; }
-  .split_special_offer .section_title {
-    max-width: 100%; } }
-
-@media screen and (max-width: 359px) {
-  .card_section {
-    padding-top: 210px; }
-  .windows_main_section .surprise {
-    margin-bottom: 50px; } }
+}

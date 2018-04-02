@@ -7,36 +7,12 @@
 	<meta name="keywords" content="Home Climate, бесшумные кондиционеры от ведущих производителей">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="libs/animate/dropdown.css">
-	<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="libs/selectstyle/jquery.formstyler.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link href="http://allfont.ru/allfont.css?fonts=roboto-bold" rel="stylesheet" type="text/css" />
-  <!-- <link href="http://allfont.ru/allfont.css?fonts=pt-mono" rel="stylesheet" type="text/css" /> -->
-  <!-- <link href="http://allfont.ru/allfont.css?fonts=bodoni" rel="stylesheet" type="text/css" /> -->
-  <link href="http://allfont.ru/allfont.css?fonts=bebas" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">   
-</head>
-<body>
 
+<style>
 
-	<div id="global-wrapper">
-
-
-
-
- <style>
-.wrapper {
-margin:auto;
-height: 100%;    
-}
 /*Стили прелоадера */
 
 #pagetransition {
@@ -101,11 +77,9 @@ height: 100%;
   background-size: contain;
 }
 
-
-
 div.top_headerline {
 min-height: 110px;
-background-color: #fff;
+background-color: transparent;
 position: absolute;
 top: 0;
 z-index: 2;
@@ -114,15 +88,13 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-/*Видео шапка*/ 
+.wrapper {
+margin:auto;
+height: 100%;  
 
-/*.v-header{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  color:#fff;
-  
-}*/
+}
+
+/*Видео шапка*/ 
 
 img.header_logo {
   display: block;
@@ -138,27 +110,42 @@ p.main_activity {
 padding-left: 20px;
   border-left: 2px solid crimson;
   font-size: 14px;
-  color: #000;
+
+  color: #fff;
 }
 
 p.main_activity b {
   font-family: "Open Sans Bold";
-  color: #000;
+  color: #fff;
 }
+
+
+button.buy_btn.modal_button {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+
+  min-width: 180px;
+}
+
 
 p.comfort {
   font-size: 13px;
   text-align: center;
   margin-top: 10px;
-  color: #000;
+ 
+  color: #fff;
 }
 
-div.model {
+div.model,
+div .model_fixed {
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   margin-top: 20px;
 }
+
+
 
 .v-header{
   height:100vh;
@@ -179,6 +166,9 @@ div.model {
 .fullscreen-video-wrap video{
   min-height:100%;
   min-width:100%;
+
+    
+
 }
 
 .header-overlay{
@@ -186,7 +176,7 @@ div.model {
   position: absolute;
   top:0;
   left:0;
-  width:100vw;
+  width:100vw!important;
   z-index:1;
   background:#225470;
   opacity:0.8;
@@ -209,23 +199,6 @@ font-size:40px;
   display:block;
   padding-bottom:2rem;
 }
-
-/*.btn{
-  background: #34b3a0;
-  color:#fff;
-  font-size:1.2rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-}*/
-
-/*.section{
-  padding:20px 0;
-}
-
-.section-b{
-  background:#333;
-  color:#fff;
-}*/
 /*Меню сайта */
 
 .close_menu {
@@ -259,6 +232,7 @@ font-size:40px;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   z-index: 100;
+
 }
 .open:hover {
   opacity: 0.8;
@@ -294,18 +268,6 @@ font-size:40px;
 
   
 }
-
-/*.*//*open span:nth-child(3):hover{
- width: 80px;
- height: 80px;
- background-color: transparent;
-
-}*/
-
-/*span.cls:hover {
-z-index: 800;
-background-color: red;
-}*/
 
 .sub-menu {
   -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -361,14 +323,14 @@ text-transform: uppercase;
   float: left;
   line-height: 40px;
   padding-right: 20px;
-	padding-left: 20px;
+  padding-left: 20px;
 }
 .sub-menu li a:hover {
-	background-color: crimson;
-	min-width: 180px;
-	width: 100%;
-	color:#fff;
-	text-align:right;
+  background-color: crimson;
+  min-width: 180px;
+  width: 100%;
+  color:#fff;
+  text-align:right;
   text-decoration: none!important;
 
 }
@@ -399,8 +361,7 @@ text-transform: uppercase;
 
 .oppenned span:first-child {
   background-color: #fff;
-  /*z-index: 103;
-  position: relative;*/
+ 
 }
 
 
@@ -485,6 +446,7 @@ text-transform: uppercase;
     float: right;
     margin-left: 10px;
 
+
 }
 
 .header_phoneblock{
@@ -493,11 +455,10 @@ text-transform: uppercase;
 
 
 .header_phone {
-    color: #000;
-    font-size: 20px;
+      font-size: 20px;
     display: inline;
     margin-bottom: 13px;
-   
+   color: #fff;
     font-family: "Open Sans SemiBold";
 
 }
@@ -506,14 +467,9 @@ span.icon0:before {
   content: "\f095";
           font-family: "FontAwesome";
           font-size: 19px;
-          color:#000;
+        
+          color: #fff;
 }
-
-
-
-
-
-
 
 
 b.price {
@@ -537,7 +493,8 @@ div.color-choose {
 .si-phone a.phone-link {
     color: #fff;
     display: inline!important;
-    font: 22 Open Sans Bold!important;
+    font-size: 22px;
+    font-family:"Open Sans Bold";
     -webkit-transition: all 0.2s ease-out 0s;
     -moz-transition: all 0.2s ease-out 0s;
     -o-transition: all 0.2s ease-out 0s;
@@ -569,42 +526,45 @@ div.color-choose {
     text-align: left;
 }
 
-
-
   </style>
-
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="libs/animate/dropdown.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/selectstyle/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">   
 </head>
- 
-
-
-
 <body>
 
-<div id="preloader">
+
+	<div id="global-wrapper">
+<!-- <div id="preloader">
   <div id="pagetransition"> 
   <div class="square white"></div>  
   <div class="square grey"></div>  
   <div class="vic-gb"></div>
   </div>
 </div>
-
+ -->
 
 
 <header id="main" class="v-header ">
   <div class="container-fluid top_headerline">
     <div class="container">
       <div class="col-md-12">
-        <div class="col-md-2">
-          <img class="header_logo " src="img/blank_logo.png" alt="Логотип">
+        <div class="col-md-2 col-xs-3">
+          <img class="header_logo " src="img/white_logo.png" alt="Логотип">
           <p class="comfort">С нами комфортно</p>
          </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-xs-4">
           <p class="main_activity"><b>Продажа и установка <br> кондиционеров</b><br> в городе Находка и<br> Находкинском<br> городском округе</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-xs-8">
            <p class="header_phoneblock"><span class="page_icons icon0"></span>
             <a href="tel:84236799766" class="header_phone">+7 (4236) 799-766  </a>
-              <a href="tel:89140690228" class="header_phone">+7 914 069-02-28  </a><br>
+              <a href="tel:89140690228" class="header_phone second_phone">+7 914 069-02-28  </a><br>
           </p> 
       </div>
 
@@ -695,7 +655,7 @@ div.color-choose {
 
       
 <div class="svg">
-       <a class="button_svg" href="#" data-toggle="modal" data-target="#main_modal">
+       <a class="button_svg" href="#" data-toggle="modal" data-target="#bonus_modal">
         <svg class="site_buttons">
             <rect height="50" width="250" fill="transparent" />
         </svg>
@@ -845,11 +805,11 @@ div.color-choose {
 <section id="order_specialist" class="site-section  ">
     <div class="container">
       <div class="col-md-12">
-         <div class="col-md-5">        
+         <div class="col-md-5 col-sm-12">        
         <img class="section_image wow slideInLeft" src="img/3.jpg" alt="Кондиционер в интерьере">
     </div>
      
-      <div class="col-md-7 wow slideInRight">
+      <div class="col-md-7 col-sm-12 wow slideInRight">
         <h2 class="section_titlewhite">Помните!</h2>
         <p class="section_textwhite">Срок службы и качество работы сплит­системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>   
         <h2 class="section_titlewhite">А ТАКЖЕ!</h2>
@@ -857,7 +817,7 @@ div.color-choose {
         <h2 class="section_titlewhite"><span>Закажите выезд специалиста</span> <br><span class="section_titlewhite"> для индивидуального расчета мощности сплит-системы </span></h2>
         <h3 class="section_textwhite">АБСОЛЮТНО БЕСПЛАТНО</h3>
 
-         <button type="button" class="callback_btn"  data-toggle="modal" data-target="#main_modal">Заказать БЕСПЛАТНЫЙ выезд</button>        
+         <button type="button" class="callback_btn"  data-toggle="modal" data-target="#order_master">Заказать БЕСПЛАТНЫЙ выезд</button>        
         
       </div>
       
@@ -974,7 +934,7 @@ div.color-choose {
       <h2 class="section_titlewhite">УСЛУГИ</h2>
         <div class="row">
             </div>
-            <div class="col-md-3 col-sm-3 wow slideIneft">
+            <div class="col-md-3 col-sm-6 wow slideIneft">
               <div class="col-md-12">
                 <div class="col-md-2">
                    <span class="page_icons icon11"></span>
@@ -1001,7 +961,7 @@ div.color-choose {
             </div>
           </div>
              
-             <div class="col-md-5 col-sm-5"> 
+             <div class="col-md-5 col-sm-6"> 
 
              <div class="col-md-12">
                 <div class="col-md-2">
@@ -1034,7 +994,7 @@ div.color-choose {
           <a href="test.html" class="callback_btn">Расчитать мощность кондиционера</a>
             </div> 
 
-            <div class="col-md-4 col-sm-4 wow slideInRight"> 
+            <div class="col-md-4 col-sm-12 wow slideInRight"> 
         <img class="section_image " src="img/5.jpg" alt="Кондиционер в интерьере">       
       </div>
         
@@ -1048,7 +1008,7 @@ div.color-choose {
 
 
   <!-- SPLIT CERTIFICATE -->
-  <section class="split_certificate site-section  ">
+  <div class="split_certificate site-section  ">
     <div class="container">
       <div class="wrapper">     
         <div class="certificate_swiper">
@@ -1096,7 +1056,7 @@ div.color-choose {
         
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- END SPLIT CERTIFICATE -->
 
@@ -1109,62 +1069,60 @@ div.color-choose {
        <p class="section_textwhite">позволяет подобрать оборудование  с учетом всех ваших пожеланий</p>
         <h3 class="section_textwhite">Самые популярные модели сплит-систем</h3>
         <div class="col-md-12">
-         
-
-<div class="col-md-4 one_product"> 
+           <div class="col-md-4 one_product"> 
              <div class="product_item product1">       
-                <p class="productor">Производитель: AUX серия FJ</p>          
+                <p class="productor">Производитель: AUX <br> серия FJ</p>          
                 <div class="product_card">                   
-                    <img data-image="black" class="active" src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/main.png" alt="">
-                    <img data-image="grey"  src="catalog/low/AUX серия FJ ASW-H07A4FJ-SR1/main.png" alt=""> 
-                    <img data-image="white" src="catalog/low/AUX серия FJ ASW-H07A4FJ-WR1/main.jpg" alt="">
-                    
-                </div>
-              <div class="color-choose">               
-                 <input  data-image="black" type="radio" id="black" name="color" value="black" checked>
-                 <label name="black" for="black"><span></span></label>
-                 <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>      
-                <input  data-image="white" type="radio" id="white" name="color" value="white">
-                <label name="white" for="white"><span></span></label>    
+                    <img id="black_cond" data-image="черный" src="catalog/low/FJ/black.png" alt="Кондиционер AUX FJ">
+                    <img id="grey_cond" data-image="серый"  src="catalog/low/FJ/grey.png" alt="Кондиционер AUX FJ"> 
+                    <img id="white_cond" class="active"  data-image="белый" src="catalog/low/FJ/white.png" alt="Кондиционер AUX FJ">
+                </div>                   
+                
+              <div class="color-choose">                 
              </div>
 
+             <span class="credit">Рассрочка 0%</span>
+
            <p class="model_title"></p>
-            <p class="select_square">Выбрать площадь помещения</p>
+
+            <p class="select_square">Выбрать цвет кондиционера</p>
 
             <select name="model" class="userselect">
-              <option name="Модель: ASW-H07A4/FJ-WR1" value="
+              <option data-id="Модель: <br> ASW-H07A4/FJ-WR1" value="
+                Площадь помещения: 20 м² <br>
                 Бесшумный<br>   
                 Биофильтр<br>   
                 Осушение воздуха<br>    
                 <b>Наличие:</b> Есть в наличии  <br>  
                 <b class='price'>14 300 руб.</b>  <br>  
-                Был заказан 106 раз">20 м²
+                Был заказан 106 раз">Белый
                 </option>
 
-              <option name="Модель: ASW-H07A4/FJ-SR1" value="   
+              <option data-id="Модель: <br> ASW-H07A4/FJ-SR1" value=" 
+                Площадь помещения: 20 м² <br>  
                 Бесшумный<br>   
                 Биофильтр <br>  
                 Осушение воздуха  <br>  
                 <b>Наличие</b> : Есть в наличии  <br> 
                 <b class='price'>14 300 руб.  </b> <br> 
-                Был заказан 98 раз ">20 м²
+                Был заказан 98 раз ">Серый
                 </option> 
 
-               <option name="Модель: ASW-H07A4/FJ-BR1" value="     
+               <option data-id="Модель: <br> ASW-H07A4/FJ-BR1" value="
+                 Площадь помещения: 20 м² <br>     
                 Бесшумный <br>  
                 Биофильтр <br>  
                 Осушение воздуха <br>   
                 <b>Наличие</b> : Есть в наличии <br>  
                 <b class='price'>14 300 руб.</b> <br>   
-                Был заказан 91 раз">20 м²
+                Был заказан 91 раз">Черный
                 </option> 
             </select>
              
            <div class="model"></div>
            <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objFJ">Подробнее</button>
         </div>
      </div>
    </div>
@@ -1173,31 +1131,21 @@ div.color-choose {
 
  <div class="col-md-4 one_product"> 
              <div class="product_item product2">       
-                <p class="productor">Производитель: AUX серия LK</p>          
+                <p class="productor">Производитель: AUX <br>серия LK</p>          
                 <div class="product_card">                   
-                    <img data-image="white" class="active" src="catalog/low/AUX серия LK ASW-H07A4LK-700R1/main.jpg" alt="">
-                    <!-- <img data-image="brown" src="catalog/medium/AUX серия LV Design Inverter ASW-H09A4LV-700R1DI/main.png" alt="">
-                    <img data-image="grey" class="active" src="catalog/premium/AUX серия LA Exclusive Inverter ASW-H09A4LA600R1DI/main.jpg" alt="">  -->
+                    <img data-image="белый" class="active" src="catalog/low/LK/main.png" alt="Кондиционер AUX LK">                   
                 </div>
                 
-                <div class="color-choose">
-               
-                 <!-- <input data-image="white" type="radio" id="white" name="color" value="white" checked>
-                 <label name="white" for="white"><span></span></label>
-              
-                 <input data-image="brown" type="radio" id="brown" name="color" value="brown">
-                <label name="brown" for="brown"><span></span></label>
-             
-                <input data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label> -->
-              
-             </div>
+                <div class="color-choose">               
+                 </div>
+
+                 <span class="credit">Рассрочка 0%</span>
                <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
 
-            <select id="users" name="model" class="userselect">                 
-                 <option selected="selected"  name="Модель: ASW-H07A4/LK-700R1" value="
+            <select  name="model" class="userselect">                 
+                 <option selected="selected"  data-id="Модель: <br>ASW-H07A4/LK-700R1" value="
                     Бесшумный <br>  
                     Угольный фильтр с ионами серебра <br>   
                     Автоматические вертикальные жалюзи <br>   
@@ -1205,15 +1153,15 @@ div.color-choose {
                     <b class='price'>17 900 руб.</b> <br>  
                     Был заказан 105 раз">21м²
                 </option>
-                 <option name="Модель: ASW-H09A4/LK-700R1 " value="
+                 <option data-id="Модель: <br>ASW-H09A4/LK-700R1 " value="
                     Бесшумный <br>
                     Угольный фильтр с ионами серебра <br> 
                     Автоматические вертикальные жалюзи <br> 
                     <b>Наличие</b>: Есть в наличии <br>
-                    <b class='price'>19 300 руб. <br>
+                    <b class='price'>19 300 руб.</b> <br>
                     Был заказан 56 раз  
                     ">25м²</option>
-                 <option name="Модель: ASW-H12A4/LK-700R1 " value=" 
+                 <option data-id="Модель: <br>ASW-H12A4/LK-700R1 " value=" 
                     Бесшумный <br>  
                     Угольный фильтр с ионами серебра  <br>  
                     Автоматические вертикальные жалюзи <br>   
@@ -1221,7 +1169,7 @@ div.color-choose {
                     <b class='price'>22 800 руб.</b><br>   
                     Был заказан 56 раз">35м²
                 </option>
-               <option name="Модель: ASW-H18A4/LK-700R1 " value="
+               <option data-id="Модель: <br>ASW-H18A4/LK-700R1 " value="
                   Бесшумный <br>
                   Угольный фильтр с ионами серебра  <br>
                   Автоматические вертикальные жалюзи <br> 
@@ -1231,7 +1179,7 @@ div.color-choose {
                   ">50²
                 </option>
 
-                <option name="Модель: ASW-H24A4/LK-700R1 " value=" 
+                <option data-id="Модель: <br>ASW-H24A4/LK-700R1 " value=" 
                   Бесшумный   <br>
                   Угольный фильтр с ионами серебра <br>   
                   Автоматические вертикальные жалюзи <br>   
@@ -1243,7 +1191,7 @@ div.color-choose {
            <div class="model"></div> 
            <div class="buttons_group">          
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objLK">Подробнее</button>
         </div>
      </div>
    </div>
@@ -1252,33 +1200,25 @@ div.color-choose {
 
    <div class="col-md-4 one_product"> 
              <div class="product_item product2">       
-                <p class="productor">Производитель: AUX серия LK <br>
+                <p class="productor">Производитель: AUX <br>серия LK 
                 Standard Inverter</p>          
                 <div class="product_card">                   
                     <!-- <img data-image="white" src="catalog/low/AUX серия LK ASW-H07A4LK-700R1/main.jpg" alt="">
                     <img data-image="brown" src="catalog/medium/AUX серия LK Standard Inverter ASW-H12A4LK-700R1DI/main.jpg" alt=""> -->
-                    <img data-image="grey" class="active" src="catalog/low/AUX серия LK ASW-H07A4LK-700R1/main.jpg" alt=""> 
+                    <img class="active" data-image="белый" src="catalog/low/LK/main.png" alt="Кондиционер AUX LK">   
                 </div>
 
                  
                 <div class="color-choose">
                
-                 <!-- <input  data-image="white" type="radio" id="white" name="color" value="white" checked>
-                 <label name="white" for="white"><span></span></label>
-              
-                 <input  data-image="brown" type="radio" id="brown" name="color" value="brown">
-                <label name="brown" for="brown"><span></span></label>
-              
-                <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label> -->
-              
              </div>
+             <span class="credit">Рассрочка 0%</span>
              <p class="model_title"></p>
              
             <p class="select_square">Выбрать площадь помещения</p>
 
             <select name="model" class="userselect">
-              <option name="Модель: ASW-H09A4/LK-700R1DI" value="
+              <option data-id="Модель:<br> ASW-H09A4/LK-700R1DI" value="
  
 DC-инвертор <br>    
 Угольный фильтр с ионами серебра<br>      
@@ -1289,7 +1229,7 @@ DC-инвертор <br>
 Был заказан 131 раз">25 м²
                 </option>
 
-              <option name="Модель:ASW-H12A4/LK-700R1DI" value="    
+              <option data-id="Модель:<br>ASW-H12A4/LK-700R1DI" value="    
 
 DC-инвертор  <br>  
 Угольный фильтр с ионами серебра <br>    
@@ -1301,7 +1241,7 @@ DC-инвертор  <br>
 ">35 м²
                 </option> 
 
-               <option value="<b>Модель: ASW-H18A4/LK-700R1DI   
+               <option value="  
    
 DC-инвертор<br>    
 Угольный фильтр с ионами серебра <br>    
@@ -1309,11 +1249,11 @@ DC-инвертор<br>
 Автоматические вертикальные жалюзи <br>    
 <b>Наличие</b>: Есть в наличии <br>   
 <b class='price'>50 700 руб.</b> <br>   
-Был заказан 52 раз    
+Был заказан 52 раза    
 ">50 м²
                 </option> 
 
-               <option name="Модель: ASW-H24A4/LK-700R1DI" value="   
+               <option data-id="Модель: <br>ASW-H24A4/LK-700R1DI" value="   
   
 DC-инвертор  <br>  
 Угольный фильтр с ионами серебра    
@@ -1333,7 +1273,7 @@ DC-инвертор  <br>
            <div class="model"></div>   
            <div class="buttons_group">        
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objLKS">Подробнее</button>
         </div>
      </div>
    </div>
@@ -1342,32 +1282,27 @@ DC-инвертор  <br>
   </div> <!-- 12 колонок -->
 
 <div class="col-md-12">
-          <div class="col-md-4"> 
+          <div class="col-md-4 one_product"> 
              <div class="product_item product2">       
-                <p class="productor">Производитель: AUX серия LV <br> Design Inverter         
-</p>          
-                <div class="product_card">                   
-                    <!-- <img data-image="white" src="catalog/low/AUX серия LK ASW-H07A4LK-700R1/main.jpg" alt=""> -->
-                    <img data-image="brown" src="catalog/medium/AUX серия LV Design Inverter ASW-H09A4LV-700R1DI/main.png" alt="">
-                    <img data-image="grey" class="active" src="catalog/medium/AUX серия LV Design Inverter ASW-H09A4LV-800R1DI/main.jpg" alt=""> 
+                <p class="productor">Производитель: AUX <br> серия LV Design Inverter</p>        
+                <div class="product_card">
+                    <img data-image="коричневый" src="catalog/medium/LV/brown.png" alt="AUX серия LV">
+                    <img data-image="бежевый" class="active" src="catalog/medium/LV/beige.png" alt="AUX серия LV"> 
                 </div>
-                <div class="color-choose  ">             
-                 
-              
-                 <input data-image="brown" type="radio" id="brown" name="color" value="brown">
-                <label name="brown" for="brown"><span></span></label>
-             
-                <input data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>
-              
-             </div>
+                <div class="color-choose"> 
+                 <input data-image="коричневый" type="radio" class="brown" name="color" value="коричневый">
+                <label data-color="коричневый"><span></span></label>
+                <input data-image="бежевый" type="radio" class="beige" name="color" value="бежевый">
+                <label data-color="бежевый"><span></span></label>              
+                </div>
+                <span class="credit">Рассрочка 0%</span>
 
              <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
 
-            <select id="users" name="model" class="userselect">                 
-                 <option name="Модель: ASW-H09A4/LV-800R1DI" selected="selected"  value="  
+            <select name="model" class="userselect">                 
+                 <option data-id="Модель: <br>ASW-H09A4/LV-800R1DI" selected="selected"  value="  
   
 DC-инвертор  <br> 
 Биофильтр <br>  
@@ -1379,20 +1314,7 @@ DC-инвертор  <br>
 ">25м²
                 </option>
 
-<option name=" Модель: ASW-H09A4\LV-700R1DI" value="
- 
-DC-инвертор<br> 
-Биофильтр <br>
-Бесшумный <br>
-Ионизатор<br> 
-<b>Наличие</b>: Есть в наличии <br>
-<b class='price'>44 300 руб.</b><br> 
-Был заказан 99 раз
-
-                  ">25²
-                </option>
-
-                 <option name="Модель:ASW-H12A4/LV-800R1DI " value="  
+<option data-id="Модель: <br>ASW-H12A4/LV-800R1DI " value="  
   
 DC-инвертор   <br>
 Биофильтр  <br> 
@@ -1400,60 +1322,40 @@ DC-инвертор   <br>
 Ионизатор  <br> 
 <b>Наличие</b>: Есть в наличии  <br> 
 <b class='price'>47 000 руб. </b>  <br>
-Был заказан 64 раз    
-
-                    ">35м²</option>
-            
-
-                <option name="Модель: ASW-H12A4\LV-700R1DI" value="
-DC-инвертор <br>  
-Биофильтр <br>  
-Бесшумный <br>  
-Ионизатор <br>  
-<b>Наличие</b>: Есть в наличии  <br> 
-<b class='price'>47 000 руб.</b> <br>  
-Был заказан 64 раз    
-">35²
-                </option>
-          </select>
+Был заказан 64 раза">35м²</option>
+</select>
           
            <div class="model"></div>  
            <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objLV">Подробнее</button>
         </div>
      </div>
    </div>
 
 
-<div class="col-md-4"> 
-             <div class="product_item product111111">       
-                <p class="productor"> Производитель: AUX серия LA Exclusive Inverter</p>          
+<div class="col-md-4 one_product"> 
+             <div class="product_item product">       
+                <p class="productor"> Производитель: AUX <br> серия LA Exclusive Inverter</p>          
                 <div class="product_card">                   
                     
-                    <img data-image="grey" class="active" src="catalog/premium/AUX серия LA Exclusive Inverter ASW-H09A4LA600R1DI/main.jpg" alt="">
-                    <img data-image="brown" src="catalog/premium/AUX серия LA Exclusive Inverter ASW-H09A4LA800R1DI/main.png" alt="">
+                    <img data-image="серый" class="active" src="catalog/premium/LA/grey.png" alt="AUX серия LA">
+                    <img data-image="коричневый" src="catalog/premium/LA/brown.png" alt="AUX серия LA">
                     
                 </div>
                 <div class="color-choose">
-               
-                 <!-- <input  data-image="white" type="radio" id="white" name="color" value="white" checked>
-                 <label name="white" for="white"><span></span></label> -->
-              
-                 <input  data-image="brown" type="radio" id="brown" name="color" value="brown">
-                <label name="brown" for="brown"><span></span></label>
-              
-                <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>
-              
-             </div>
+                <input  data-image="коричневый" type="radio" class="brown" name="color" value="коричневый">
+                <label data-color="коричневый"><span></span></label>            
+                <input  data-image="серый" type="radio" class="grey" name="color" value="серый">
+                <label data-color="серый"><span></span></label>              
+                </div>
+                <span class="credit">Рассрочка 0%</span>
 
               <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
 
             <select name="model" class="userselect">
-              <option name="Модель: ASW-H09A4\LA800R1DI" value="   
-   
+<option data-id="Модель: <br>ASW-H09A4\LA800R1DI" value="   
 DC-инвертор  <br> 
 Управление через WI-FI <br>   
 Обдув 4D  <br>  
@@ -1463,12 +1365,8 @@ DC-инвертор  <br>
 <b>Наличие</b>: Есть в наличии <br>  
 <b class='price'>51 900 руб.</b> <br>  
 Был заказан 64 раз    
-">25 м²
-                </option>
-
-              <option name="Модель: ASW-H12A4/LA800R1DI" value="  
-  
-DC-инвертор<br>   
+">25 м²</option>
+<option data-id="Модель: <br>ASW-H12A4/LA800R1DI" value="DC-инвертор<br>   
 Управление через WI-FI <br>   
 Обдув 4D <br>   
 Биофильтр <br>  
@@ -1478,76 +1376,637 @@ DC-инвертор<br>
 <b class='price'>57 900 руб.</b> <br>  
 Был заказан 64 раз    
 ">35 м²
-                </option> 
-
-               
-            </select>
+</option> 
+</select>
            
            <div class="model"></div>  
             <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objLA">Подробнее</button>
         </div>
      </div>
    </div>
 
 
 
-   <div class="col-md-4"> 
-             <div class="product_item product111111">       
-                <p class="productor">Производитель: AUX серия Kids Inverter</p>          
-                <div class="product_card">                 
-                    
-                    <img data-image="pink" src="catalog/premium/AUX серия Kids Inverter ДЕВОЧЕК AWG-H09PNR1DI AS-H09R1DI/pink.gif" alt="">
-                    <img data-image="blue" class="active" src="catalog/premium/AUX серия Kids Inverter МАЛЬЧИКОВ AWB-H09BCR1DI AS-H09R1DI/blue.gif" alt=""> 
-                </div>
-                <div class="color-choose">              
-                 
-                 <label checked name="white" for="white"><span></span></label>
-              
-                 <input  data-image="pink" type="radio" id="pink" name="color" value="brown">
-                <label name="pink" for="pink"><span></span></label>
-              
-                <input  data-image="blue" type="radio" id="blue" name="color" value="blue">
-                <label name="blue" for="blue"><span></span></label>
-              
-             </div>
 
-              <p class="model_title">Модель: AWB-H09BC/R1DI</p>
-            <!-- <p class="select_square">Выбрать площадь помещения</p>
+<div class="col-md-4 one_product"> 
+             <div class="product_item product">       
+                <p class="productor">Производитель: AUX <br> серия Kids Inverter</p>
+                <div class="product_card">
+                    <img id="girl" data-image="розовый" class="active" src="catalog/premium/Kids/pink.png" alt="серия Kids Inverter">
+                    <img id="boy" data-image="голубой"  src="catalog/premium/Kids/blue.png" alt="серия Kids Inverter"> 
+                </div>
+                <div class="color-choose"> 
+               
+               </div>
+               <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+          <p class="select_square">Выбрать</p>
 
             <select name="model" class="userselect">
-              <option value="<b>Модель: AWB-H09BC/R1DI</b> <br>   
-Площадь помещения: 25м² <br>   
-DC-инвертор   <br> 
-Режим 'Детский сон' <br>   
-Бесшумная работа  <br>   
-Ионизатор   <br> 
-<b>Наличие</b>: Есть в наличии <br>   
-<b>49 700 руб.</b><br>    
-Был заказан 64 раз">25 м²
+              <option data-id="Модель: <br> AWG-H09BC/R1DI" value=" 
+Площадь помещения: 25м²  <br> 
+
+DC-инвертор <br>
+Режим 'Детский сон' <br>
+Бесшумная работа <br> 
+Ионизатор <br>
+<b>Наличие</b>: Есть в наличии <br>  
+<b class='price'>49 700 руб.</b> 
+Был заказан 64 раза     
+      
+">для девочек
                 </option>
 
-              
-
-
-            </select> -->
+ <option data-id="Модель: <br> AWB-H09BC/R1DI" value=" 
+ Площадь помещения: 25м²  <br>  
+DC-инвертор <br>
+Режим 'Детский сон' <br>
+Бесшумная работа <br> 
+Ионизатор <br>
+<b>Наличие</b>: Есть в наличии <br>  
+<b class='price'>49 700 руб.</b> 
+Был заказан 64 разa  
+     
+">для мальчиков</option>             
+</select>
            
-           <div class="model">
-   
-Площадь помещения: 25м² <br>   
-DC-инвертор   <br> 
-Режим 'Детский сон' <br>   
-Бесшумная работа  <br>   
-Ионизатор   <br> 
-<b>Наличие</b>: Есть в наличии <br>   
-<b class="price">49 700 руб.</b><br>    
-Был заказан 64 раз
-
-           </div>  
+<div class="model"></div>  
            <div class="buttons_group">         
           <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj5">Подробнее</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objKid">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+
+  </div> <!-- 12 колонок -->
+
+ <div class="col-md-12">
+
+<div class="col-md-4 one_product"> 
+             <div class="product_item product">       
+                 <p class="productor"> Производитель: Haier <br> серия TIBIO</p>       
+                <div class="product_card">                   
+                    
+                    <img data-image="белый" class="active" src="catalog/low/Tibio/haier-tibio.png" alt="Haier серия TIBIO">
+                    
+                </div>
+                <!-- <div class="color-choose">
+                             
+                </div> -->
+                <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+            <select name="model" class="userselect">
+<option  data-id="Модель: <br> HSU-07HT103/R2" value="   
+ Бесшумный  <br>    
+Антибактериальный фильтр <br>     
+Фотокаталитический фильтр <br>   
+Скрытый дисплей  <br>   
+Антикоррозионное покрытие Blue Fin <br>  
+Режим комфортного сна   <br>  
+Самоочистка теплообменников  <br>   
+<b>Наличие</b>: Есть в наличии <br>  
+<b class='price'>17280 руб.</b> 
+Был заказан 39 раз">20 м²</option>
+<option data-id="Модель: <br> HSU-09HT103/R2" value="Бесшумный<br>    
+Антибактериальный фильтр <br>    
+Фотокаталитический фильтр <br>   
+Скрытый дисплей  <br>  
+Антикоррозионное покрытие Blue Fin  <br>   
+Режим комфортного сна  <br>  
+Самоочистка теплообменников  <br>  
+<b>Наличие</b>: Есть в наличии<br>   
+<b class='price'>18 270 руб.</b> <br> 
+Был заказан 39 раз">25 м²</option> 
+        
+<option data-id="Модель: <br> HSU-12HT203/R2" value="  
+Бесшумный  <br> 
+Антибактериальный фильтр <br>   
+Фотокаталитический фильтр <br>  
+Скрытый дисплей   <br>
+Антикоррозионное покрытие Blue Fin  <br>  
+Режим комфортного сна  <br> 
+Самоочистка теплообменников <br>  
+<b>Наличие</b>: Есть в наличии<br>   
+<b class='price'>21 600 руб.</b> <br> 
+Был заказан 39 раз 
+">35 м²</option> 
+                
+<option data-id="Модель: <br> HSU-18HT203/R2" value=" 
+Бесшумный   <br>
+Антибактериальный фильтр  <br>  
+Фотокаталитический фильтр <br>  
+Скрытый дисплей  <br> 
+Антикоррозионное покрытие Blue Fin <br>   
+Режим комфортного сна  <br> 
+Самоочистка теплообменников <br>  
+<b>Наличие</b>: Есть в наличии<br>   
+<b class='price'>32 220 руб.</b> <br> 
+Был заказан 39 раз">45 м²</option> 
+
+<option data-id="Модель: <br> HSU-24HT203/R2    
+" value="  
+Бесшумный <br>   
+Антибактериальный фильтр  <br>   
+Фотокаталитический фильтр <br>   
+Скрытый дисплей   <br> 
+Антикоррозионное покрытие Blue Fin <br>    
+Режим комфортного сна   <br> 
+Самоочистка теплообменников  <br>  
+<b>Наличие</b>: Есть в наличии<br>   
+<b class='price'>43 020 руб.</b> <br> 
+Был заказан 39 раз">70 м²</option> 
+</select>
+           
+           <div class="model"></div>  
+            <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objTib">Подробнее</button>
+        </div>
+     </div>
+</div>
+
+
+
+ <div class="col-md-4 one_product"> 
+                 <div class="product_item product2">       
+                <p class="productor">Производитель: Haier <br> серия FAMILY </p>
+                <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/low/Family/Family.png" alt="Haier серия FAMILY">               
+                </div>
+                <!-- <div class="color-choose">                        
+                </div> -->
+                <span class="credit">Рассрочка 0%</span>
+ <p class="model_title"></p>
+
+<p class="select_square">Выбрать площадь помещения</p>  
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> HSU-30HNH03/R2-W" value="   
+Бесшумный  <br>     
+Мощная УФ лампа  <br>       
+Фотокаталитический фильтр  <br>   
+Режим дежурного отопления +10С  <br>  
+Воздушный поток 12м  <br>   
+<b>Наличие:</b> Есть в наличии  <br>   
+<b class='price'>48 960 руб.</b> <br>      
+Был заказан 39 раз        
+    
+">90 м²</option>
+<option data-id="Модель: <br> HSU-36HNH03R2" value="
+
+Бесшумный <br>      
+Мощная УФ лампа <br>        
+Фотокаталитический фильтр <br>    
+Режим дежурного отопления +10С <br>   
+Воздушный поток 12м    <br> 
+<b>Наличие:</b> Есть в наличии  <br>   
+<b class='price'>60 080 руб.</b>  <br>     
+Был заказан 39 раз        
+      
+">100 м²</option> 
+        
+
+</select>
+
+                    
+<div class="model"></div>  
+           <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objFam">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+   
+
+<div class="col-md-4 one_product"> 
+             <div class="product_item product">       
+                 <p class="productor"> Производитель: Haier <br> серия LEADER</p>       
+                <div class="product_card">                   
+                    
+                    <img data-image="белый" class="active" src="catalog/low/Leader/haier_lider.png" alt="Haier серия LEADER">
+                    
+                </div>
+                <!-- <div class="color-choose">
+                             
+                </div> -->
+                <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+            <select name="model" class="userselect">
+<option  data-id="Модель: <br> HSU-07HLT03/R2" value="   
+ Бесшумный   <br>   
+Авторестарт  <br> 
+24 - часовой таймер   <br>
+Режим Турбо    <br> 
+12м воздушный поток <br>
+Режим комфортного сна <br>  
+3D Airflow  <br>
+<b>Наличие: </b>Есть в наличии  <br> 
+<b class='price'>10 990 руб. </b><br>    
+Был заказан 39 раз      
+">20 м²</option>
+<option data-id="Модель: <br> HSU-09HLT03/R2" value="Бесшумный<br>    
+Бесшумный  <br>   
+Авторестарт   <br>
+24 - часовой таймер <br>  
+Режим Турбо   <br>  
+12м воздушный поток <br>
+Режим комфортного сна <br>  
+3D Airflow  <br>
+<b>Наличие: </b>Есть в наличии<br>   
+<b class='price'>11 990 руб.</b>    <br> 
+Был заказан 39 раз      
+">25 м²</option> 
+        
+<option data-id="Модель: <br> HSU-12HLT03/R2" value="  
+Бесшумный  <br>   
+Авторестарт  <br> 
+24 - часовой таймер   <br>
+Режим Турбо     <br>
+12м воздушный поток <br>
+Режим комфортного сна  <br> 
+3D Airflow  <br>
+<b>Наличие:</b> Есть в наличии <br>  
+<b class='price'>13 990 руб.</b>    <br> 
+Был заказан 39 раз      
+ 
+">35 м²</option> 
+                
+<option data-id="Модель: <br> HSU-18HLT03R2" value=" 
+Бесшумный   <br>  
+Авторестарт  <br> 
+24 - часовой таймер  <br> 
+Режим Турбо    <br> 
+12м воздушный поток <br>
+Режим комфортного сна <br>  
+3D Airflow  <br>
+<b>Наличие: </b>Есть в наличии <br>  
+<b class='price'>23 500 руб.</b> <br>    
+Был заказан 39 раз      
+">45 м²</option> 
+
+<option data-id="Модель: <br> HSU-24HLT03R2    
+" value="  
+Бесшумный  <br>   
+Авторестарт  <br> 
+24 - часовой таймер   <br>
+Режим Турбо   <br>  
+12м воздушный поток <br>
+Режим комфортного сна  <br> 
+3D Airflow  <br>
+<b>Наличие: </b>Есть в наличии  <br> 
+<b class='price'>31 450 руб.<b>  <br>   
+Был заказан 39 раз      
+">70 м²</option> 
+</select>
+           
+           <div class="model"></div>  
+            <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_objLeader">Подробнее</button>
+        </div>
+     </div>
+</div>
+</div>
+
+
+
+<div class="col-md-12">
+          <div class="col-md-4 one_product"> 
+             <div class="product_item long product2">       
+                <p class="productor">Производитель: Haier <br> серия Lightera</p>        
+                <div class="product_card">
+                    <img data-image="белый" src="catalog/low/Lightera/white.png" alt="Haier  серия Lightera">
+                    <img data-image="золотой" class="active" src="catalog/low/Lightera/gold.png" alt="Haier серия Lightera"> 
+                </div>
+                <div class="color-choose"> 
+                 <input data-image="белый" type="radio" class="white" name="color" value="белый">
+                <label data-color="белый" ><span></span></label>
+                <input data-image="золотой" type="radio" class="beige" name="color" value="бежевый">
+                <label data-color="золотой"><span></span></label>              
+                </div>
+
+                <span class="credit">Рассрочка 0%</span>
+
+             <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+
+            <select  name="model" class="userselect">                 
+                 <option data-id="Модель: <br>HSU-07HNF203/R2" selected="selected"  value="Бесшумный  <br>   
+Мощная ультрафиолетовая лампа <br>  
+Nano-Aqua модуль    <br>
+Антикоррозийное покрытие Blue Fin  <br>   
+20м воздушный поток <br>
+Фотокаталитический фильтр  <br> 
+Антибактериальный фильтр<br>
+Режим «Турбо»<br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br> 
+<b>Наличие:</b> Есть в наличии <br>  
+<b class='price'>16 990 руб. </b>  <br>  
+Был заказан 39 раз">20м²
+                </option>
+
+<option data-id="Модель: <br>HSU-09HNF203/R2 " value="  
+Бесшумный   <br> 
+Мощная ультрафиолетовая лампа  <br> 
+Nano-Aqua модуль   <br> 
+Антикоррозийное покрытие Blue Fin   <br>  
+20м воздушный поток <br>
+Фотокаталитический фильтр <br>  
+Антибактериальный фильтр<br>
+Режим «Турбо»<br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br>
+<b>Наличие:</b> Есть в наличии   <br>
+<b class='price'>18 320 руб. <b>  <br>  
+Был заказан 39 раз      
+">25м²</option>
+
+
+<option data-id="Модель: <br>HSU-12HNF203/R2 " value="  
+Бесшумный  <br>   
+Мощная ультрафиолетовая лампа <br>  
+Nano-Aqua модуль  <br>  
+Антикоррозийное покрытие Blue Fin<br>     
+20м воздушный поток <br>
+Фотокаталитический фильтр   <br>
+Антибактериальный фильтр<br>
+Режим «Турбо»<br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br> 
+<b>Наличие:</b> Есть в наличии <br>  
+<b class='price'>18 320 руб.</b>    <br> 
+Был заказан 39 раз      
+">35м²</option>
+
+
+
+<option data-id="Модель: <br>HSU-18HNF103/R2 " value="  
+Бесшумный <br>    
+Мощная ультрафиолетовая лампа   <br>
+Nano-Aqua модуль    <br>
+Антикоррозийное покрытие Blue Fin <br>    
+20м воздушный поток <br>
+Фотокаталитический фильтр   <br>
+Антибактериальный фильтр<br>
+Режим «Турбо»<br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br> 
+<b>Наличие: Есть в наличии </b><br>  
+<b class='price'>31 390 руб. </b>  <br>  
+Был заказан 39 раз      
+    
+">45м²</option>
+
+
+<option data-id="Модель: <br>HSU-24HNF103/R2 " value="  
+Бесшумный  <br>   
+Мощная ультрафиолетовая лампа   <br>
+Nano-Aqua модуль    <br>
+Антикоррозийное покрытие Blue Fin   <br>  
+20м воздушный поток <br>
+Фотокаталитический фильтр  <br> 
+Антибактериальный фильтр<br>
+Режим «Турбо»<br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>
+<b>Наличие: </b>Есть в наличии  <br> 
+<b class='price'>40 320 руб.</b> <br>    
+Был заказан 39 раз      
+      
+">70²</option>
+
+
+
+
+</select>
+          
+           <div class="model"></div>  
+           <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj8">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+
+<div class="col-md-4 one_product"> 
+             <div class="product_item long product">       
+                <p class="productor"> Производитель: Haier <br> серия Elegant DC Inverter</p>          
+                <div class="product_card">                   
+                    
+                    <img data-image="белый" class="active" src="catalog/medium/ElegantDCInverter/white.png" alt="Elegant DC Inverter">
+                   
+                    
+                </div>
+                <div class="color-choose">
+                          
+                </div>
+                <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+            <select name="model" class="userselect">
+<option data-id="Модель: <br>AS07NM5HRA" value="   
+Бесшумный   <br>  
+Режим комфортного сна  <br> 
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр   <br>
+Антикоррозийное покрытие Blue Fin   <br>  
+Скрытый дисплей<br>   
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>
+<b>Наличие: </b>Есть в наличии <br>  
+<b class='price'>20 850 руб. </b>  <br>  
+Был заказан 39 раз      
+   
+">20 м²</option>
+<option data-id="Модель: <br>AS09NM5HRA" value="Бесшумный  <br>   
+Режим комфортного сна <br>  
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр <br>  
+Антикоррозийное покрытие Blue Fin <br>    
+Скрытый дисплей   <br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br> 
+<b>Наличие: </b>Есть в наличии <br>  
+<b class='price'>22 350 руб.</b> <br>    
+Был заказан 39 раз      
+   
+">25 м²
+</option> 
+
+
+<option data-id="Модель: <br>AS12NM5HRA" value="Бесшумный <br>     
+Режим комфортного сна  <br> 
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр <br>  
+Антикоррозийное покрытие Blue Fin  <br>   
+Скрытый дисплей<br>   
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>
+<b>Наличие:</b>Есть в наличии  <br> 
+<b class='price'>25 110 руб. </b>  <br>  
+Был заказан 39 раз      
+
+">35 м²
+</option> 
+
+
+<option data-id="Модель: <br>AS18NM5HRA" value="Бесшумный <br>     
+Режим комфортного сна   <br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>   
+Антикоррозийное покрытие Blue Fin  <br>   
+Скрытый дисплей   <br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br> 
+<b>Наличие: </b>Есть в наличии  <br> 
+<b class='price'>36 520 руб.</b>  <br>   
+Был заказан 39 раз      
+
+">45 м²
+</option> 
+
+
+<option data-id="Модель: <br>AS24NM5HRA" value="Бесшумный  <br>    
+Режим комфортного сна  <br> 
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр <br>  
+Антикоррозийное покрытие Blue Fin   <br> 
+Скрытый дисплей   <br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br> 
+<b>Наличие: </b>Есть в наличии <br>  
+<b class='price'>45 330 руб. </b>  <br>  
+Был заказан 39 раз      
+
+">70 м²
+</option> 
+</select>
+           
+           <div class="model"></div>  
+            <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj10">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+
+
+
+<div class="col-md-4 one_product"> 
+             <div class="product_item long product">       
+                <p class="productor">Производитель: Haier <br>серия Tibio DC Inverter  </p>
+                <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/medium/TibioDCInverter/white.png" alt="Haier серия Tibio DC Inverter ">
+                   
+                </div>
+                <div class="color-choose"> 
+                
+               </div>
+               <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+          <p class="select_square">Выбрать</p>
+
+            <select name="model" class="userselect">
+<option data-id="Модель: <br> AS07TH3HRA" value=" 
+Бесшумный     
+Режим комфортного сна   
+Антибактериальный фильтр
+Фотокаталитический фильтр   
+Антикоррозийное покрытие Blue Fin     
+Скрытый дисплей   
+3D Airflow - объемный поток воздуха
+Функция самоочистки теплообменника  
+<b>Наличие: </b>Есть в наличии   
+<b class='price'>19 350 руб.</b>     
+Был заказан 39 раз 
+">20 м²
+</option>
+
+ <option data-id="Модель: AS09TH3HRA" value=" 
+Бесшумный     
+Режим комфортного сна   
+Антибактериальный фильтр
+Фотокаталитический фильтр   
+Антикоррозийное покрытие Blue Fin     
+Скрытый дисплей   
+3D Airflow - объемный поток воздуха
+Функция самоочистки теплообменника  
+<b>Наличие: </b>Есть в наличии   
+<b class='price'>20 330 руб.  </b>   
+Был заказан 39 раз      
+
+">25  м²</option>  
+
+
+
+<option data-id="Модель: <br> AS12TB3HRA" value=" 
+Бесшумный  <br>   
+Режим комфортного сна <br>  
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр  <br> 
+Антикоррозийное покрытие Blue Fin  <br>   
+Скрытый дисплей   <br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>
+<b>Наличие: </b>Есть в наличии <br>  
+<b class='price'>23 160 руб. </b> <br>   
+Был заказан 39 раз      
+
+">35  м²</option>  
+
+
+<option data-id="Модель: <br>AS18TD2HRA" value=" 
+Бесшумный <br>    
+Режим комфортного сна   <br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр  <br> 
+Антикоррозийное покрытие Blue Fin    <br> 
+Скрытый дисплей   <br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>
+<b>Наличие:</b> Есть в наличии   <br>
+<b class='price'>33 240 руб.  </b>   
+Был заказан 39 раз
+">45  м²</option>  
+
+<option data-id="Модель:<br> AS24TD2HRA" value=" 
+Бесшумный  <br>   
+Режим комфортного сна   <br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр <br>  
+Антикоррозийное покрытие Blue Fin   <br>  
+Скрытый дисплей   <br>
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>
+<b>Наличие:</b> Есть в наличии   <br>
+<b class='price'>42 680 руб.</b>  <br>   
+Был заказан 39 раз      
+
+">70  м²</option>             
+</select>
+           
+<div class="model"></div>  
+           <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj11">Подробнее</button>
         </div>
      </div>
    </div>
@@ -1557,8 +2016,269 @@ DC-инвертор   <br>
 
 
 
+<div class="col-md-12">
+          <div class="col-md-4 one_product"> 
+             <div class="product_item long product2">       
+                <p class="productor">Производитель: Haier <br> Lightera Crystal DC Inverter</p>        
+                <div class="product_card">
+                    <img class="active" data-image="белый" src="catalog/premium/LighteraCrystalDCInverter/white.jpg" alt="Haier  Lightera Crystal DC Inverter">
+                    
+                </div>
+                <div class="color-choose"></div>
+                <span class="credit">Рассрочка 0%</span>
+
+             <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+
+            <select  name="model" class="userselect">                 
+                 
+
+<option selected="selected" data-id="Модель: <br>AS09CB2HRA" value="  
+Бесшумный<br>
+Работа на обогрев при температуре наружного воздуха: до -30*C<br>
+Wi-Fi управление<br>
+Мощная УФ лампа<br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Настраиваемый автоматический режим<br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>
+DC-инверторный компрессор A-Pam <br>    
+Антикоррозийное покрытие Blue Fin  <br> 
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br>   
+<b>Наличие:</b> Есть в наличии  <br>   
+<b class='price'>46 430 руб. </b>  
+Был заказан 39 раз 
+">25м²</option>
+
+
+<option data-id="Модель: <br>AS12CB2HRA" value="  
+Бесшумный<br>
+Работа на обогрев при температуре наружного воздуха: до -30*C<br>
+Wi-Fi управление<br>
+Мощная УФ лампа<br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Настраиваемый автоматический режим<br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>
+DC-инверторный компрессор A-Pam  <br>   
+Антикоррозийное покрытие Blue Fin  <br> 
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br>   
+<b>Наличие: </b>Есть в наличии    <br> 
+<b class='price'>48 960 руб. </b>  <br>
+Был заказан 39 раз 
+">35м²</option>
+</select>
+          
+           <div class="model"></div>  
+           <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj12">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+
+
+
+
+
+<div class="col-md-4 one_product"> 
+             <div class="product_item long product">       
+                <p class="productor">Производитель: Haier серия Lightera Premium DC Inverter  </p>
+                <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/premium/LighteraPremiumDCInverter/white.png" alt="Haier серия Lightera Premium DC Inverter">
+                </div>
+                <div class="color-choose"> 
+
+               </div>
+               <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+          <p class="select_square">Выбрать площадь помещения</p>
+
+            <select name="model" class="userselect">
+<option data-id="Модель: <br>AS25S2SD1FA" value=" 
+Бесшумный<br>
+Wi-Fi управление<br>
+Сверх тихая работа (уровень шума 15 дБ(А)) <br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Датчик присутствия и передвижения людей 'Ecopilot',
+Super DC-инвертор<br>
+3-М фильтр<br>
+Функция самоочистки теплообменника<br>
+3D Airflow - объемный поток воздуха  <br>   
+<b>Наличие: </b>Есть в наличии  <br> 
+<b class='price'>55 580 руб. </b>  <br>
+Был заказан 39 раз      
+ 
+">25 м²
+</option>
+
+ <option data-id="Модель: <br>AS35S2SD1FA" value=" 
+Бесшумный<br>
+Wi-Fi управление<br>
+Сверх тихая работа (уровень шума 15 дБ(А)) <br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Датчик присутствия и передвижения людей 'Ecopilot',
+Super DC-инвертор<br>
+3-М фильтр<br>
+Функция самоочистки теплообменника<br>
+3D Airflow - объемный поток воздуха  <br>   
+<b>Наличие:</b> Есть в наличии <br>  
+<b class='price'>59 440 руб. </b><br>  
+Был заказан 39 раз      
+
+">35  м²</option>
+</select>
+           
+<div class="model"></div>  
+           <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj14">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+
+<div class="col-md-4 one_product"> 
+             <div class="product_item long product">       
+                <p class="productor"> Производитель: Haier <br> серия Lightera DC Inverter</p>          
+                <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/premium/LighteraDCInverter/white.png" alt="серия Lightera DC Inverter">
+                     <img data-image="золотой"  src="catalog/premium/LighteraDCInverter/gold.png" alt="серия Lightera DC Inverter">
+                     <img data-image="черный"  src="catalog/premium/LighteraDCInverter/black.jpg" alt="серия Lightera DC Inverter">
+                </div>                
+                <div class="color-choose">
+               <input  data-image="белый" type="radio" class="white" name="color" value="белый">
+                <label data-color="белый" ><span></span></label> 
+
+                <input  data-image="черный" type="radio" class="black" name="color" value="черный">
+                <label data-color="черный" ><span></span></label>  
+                <input  data-image="золотой" type="radio" class="gold" name="color" value="серый">
+                <label data-color="золотой" ><span></span></label>              
+                           
+                </div>
+                <span class="credit">Рассрочка 0%</span>
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+            <select name="model" class="userselect">
+<option data-id="Модель: <br>AS09NS4ERA" value="   
+Бесшумный <br>
+Wi-Fi управление<br>
+Мощная УФ лампа<br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Настраиваемый автоматический режим<br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>
+DC-инверторный компрессор A-Pam <br>    
+Антикоррозийное покрытие Blue Fin <br>  
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника  <br>  
+<b>Наличие:</b> Есть в наличии <br>    
+<b class='price'>29 610 руб.</b><br>
+Был заказан 39 раз   
+
+">25 м²</option>
+<option data-id="Модель: <br>AS12NS4ERA" value="Бесшумный<br>
+Wi-Fi управление<br>
+Мощная УФ лампа<br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Настраиваемый автоматический режим<br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>
+DC-инверторный компрессор A-Pam <br>    
+Антикоррозийное покрытие Blue Fin  <br> 
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br>   
+<b>Наличие:</b> Есть в наличии <br>    
+<b class='price'>33 580 руб. </b>  <br>
+Был заказан 39 раз  
+
+">35 м²
+</option> 
+
+
+<!-- <option name="Модель: <br>AS12NM5HRA" value="Бесшумный      
+Режим комфортного сна   
+Антибактериальный фильтр
+Фотокаталитический фильтр   
+Антикоррозийное покрытие Blue Fin     
+Скрытый дисплей   
+3D Airflow - объемный поток воздуха
+Функция самоочистки теплообменника  
+Наличие: Есть в наличии   
+25 110 руб.     
+Был заказан 39 раз      
+
+">35 м²
+</option> --> 
+
+
+<option data-id="Модель: <br>AS18NM5HRA" value="     
+Бесшумный<br>
+Wi-Fi управление<br>
+Мощная УФ лампа<br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Настраиваемый автоматический режим<br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>
+DC-инверторный компрессор A-Pam <br>    
+Антикоррозийное покрытие Blue Fin <br>  
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника <br>   
+<b>Наличие:</b> Есть в наличии  <br>   
+<b class='price'>50 000 руб. </b>  <br>
+Был заказан 39 раз  
+
+">45 м²
+</option> 
+
+
+<option data-id="Модель: <br>AS24NS4ERA" value="Бесшумный<br>
+Wi-Fi управление<br>
+Мощная УФ лампа<br>
+Модуль Nano-Aqua очистки и ионизации воздуха<br>
+Настраиваемый автоматический режим<br>
+Антибактериальный фильтр<br>
+Фотокаталитический фильтр<br>
+DC-инверторный компрессор A-Pam <br>    
+Антикоррозийное покрытие Blue Fin  <br> 
+3D Airflow - объемный поток воздуха<br>
+Функция самоочистки теплообменника<br>    
+<b>Наличие:</b> Есть в наличии <br>    
+<b class='price'>61 800 руб. </b>  <br>
+Был заказан 39 раз  
+
+">70 м²
+</option> 
+</select>
+           
+           <div class="model"></div>  
+            <div class="buttons_group">         
+          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
+          <button type="button" class="more_button" data-toggle="modal" data-target=".modal_obj13">Подробнее</button>
+        </div>
+     </div>
+   </div>
+
+
+
+  </div> <!-- 12 колонок -->
+
+
+
 
 </div>
+
+
+
+
+
 </section>
 
 
@@ -1570,35 +2290,35 @@ DC-инвертор   <br>
    <div class="container">     
       <h2 class="section_titlewhite">6 главных преимуществ</h2>
         <div class="row">
-            <div class="col-md-4 col-sm-4"> 
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
                <img class="section_image wow slideInLeft" src="img/6.jpg" alt="Кондиционер в интерьере">
             </div>
 
 
 
-            <div class="col-md-8 col-sm-8 wow slideInRight"> 
+            <div class="col-md-8 col-sm-12 wow slideInRight"> 
              <div class="col-md-12">
-                <div class="col-md-2">
+                <div class="col-md-2 col-xs-2">
                  <span class="page_icons icon12"></span>
                  </div>
-                 <div class="col-md-10">
+                 <div class="col-md-10 col-sm-12">
                     <p class="section_textwhite">При монтаже используем штроборез с пылесосом, что минимизирует количество пыли и крошки, которую потом сложно убирать</p>
                   </div> 
                </div>             
-                 <div class="col-md-2">
+                 <div class="col-md-2 col-xs-2">
                    <span class="page_icons icon12"></span>
                  </div>
               <div class="col-md-10">
                 <p class="section_textwhite">Работаем только профессиональным инструментом <span>BOSCH</span> (Германия), <span>MAKITA</span> (Япония), <span>WIGAM</span> (Италия), <span>CPS</span> (США), <span>REFCO</span>(Швейцария), <span>MASTERCOOL</span> (США), что позволяет решать любые задачи и производить монтаж в любой ситуации</p>
               </div>            
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-2">
                <span class="page_icons icon12"></span>
               </div>
               <div class="col-md-10">
                 <p class="section_textwhite">Используем качественные импортные материалы,включая сербскую толстостенную трубу, сверхпрочные кранштейны из нержавеющей и оцинкованной стали,которым не страшен никакой ветер</p>
               </div>
 
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-2">
                    <span class="page_icons icon12"></span>
                  </div>
                   <div class="col-md-10">
@@ -1606,15 +2326,15 @@ DC-инвертор   <br>
                   </div> 
               
 
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-2">
                <span class="page_icons icon12"></span>
               </div>
                 <div class="col-md-10">
-                  <p class="section_textwhite">Многолетний опыт и квалификация монтажников позволяют нам давать бессрочную гарантию на свои работы, мы знаем, что они сделают все безупречно A</p>
+                  <p class="section_textwhite">Многолетний опыт и квалификация монтажников позволяют нам давать бессрочную гарантию на свои работы, мы знаем, что они сделают все безупречно</p>
               
                 </div>   
 
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-2">
                <span class="page_icons icon12"></span>
               </div>
               <div class="col-md-10">
@@ -1647,7 +2367,7 @@ DC-инвертор   <br>
 </div>
             </div>
           <div class="col-md-6 col-sm-6 wow slideInRight">
-            <img src="img/paper.png" alt="Буклет">
+            <img class="booklet" src="img/paper.png" alt="Буклет">
           </div>
                
         </div>
@@ -1892,7 +2612,7 @@ DC-инвертор   <br>
                       </p>
                   <p class="section_textwhite">
                      Хотим быть полезными конкретно Вам в Вашей ситуации!</p>
-                  </p>
+                 
                   </div> 
 			
 				
@@ -1903,7 +2623,7 @@ DC-инвертор   <br>
 <div class="col-md-12">
 <div class="col-md-3">
   
-	<p class="section_textwhitetitle2"><span class="page_icons icon20"></span> 8 лет <br> на рынке </p>
+	<p class="section_textwhitetitle2"><span class="page_icons icon20"></span> 8 лет  на рынке </p>
 </div>
 
 <div class="col-md-3">
@@ -1930,56 +2650,34 @@ DC-инвертор   <br>
 
 					
 
-				</div>
+				</section>
 
-				
-
-		</div>
-
-	</section>
-
-
-
-<!-- <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div> 
-	 -->
-
-	
-
-<article class="page-form-block wow pulse"  data-wow-iteration="1" data-wow-duration="3000ms">
+<div class="page-form-block wow pulse"  data-wow-iteration="1" data-wow-duration="3000ms">
 		<div class="container">
-		<form action="send.php" method="post" class="send-form page-form" autocomplete="off">
-
+		   <form action="send.php" method="post" class="send-form page-form" autocomplete="off">
 			<div class="form-title">
-				<b class="section_titlewhite">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?
-</b><br>
-				
+				<b class="section_titlewhite">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?</b><br>				
 				НАШ СПЕЦИАЛИСТ С РАДОСТЬЮ ОТВЕТИТ ВАМ!
 			</div>
+			<!-- <input type="text" name="client_name" class="client-name" placeholder="Ваше имя">
+			<input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон">			
+			<input type="hidden" name="goal" value="на консультацию специалиста">
+           <button type="submit" class="callback_btn consult">Получить ответ</button> -->
 
-			<input type="text" name="client_name" class="client-name" placeholder="Ваше имя">
-			<input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон">
-			
-			<input type="hidden" name="form_type" value="Консультация специалиста">
-<div class="svg">
-       <a class="button_svg" href="#" data-toggle="modal" data-target="#main_modal">
-        <svg class="site_buttons">
-            <rect height="50" width="250" fill="transparent" />
-        </svg>
-        <span>Получить ответ</span>
-       </a>
-    </div>
-
-			<!-- <button type="submit" class="callback_btn" data-toggle="modal" data-target="#main_modal"><span></span></button> -->
-
-
-
-		</form>
-
+           <input type="hidden" name="goal" value="на консультацию">
+           <label class="name_label">
+							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
+							<span></span>
+						</label>
+						<label class="tel_label">
+							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
+							<span></span>
+						</label>
+						<button type="submit" class="callback_btn consult">Задать вопрос</button>
+                       </form>
 	</div>
 </div>
-</article>
+
 
  
 
@@ -1987,19 +2685,18 @@ DC-инвертор   <br>
 	<!-- END LAST QUESTION -->
 <footer class="container-fluid footer">
   <div id="map">
-    <!--  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
-   
-    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3e0520a21fe5ead1234f01e8872a2aa71a884e880f1fa815c8dc1c0a9755844&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> -->
-     <script src="libs/map.js"></script>
+  <script src="libs/map.js"></script>
   </div>
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-            <div class="col-md-3">
-              <img id="img_logo" src="img/team_logo.png" alt="Логотип">          
+            <div class="col-md-3 col-xs-12">
+              <img id="img_logo" src="img/white_logo.png" alt="Логотип">          
              <p class="social">Мы в социальных сетях</p>
+             <div class="social_icons">
               <a href="https://www.instagram.com/h_climat/" target="_blank" class="instagram"><span class="page_icons icon27"></span></a>
                <a href="https://api.whatsapp.com/send?phone=79140756154&text=Здравствуйте!%20У%20меня%20есть%20вопрос%20насчет%20кондиционеров%20HomeClimate,%20напишите%20мне%20на%20этот%20номер,%20пожалуйста." target="_blank"><span class="page_icons icon28"></span></a>
+            </div>
 
               
 
@@ -2008,7 +2705,7 @@ DC-инвертор   <br>
 
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <p class="footer__sections">Навигация</p>
               <ul class="sitesmenu  footer__menu">               
             			<li>
@@ -2028,19 +2725,15 @@ DC-инвертор   <br>
                   </li>                       
               </ul>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-xs-6">
               <p id="contacts" class="footer__sections">Контакты</p>
-              <div class="col-md-2 col-xs-2">
-                 <!-- <span><img class="footer_icon" src="img/footer_icon1.png" alt="Иконка"></span> -->
-                 <!-- <span class="page_icons icon24"></span> -->
+              <div class="col-md-2 col-xs-2">                
                </div>
                <div class="col-md-10 col-xs-10">
                 
                  <p class="footer__contactsText"><span class="page_icons icon24"></span>г. Находка, Угольная 61, база ТМТ</p>
                 </div>
-                <div class="col-md-2 col-xs-2">
-                 <!-- <span><img class="footer_icon" src="img/footer_icon2.png" alt="Иконка"></span> -->
-                 
+                <div class="col-md-2 col-xs-2">                
                </div>
                <div class="col-md-10 col-xs-10">
                 
@@ -2059,11 +2752,7 @@ DC-инвертор   <br>
     </div>
 </footer>
 <!-- END FOOTER -->
-	
-
-
-
-	</div><!-- END PAGE WRAPPER -->
+</div><!-- END PAGE WRAPPER -->
 
 	
 	<!-- MAIN MODAL -->
@@ -2073,10 +2762,10 @@ DC-инвертор   <br>
 			<div class="modal-content">
 				<button class="close" type="button" data-dismiss="modal"></button>
 				<div class="modal-body">
-					<h5 class="modal_title">ВЫЗВАть мастера</h5>
-					<p>Введите свои данные чтобы <br>оформить заявку:</p>
-					<form action="" class="modal_form" id="modal_main_form">
-						<input type="hidden" name="formname" value="Вызвать мастера [Страница - Сплит-системы]">
+					<h5 class="modal_title">Оставить заявку</h5>
+					<p>Введите свои данные, чтобы <br>оформить заявку:</p>
+					<form action="send.php" class="modal_form" id="modal_main_form">
+						<input type="hidden" name="goal" value="на консультацию">
 						<label class="name_label">
 							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
 							<span></span>
@@ -2085,563 +2774,2257 @@ DC-инвертор   <br>
 							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
 							<span></span>
 						</label>
-						<label class="email_label">
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
-							<span></span>
-						</label>
-
 						<button type="submit" class="callback_btn">Отправить</button>
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
+						<p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+  <div class="modal fade main_modal" id="bonus_modal">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal"></button>
+        <div class="modal-body">
+          <h5 class="modal_title">Получить бонусы</h5>
+          <p>Введите свои данные, чтобы <br>оформить заявку:</p>
+          <form action="send.php" class="modal_form">
+            <input type="hidden" name="goal" value="получить бонусы">
+            <label class="name_label">
+              <input type="text" name="name" class="name_input" required placeholder="Введите имя">
+              <span></span>
+            </label>
+            <label class="tel_label">
+              <input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
+              <span></span>
+            </label>
+            <button type="submit" class="callback_btn">Отправить</button>
+            <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 	<!-- END MAIN MODAL -->
 
-
-
-	<!-- DISCOUNT MODAL -->
-
-	<div class="modal fade main_modal" id="discount_modal">
-
-		<div class="modal-dialog modal-md">
-
-			<div class="modal-content">
-
-				<button class="close" type="button" data-dismiss="modal"></button>
-
-				<div class="modal-body">
-
-					<h5 class="modal_title">Получить бонусы</h5>
-
-					<p>Введите свои данные чтобы <br>оформить заявку:</p>
-
-					<form action="" class="modal_form" id="discount_form">
-
-						<input type="hidden" name="formname" value="Получить бонусы [Страница - Сплит-системы]">
-
-						<label class="name_label">
-
-							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
-
-							<span></span>
-
-						</label>
-
-						<label class="tel_label">
-
-							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
-
-							<span></span>
-
-						</label>
-
-						<label class="email_label">
-
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
-
-							<span></span>
-
-						</label>
-
-						<button type="submit" class="callback_btn">Отправить</button>
-
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- END DISCOUNT MODAL -->
-
-
-
-	<!-- ORDER MODAL -->
+<!-- ORDER MODAL -->
 
 	<div class="modal fade main_modal" id="order_modal">
-
 		<div class="modal-dialog modal-md">
-
 			<div class="modal-content">
-
 				<button class="close" type="button" data-dismiss="modal"></button>
-
 				<div class="modal-body">
-
-					<h5 class="modal_title buy_condition"></h5>
-
-					<p>Введите свои данные чтобы <br>оформить заявку:</p> 
-
-					<form action="" class="modal_form" id="order_form">
-
-						<input type="hidden" name="formname" value="Заказ кондиционера [Страница - Сплит-системы]" id="order_name">
-
+					<p class="modal_title buy_condition"></p>
+					<p>Введите свои данные, чтобы <br>оформить заявку:</p>
+					<form action="buy.php" class="modal_form" id="order_form">
 						<label class="name_label">
-
 							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
-
 							<span></span>
-
 						</label>
-
 						<label class="tel_label">
-
 							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
-
 							<span></span>
-
 						</label>
-
-						<label class="email_label">
-
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
-
-							<span></span>
-
-						</label>
-
+              <input id="selected_model" type="hidden" name="selected_model" />
+               <input id="selected_color" type="hidden" name="selected_color" />
 						<button type="submit" class="callback_btn">Заказать</button>
-
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
-
+					<p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
 					</form>
-
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 
 	<!-- END ORDER MODAL -->
 
 
+<div class="modal fade main_modal" id="order_master">
 
-	<!-- PRODUCT MODAL -->
+    <div class="modal-dialog modal-md">
 
-	<div class="modal fade main_modal" id="product_modal">
+      <div class="modal-content">
 
-		<div class="modal-dialog modal-md">
+        <button class="close" type="button" data-dismiss="modal"></button>
 
-			<div class="modal-content">
+        <div class="modal-body">
 
-				<button class="close" type="button" data-dismiss="modal"></button>
+          <h5 class="modal_title">Вызвать мастера</h5>
 
-				<div class="modal-body">
+          <p>Введите свои данные, чтобы оформить заявку:</p>
 
-					<h5 class="modal_title">Подобрать модель индивидуально!</h5>
+          <form action="send.php" class="modal_form" id="services_form">
 
-					<p>Введите свои данные чтобы <br>оформить заявку:</p>
+            <input type="hidden" name="goal" value="вызвать мастера">
 
-					<form action="" class="modal_form" id="product_form">
+            <label class="name_label">
 
-						<input type="hidden" name="formname" value="Подобрать модель индивидуально! [Страница - Сплит-системы]">
+              <input type="text" name="name" class="name_input" required placeholder="Введите имя">
 
-						<label class="name_label">
+              <span></span>
 
-							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
+            </label>
 
-							<span></span>
+            <label class="tel_label">
 
-						</label>
+              <input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
 
-						<label class="tel_label">
+              <span></span>
 
-							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
+            </label>
 
-							<span></span>
+            
 
-						</label>
+            <button type="submit" class="callback_btn">Отправить</button>
 
-						<label class="email_label">
+            <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
 
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
+          </form>
 
-							<span></span>
+        </div>
 
-						</label>
+      </div>
 
-						<button type="submit" class="callback_btn">Отправить</button>
+    </div>
 
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- END PRODUCT MODAL -->
+  </div>
 
 
 
 	<!-- SERIVCES MODAL -->
 
 	<div class="modal fade main_modal" id="services_modal">
-
 		<div class="modal-dialog modal-md">
-
 			<div class="modal-content">
-
 				<button class="close" type="button" data-dismiss="modal"></button>
-
 				<div class="modal-body">
-
-					<h5 class="modal_title">вызвать сервисную службу</h5>
-
-					<p>Введите свои данные чтобы <br>оформить заявку:</p>
-
-					<form action="" class="modal_form" id="services_form">
-
-						<input type="hidden" name="formname" value="Вызвать сервисную службу [Страница - Сплит-системы]">
-
+					<h5 class="modal_title">Вызвать сервисную службу</h5>
+					<p>Введите свои данные, чтобы оформить заявку:</p>
+					<form action="send.php" class="modal_form" id="services_form">
+						<input type="hidden" name="goal" value="вызов сервисной службы">
 						<label class="name_label">
-
 							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
-
 							<span></span>
-
 						</label>
-
 						<label class="tel_label">
-
 							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
-
 							<span></span>
-
 						</label>
-
-						<label class="email_label">
-
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
-
-							<span></span>
-
-						</label>
-
 						<button type="submit" class="callback_btn">Отправить</button>
-
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
-
+					<p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
 					</form>
-
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 
 	<!-- END SERVICES MODAL -->
 
 
 
-	<!-- DOWNLOAD MODAL -->
-
-	<div class="modal fade main_modal" id="download_modal">
-
-		<div class="modal-dialog modal-md">
-
-			<div class="modal-content">
-
-				<button class="close" type="button" data-dismiss="modal"></button>
-
-				<div class="modal-body">
-
-					<h5 class="modal_title">Скачать буклет</h5>
-
-					<p>Введите свои данные чтобы <br>скачать буклет:</p>
-
-					<form action="" class="modal_form" id="download_form">
-
-						<input type="hidden" name="formname" value="Скачать буклет [Страница - Сплит-системы]">
-
-						<label class="name_label">
-
-							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
-
-							<span></span>
-
-						</label>
-
-						<label class="tel_label">
-
-							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
-
-							<span></span>
-
-						</label>
-
-						<label class="email_label">
-
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
-
-							<span></span>
-
-						</label>
-
-						<button type="submit" class="callback_btn">Скачать</button>
-
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <!-- <a href="docs/obrabotka-pers.pdf" target="_blank"> -->обработку персональных данных</a> и соглашаюсь с условиями <!-- <a href="docs/privacy.pdf" target="_blank"> -->политики конфиденциальности</a></p>
-
-						<!-- <a href="/docs/5_pravil.pdf" id="download_file" download></a> -->
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- END DOWNLOAD MODAL -->
-
-
-
-	<!-- QUESTION MODAL -->
-
-	<div class="modal fade main_modal" id="question_modal">
-
-		<div class="modal-dialog modal-md">
-
-			<div class="modal-content">
-
-				<button class="close" type="button" data-dismiss="modal"></button>
-
-				<div class="modal-body">
-
-					<h5 class="modal_title">Задать вопрос</h5>
-
-					<p>Введите свои данные чтобы <br>задать вопрос:</p>
-
-					<form action="" class="modal_form" id="question_modal_form">
-
-						<input type="hidden" name="formname" value="Задать вопрос [Страница - Сплит-системы]">
-
-						<label class="name_label">
-
-							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
-
-							<span></span>
-
-						</label>
-
-						<label class="tel_label">
-
-							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
-
-							<span></span>
-
-						</label>
-
-						<label class="email_label">
-
-							<input type="text" name="email" class="email_input" required placeholder="Введите e-mail">
-
-							<span></span>
-
-						</label>
-
-						<button type="submit" class="callback_btn">Получить ответ</button>
-
-						<p class="little_text">Нажимая на кнопку, я даю согласие на <a href="docs/obrabotka-pers.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="docs/privacy.pdf" target="_blank">политики конфиденциальности</a></p>
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- END QUESTION MODAL -->
-
-
-<div class="modal fade modal_obj5" tabindex="-1" role="dialog" >
+<div class="modal modal_obj fade modal_objFJ" tabindex="-1" role="dialog" >
   <div class="modal-dialog modal-lg">
     <div class="modal-content big">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-      <div class="row">
+       <div class="row">
         <div class="col-md-6">
-
-<!-- Карусель -->
-<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-  
-  <ol class="carousel-indicators">
-   
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    
-    <!-- <li data-target="#myCarousel" data-slide-to="1"></li> -->
-    
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>   
-  
-  <div class="carousel-inner">
-    
-    <div class="active item">
-    <img src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/1.jpg">     
-    </div>
-    
-    <!-- <div class="item">
-      
-      <div class="carousel-caption">
-        <img src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/2.png">  
-      </div>
-    </div> -->
-    
-    <div class="item">
-     <img src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/3.jpg">  
-      <div class="carousel-caption">
-      
-      </div>
-    </div>
-  </div>
-  
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-      
-        </div>
+            <!-- Карусель -->
+            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>              
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/FJ/1.jpg" alt="AUX серия FJ">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/low/FJ/grey_full.jpg" alt="AUX серия FJ">    
+              </div>
+              <div class="item">
+                  <img src="catalog/low/FJ/white_full.jpg" alt="AUX серия FJ">
+              </div>
+             <div class="item">
+                  <img src="catalog/low/FJ/black_full.png" alt="AUX серия FJ">
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+             
+        </div> <!-- 6-md -->
         <div class="col-md-6">
-         
-
-<div class="one_product"> 
+        <div class="one_product"> 
              <div class="product_item product1">       
                 <p class="productor">Производитель: AUX серия FJ</p>          
                 <div class="product_card">                   
-                    <img data-image="black" class="active" src="catalog/low/AUX серия FJ ASW-H07A4FJ-BR1/main.png" alt="">
-                    <img data-image="grey"  src="catalog/low/AUX серия FJ ASW-H07A4FJ-SR1/main.png" alt=""> 
-                    <img data-image="white" src="catalog/low/AUX серия FJ ASW-H07A4FJ-WR1/main.jpg" alt="">
+                   <img id="black_cond2" data-image="черный" src="catalog/low/FJ/black.png" alt="Кондиционер AUX FJ">
+                    <img id="grey_cond2" data-image="серый"  src="catalog/low/FJ/grey.png" alt="Кондиционер AUX FJ"> 
+                    <img id="white_cond2" class="active"  data-image="белый" src="catalog/low/FJ/white.png" alt="Кондиционер AUX FJ">          
+                </div>
+                 <p class="model_title"></p>
+                 <p class="select_square">Выбрать цвет кондиционера</p>
+            <select name="model" class="userselect">
+            <option data-id="Модель: <br> ASW-H07A4/FJ-WR1" value="
+            <b>AUX</b> <br>       
+            <b>14 300 руб.</b>  <br>      
+            <b>Тип: </b>on/off сплит-система <br>     
+            <b>Тип монтажа:</b> настенный  <br>     
+            <b>Режимы: </b>охлаждение/обогрев/осушение<br>      
+            <b>Рекомендуемая площадь: </b>до 20 м² <br>     
+            <b>Мощность охлаждения:</b> 2100 Вт<br>       
+            <b>Мощность обогрева:</b> 2200Вт  <br>    
+            <b>Потребляемая мощность:</b> 650 Вт <br>     
+            <b>Уровень шума (max/min): </b>33/24 дБ  <br>     
+            <b>Тип хладагента:</b> R410А<br>      
+            <b>Гарантия: 3 года </b><br>  
+            <b>Производитель:</b> AUX серия FJ <br>     
+            <b>Модель: </b>ASW-H07A4/FJ-WR1 <br>      
+            <b>Наличие:</b> Есть в наличии     
+            ">Белый</option>
+            <option data-id="Модель: <br> ASW-H07A4/FJ-SR1" value=" 
+            <b>AUX</b> <br>      
+            <b>14 300 руб.</b><br>        
+            <b>Тип:</b> on/off сплит-система <br>     
+            <b>Тип монтажа:</b> настенный  <br>     
+            <b>Режимы: </b>охлаждение/обогрев/осушение <br>     
+            <b>Рекомендуемая площадь: </b>до 20 м² <br>     
+            <b>Мощность охлаждения: </b>2100 Вт <br>      
+            <b>Мощность обогрева: </b>2200Вт  <br>    
+            <b>Потребляемая мощность:</b> 650 Вт  <br>    
+            <b>Уровень шума (max/min): </b>33/24 дБ   <br>    
+            <b>Тип хладагента: </b>R410А <br>     
+            <b>Гарантия: </b>3 года <br> 
+            <b>Производитель:</b> AUX серия FJ  <br>    
+            <b>Модель:</b> ASW-H07A4/FJ-SR1<br>       
+            <b>Наличие:</b> Есть в наличии     
+            ">Серый</option>
+            <option data-id="Модель: <br> ASW-H07A4/FJ-BR1" value="
+            <b>AUX </b> <br>      
+            <b>14 300 руб. </b> <br>      
+            <b>Тип: </b>on/off сплит-система <br>     
+            <b>Тип монтажа: </b>настенный  <br>     
+            <b>Режимы: </b>охлаждение/обогрев/осушение  <br>    
+            <b>Рекомендуемая площадь:</b> до20 м² <br>      
+            <b>Мощность охлаждения:</b>2100 Вт <br>      
+            <b>Мощность обогрева:</b> 2200Вт <br>     
+            <b>Потребляемая мощность:</b> 650 Вт <br>     
+            <b>Уровень шума (max/min): </b>33/24 дБ  <br>     
+            <b>Тип хладагента: </b>R410А <br>     
+            <b>арантия:</b> 3 года  <br> 
+            <b>Производитель:</b> AUX серия FJ  <br>    
+            <b>Модель: </b>ASW-H07A4/FJ-BR1  <br>     
+            <b>Наличие:</b> Есть в наличии     
+            ">Черный</option> 
+            </select>
+           <div class="model"></div>
+
+               </div>
+       </div>
+      </div>         
+              <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>           
+    
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+<div class="modal modal_obj fade modal_objLK" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel1" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel1" data-slide-to="1"></li>              
+              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/LK/1.jpg" alt="AUX серия LK">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/low/LK/2.jpg" alt="AUX серия LK">    
+              </div>
+              
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+            </div> <!-- myCarousel -->
+           
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: AUX серия LK</p>          
+               <div class="product_card">                   
+                    <img data-image="белый" class="active" src="catalog/low/LK/main.png" alt="Кондиционер AUX LK">                   
+                </div>
+             
+               <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+
+            <select  name="model" class="userselect">                 
+                 <option selected="selected"  data-id="Модель: <br>ASW-H07A4/LK-700R1" value="
+                    AUX <br>       
+<b>17 900 руб.</b>  <br>      
+<b>Тип: </b>on/off сплит-система <br>     
+<b>Тип монтажа: </b>настенный   <br>    
+<b>Режимы: </b>охлаждение/обогрев/осушение <br>     
+<b>Рекомендуемая площадь: </b>до 21м² <br>      
+<b>Мощность охлаждения:</b> 2100 Вт <br>      
+<b>Мощность обогрева:</b> 2200Вт  <br>    
+<b>Потребляемая мощность: </b>650 Вт <br>     
+<b>Уровень шума (max/min): </b>33/22 дБ  <br>     
+<b>Тип хладагента: </b>R410А  <br>    
+<b>Гарантия: </b>3 года  <br>
+<b>Производитель:</b> AUX серия LK <br>    
+<b>Модель:</b> ASW-H07A4/FJ-WR1 <br>      
+<b>Наличие: </b>Есть в наличии      
+">21м²
+                </option>
+                 <option data-id="Модель: <br>ASW-H09A4/LK-700R1 " value="
+                    AUX <br>       
+<b>19 300 руб.</b> <br>       <br> 
+<b>Тип: </b>on/off сплит-система <br>     
+<b>Тип монтажа: </b>настенный <br>      
+<b>Режимы: </b>охлаждение/обогрев/осушение <br>     
+<b>Рекомендуемая площадь:</b> до 25м² <br>      
+<b>Мощность охлаждения: </b>2650 Вт <br>      
+<b>Мощность обогрева: </b>2700Вт  <br>    
+<b>Потребляемая мощность: </b>740 Вт <br>     
+<b>Уровень шума (max/min):</b> 36/27 дБ <br>      
+<b>Тип хладагента: </b>R410А <br>     
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> AUX серия LK <br>     
+<b>Модель: </b>ASW-H09A4/LK-700R1  <br>     
+<b>Наличие: </b>Есть в наличии     
+
+                    ">25м²</option>
+                 <option data-id="Модель: <br>ASW-H12A4/LK-700R1 " value=" 
+                    AUX  <br>      
+<b>22 800 руб. </b> <br>      
+<b>Тип:</b>on/off сплит-система <br>     
+<b>Тип монтажа: </b>настенный   <br>    
+<b>Режимы: </b>охлаждение/обогрев/осушение  <br>    
+<b>Рекомендуемая площадь:</b> до 35м²  <br>     
+<b>Мощность охлаждения: </b>3550 Вт  <br>     
+<b>Мощность обогрева:</b> 3650Вт <br>     
+<b>Потребляемая мощность:</b> 1100 Вт<br>       
+<b>Уровень шума (max/min): </b>39/30 дБ <br>      
+<b>Тип хладагента:</b> R410А <br> 
+<b>Гарантия: </b>3 года<br>    
+<b>Производитель:</b> AUX серия LK <br>     
+<b>Модель: </b>ASW-H12A4/LK-700R1 <br>      
+<b>Наличие:</b> Есть в наличии     
+">35м²
+                </option>
+               <option data-id="Модель: <br>ASW-H18A4/LK-700R1 " value="
+                  AUX   <br>     
+    <b>35 000 руб. </b> <br>      
+    <b>Тип: </b>on/off сплит-система  <br>    
+    <b>Тип монтажа: </b>настенный   <br>    
+    <b>Режимы:</b> охлаждение/обогрев/осушение<br>      
+    <b>Рекомендуемая площадь:</b> до 50м²<br>       
+    <b>Мощность охлаждения:</b> 5300 Вт<br>       
+    <b>Мощность обогрева:</b> 5450Вт  <br>    
+    <b>Потребляемая мощность:</b> 1650 Вт <br>      
+    <b>Уровень шума (max/min): </b>45/36 дБ   <br>    
+    <b>Тип хладагента:</b> R410А <br>     
+    <b>Гарантия:</b> 3 года <br>
+    <b>Производитель:</b>AUX серия LK <br>     
+    <b>Модель: </b>ASW-H18A4/LK-700R1 <br>      
+    <b>Наличие:</b> Есть в наличии     
+
+                    ">50²
+                  </option>
+
+                  <option data-id="Модель: <br>ASW-H24A4/LK-700R1 " value=" 
+                    AUX <br>         
+    <b>42 500 руб. </b>  <br>       
+    <b>Тип:</b> on/off сплит-система<br>        
+    <b>Тип монтажа:</b> настенный  <br>       
+    <b>Режимы:</b> охлаждение/обогрев/осушение  <br>      
+    <b>Рекомендуемая площадь: </b>до 70м² <br>        
+    <b>Мощность охлаждения:</b> 7000 Вт <br>        
+    <b>Мощность обогрева:</b> 7100Вт  <br>      
+    <b>Потребляемая мощность: </b>2330 Вт<br>         
+    <b>Уровень шума (max/min): </b>46/37 дБ  <br>       
+    <b>Тип хладагента:</b> R410А <br>       
+    <b>Гарантия: </b>3 года <br>
+    <b>Производитель: </b>AUX серия LK  <br>      
+    <b>Модель: </b>ASW-H24A4/LK-700R1 <br>        
+    <b>Наличие:</b> Есть в наличии  <br>      
+    ">70²
+                </option>
+          </select>
+         
+           <div class="model"></div>  
+               </div>
+       </div>
+      </div>       
+                    <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>     
+    
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_objLKS" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1"></li>              
+              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/LK/1.jpg" alt="Haier серия LK">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/low/LK/2.jpg" alt="Haier серия LK">    
+              </div>
+              
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: AUX серия LK Standard Inverter</p>          
+               <div class="product_card">                   
+             
+                    <img data-image="белый" class="active" src="catalog/low/LK/main.png" alt="Кондиционер AUX LK">   
+                </div>
+
+                 
+                <div class="color-choose"></div>
+              
+             <p class="model_title"></p>
+             
+            <p class="select_square">Выбрать площадь помещения</p>
+
+            <select name="model" class="userselect">
+              <option data-id="Модель:<br> ASW-H09A4/LK-700R1DI" value="
+<b>AUX </b> <br>          
+<b>28 000 руб.</b> <br>           
+<b>Тип:</b> DC-инвертор, сплит-система <br>         
+<b>Тип монтажа:</b> настенный<br>           
+<b>Режимы:</b> охлаждение/обогрев/осушение <br>         
+<b>Рекомендуемая площадь:</b> до 25м² <br>          
+<b>Мощность охлаждения:</b> 2700 Вт <br>          
+<b>Мощность обогрева:</b> 2800 Вт <br>          
+<b>Потребляемая мощность:</b> 880 Вт <br>         
+<b>Уровень шума (max/min):</b> 36/27 дБ  <br>         
+<b>Тип хладагента:</b> R410А <br>         
+<b>Гарантия:</b> 3 года<br> 
+<b>Производитель:</b> AUX серия LK Standard Inverter <br>         
+<b>Модель:</b> ASW-H09A4/LK-700R1DI<br>           
+<b>Наличие:</b> Есть в наличии         
+">25 м²
+                </option>
+
+              <option data-id="Модель:<br>ASW-H12A4/LK-700R1DI" value="    
+<b>AUX</b>  <br>        
+<b>31 600 руб.</b> <br>         
+<b>Тип: </b>DC-инвертор, сплит-система <br>       
+<b>Тип монтажа:</b> настенный  <br>       
+<b>Режимы: </b>охлаждение/обогрев/осушение  <br>      
+<b>Рекомендуемая площадь:</b> до 35м²  <br>       
+<b>Мощность охлаждения:</b> 3300 Вт <br>        
+<b>Мощность обогрева: </b>3500 Вт<br>         
+<b>Потребляемая мощность:</b> 1020 Вт <br>        
+<b>Уровень шума (max/min):</b> 39/30 дБ  <br>       
+<b>Тип хладагента:</b> R410А <br>       
+<b>Гарантия:</b> 3 года<br> 
+<b>Производитель:</b> AUX серия LK Standard Inverter   <br>     
+<b>Модель:</b> ASW-H12A4/LK-700R1DI  <br>       
+<b>Наличие:</b> Есть в наличии       
+   
+">35 м²
+                </option> 
+
+               <option value="  
+   
+    <b>AUX </b><br>         
+    <b>50 700 руб.</b> <br>         
+    <b>Тип:</b> DC-инвертор, сплит-система<br>        
+    <b>Тип монтажа:</b> настенный  <br>       
+    <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
+    <b>Рекомендуемая площадь:</b> до 50м² <br>        
+    <b>Мощность охлаждения:</b> 5000 Вт <br>        
+    <b>Мощность обогрева:</b> 5100 Вт  <br>       
+    <b>Потребляемая мощность:</b> 1500 Вт <br>        
+    <b>Уровень шума (max/min):</b> 45/36 дБ  <br>       
+    <b>Тип хладагента:</b> R410А <br>       
+    <b>Гарантия:</b> 3 года  <br> 
+    <b>Производитель:</b> AUX серия LK Standard Inverter  <br>      
+    <b>Модель:</b> ASW-H18A4/LK-700R1DI <br>        
+    <b>Наличие:</b> Есть в наличии       
+        
+    ">50 м²
+                    </option> 
+
+                   <option data-id="Модель: <br>ASW-H24A4/LK-700R1DI" value="   
+    <b>AUX</b>   <br>       
+    <b>60 000 руб.</b> <br>         
+    <b>Тип:</b> DC-инвертор, сплит-система  <br>      
+    <b>Тип монтажа: </b>настенный    <br>     
+    <b>Режимы: </b>охлаждение/обогрев/осушение  <br>      
+    <b>Рекомендуемая площадь:</b> до 70м² <br>        
+    <b>Мощность охлаждения:</b> 6700 Вт <br>        
+    <b>Мощность обогрева:</b> 6800 Вт  <br>       
+    <b>Потребляемая мощность:</b> 1880 Вт <br>        
+    <b>Уровень шума (max/min):</b> 46/37 дБ <br>        
+    <b>Тип хладагента:</b> R410А <br>       
+    <b>Гарантия:</b> 3 года   <br>      
+    <b>Производитель:</b> AUX серия LK Standard Inverter <br>       
+    <b>Модель:</b> ASW-H24A4/LK-700R1DI   <br>      
+    <b>Наличие:</b> Есть в наличии <br>       
+
+">70 м²
+</option> 
+</select>
+           
+           <div class="model"></div> 
+
+            </div>
+       </div>
+      </div>
+           <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>     
+       
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+<div class="modal modal_obj fade modal_objLV" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel3" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>              
+              <li data-target="#myCarousel3" data-slide-to="1"></li>              
+              <li data-target="#myCarousel3" data-slide-to="2"></li>
+              <li data-target="#myCarousel3" data-slide-to="3"></li>
+              <li data-target="#myCarousel3" data-slide-to="4"></li>              
+              <li data-target="#myCarousel3" data-slide-to="5"></li>
+              <li data-target="#myCarousel3" data-slide-to="6"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/medium/LV/brown1.png" alt="Кондиционер AUX LV">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/medium/LV/brown2.png" alt="Кондиционер AUX LV"> 
+              </div>
+              <div class="item">
+                   <img src="catalog/medium/LV/grey1.png" alt="Кондиционер AUX LV"> 
+              </div>
+             <div class="item">
+                  <img src="catalog/medium/LV/grey2.png" alt="Кондиционер AUX LV"> 
+              </div>
+
+              <div class="item">
+                  <img src="catalog/medium/LV/full_grey.jpg" alt="Кондиционер AUX LV"> 
+              </div>
+              <div class="item">
+                  <img src="catalog/medium/LV/general.png" alt="Кондиционер AUX LV"> 
+              </div>
+              <div class="item">
+                  <img src="catalog/medium/LV/Pult_bytovye.png" alt="Кондиционер AUX LV"> 
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel3" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: AUX серия LV Design Inverter</p>          
+               <div class="product_card">
+                    <img data-image="коричневый" src="catalog/medium/LV/brown.png" alt="AUX серия LV">
+                    <img data-image="бежевый" class="active" src="catalog/medium/LV/beige.png" alt="AUX серия LV"> 
+                </div>
+                <div class="color-choose"> 
+                 <input data-image="коричневый" type="radio" class="brown" name="color" value="коричневый">
+                <label data-color="коричневый" ><span></span></label>
+                <input data-image="бежевый" type="radio" class="beige" name="color" value="бежевый">
+                <label data-color="бежевый"><span></span></label>              
+                </div>
+               
+
+             <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+
+            <select  name="model" class="userselect">                 
+                 <option data-id="Модель: <br>ASW-H09A4/LV-800R1DI" selected="selected"  value="  
+    <b>AUX</b>  <br>        
+    <b>44 300 руб. </b><br>         
+    <b>Тип:</b> DC-инвертор, сплит-система <br>       
+    <b>Тип монтажа:</b> настенный <br>        
+    <b>Режимы:</b> охлаждение/обогрев/осушение<br>        
+    <b>Рекомендуемая площадь:</b> до 25м² <br>        
+    <b>Мощность охлаждения:</b> 2700 Вт <br>        
+    <b>Мощность обогрева: </b>2<b></b>800 Вт <br>        
+    <b>Потребляемая мощность:</b> 800 Вт <br>       
+    <b>Уровень шума (max/min):</b> 33/24 дБ <br>        
+   <b> Тип хладагента:</b> R410А <br>       
+    <b>Гарантия:</b> 3 года   <br>      
+    <b>Производитель:</b> AUX серия LV Design Inverter <br>       
+    <b>Модель:</b> ASW-H09A4/LV-800R1DI <br>        
+   <b> Наличие:</b> Есть в наличии
+    ">25м²
+    </option>
+
+    <option data-id="Модель: <br>ASW-H12A4/LV-800R1DI " value="  
+    <b>AUX </b> <br>        
+    <b>47 000 руб.</b>  <br>        
+    <b>Тип:</b> DC-инвертор, сплит-система <br>       
+    <b>Тип монтажа:</b> настенный  <br>       
+    <b>Режимы: </b>охлаждение/обогрев/осушение  <br>      
+    <b>Рекомендуемая площадь:</b> до 35м²  <br>       
+    <b>Мощность охлаждения:</b> 3300 Вт <br>        
+   <b> Мощность обогрева:</b> 3500 Вт  <br>       
+    <b>Потребляемая мощность:</b> 970 Вт  <br>      
+    <b>Уровень шума (max/min): </b>33/24 дБ   <br>      
+    <b>Тип хладагента:</b> R410А <br>       
+    <b>Гарантия:</b> 3 года <br> 
+    <b>Производитель:</b> AUX серия LV Design Inverter  <br>      
+    <b>Модель:</b> ASW-H12A4/LV-800R1DI  <br>       
+    <b>Наличие:</b> Есть в наличии  <br>      
+    ">35м²</option>
+            
+
+                
+          </select>
+          
+           <div class="model"></div>  
+             </div>
+       </div>
+      </div>      
+              <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>     
+      
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+<div class="modal modal_obj fade modal_objLA" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel4" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>              
+              <li data-target="#myCarousel4" data-slide-to="1"></li>              
+              <li data-target="#myCarousel4" data-slide-to="2"></li>
+              <li data-target="#myCarousel4" data-slide-to="3"></li>
+              <li data-target="#myCarousel4" data-slide-to="4"></li>
+              <li data-target="#myCarousel4" data-slide-to="5"></li>              
+              <li data-target="#myCarousel4" data-slide-to="6"></li>
+              <li data-target="#myCarousel4" data-slide-to="7"></li>
+              <li data-target="#myCarousel4" data-slide-to="8"></li>
+              <li data-target="#myCarousel4" data-slide-to="9"></li>              
+              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/premium/LA/brown1.png" alt="LA Exclusive Inverter">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/premium/LA/grey1.jpg" alt="LA Exclusive Inverter">    
+              </div>
+              <div class="item">
+                  <img src="catalog/premium/LA/grey_full.jpg" alt="LA Exclusive Inverter">
+              </div>
+             <div class="item">
+                  <img src="catalog/premium/LA/gneral.jpg" alt="LA Exclusive Inverter">
+              </div>
+               <div class="item">
+                  <img src="catalog/premium/LA/Pult_bytovye.png" alt="LA Exclusive Inverter">
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control le<br> ft" href="#myCarousel4" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel4" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: AUX серия LA Exclusive Inverter</p>          
+               <div class="product_card">                   
+                    
+                    <img data-image="серый" class="active" src="catalog/premium/LA/grey.png" alt="AUX серия LA">
+                    <img data-image="brown" src="catalog/premium/LA/brown.png" alt="AUX серия LA">
                     
                 </div>
                 <div class="color-choose">
-               
-                 <input  data-image="black" type="radio" id="black" name="color" value="black" checked>
-                 <label name="black" for="black"><span></span></label>
-
-                  <input  data-image="grey" type="radio" id="grey" name="color" value="grey">
-                <label name="grey" for="grey"><span></span></label>
+                <input  data-image="коричневый" type="radio" class="brown" name="color" value="коричневый">
+                <label data-color="коричневый"><span></span></label>            
+                <input  data-image="серый" type="radio" class="grey" name="color" value="серый">
+                <label data-color="серый"><span></span></label>              
+                </div>
               
-              
-                 <input  data-image="white" type="radio" id="white" name="color" value="white">
-                <label name="white" for="white"><span></span></label>
-              
-               
-             </div>
-            <!-- <p class="select_square">Выбрать площадь помещения</p> -->
 
-           <!--  <select name="model" class="userselect"> -->
-             <!--  <option value="   AUX <br>      
-14 300 руб.   <br>    
-Тип: on/off сплит-система <br>    
-Тип монтажа: настенный  <br>    
-Режимы: охлаждение/обогрев/осушение <br>    
-Рекомендуемая площадь: до 20 м² <br>    
-Мощность охлаждения: 2100 Вт <br>     
-Мощность обогрева: 2200Вт  <br>   
-Потребляемая мощность: 650 Вт <br>    
-Уровень шума (max/min): 33/24 дБ <br>     
-Тип хладагента: R410А <br>    
-Гарантия: 3 года<br>
-Производитель: AUX серия FJ <br>    
-Модель: ASW-H07A4/FJ-WR1 <br>     
-Наличие: Есть в наличии"     
->20 м²
-                </option> -->
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
 
-             <!--  <option value="AUX <br>     
-14 300 руб. <br>      
-Тип: on/off сплит-система  <br>   
-Тип монтажа: настенный   <br>   
-Режимы: охлаждение/обогрев/осушение  <br>   
-Рекомендуемая площадь: до 20 м²  <br>   
-Мощность охлаждения: 2100 Вт <br>     
-Мощность обогрева: 2200Вт <br>    
-Потребляемая мощность: 650 Вт<br>     
-Уровень шума (max/min): 33/24 дБ  <br>    
-Тип хладагента: R410А  <br>   
-Гарантия: 3 года  <br>    
+            <select name="model" class="userselect">
+    <option data-id="Модель: <br>ASW-H09A4\LA800R1DI" value="   
+   <b> AUX</b><br>          
+    <b>51 900 руб.</b>  <br>        
+    <b>Тип:</b> DC-инвертор, сплит-система <br>       
+    <b>Тип монтажа:</b> настенный  <br>       
+   <b> Режимы:</b> охлаждение/обогрев/осушение <br>       
+    <b>Рекомендуемая площадь: д</b>о 25м²  <br>       
+    <b>Мощность охлаждения:</b> 2700 Вт <br>        
+    <b>Мощность обогрева:</b> 2800 Вт <br>        
+    <b>Потребляемая мощность:</b> 820 Вт  <br>      
+    <b>Уровень шума (max/min):</b> 33/24 дБ <br>        
+    <b>Тип хладагента:</b> R410А  <br>      
+    <b>Гарантия:</b> 3 года <br> 
+    <b>Производитель:</b> AUX серия LA Exclusive Inverter  <br>       
+    <b>Модель: </b>ASW-H09A4\LA800R1DI  <br>      
+   <b> Наличие:</b> Есть в наличии       
+        
+    ">25 м²</option>
+    <option data-id="Модель: <br>ASW-H12A4/LA800R1DI" value="<b>AUX</b> <br>         
+    <b>57 900 руб.</b>     <br>   
+    <b>Тип:</b> DC-инвертор, сплит-система <br>       
+    <b>Тип монтажа:</b> настенный  <br>       
+    <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
+   <b> Рекомендуемая площадь:</b> до 35м² <br>        
+    <b>Мощность охлаждения:</b> 3400 Вт <br>        
+    <b>Мощность обогрева: </b>3600 Вт  <br>       
+    <b>Потребляемая мощность:</b> 970 Вт  <br>      
+   <b> Уровень шума (max/min): </b>33/24 дБ   <br>      
+    <b>Тип хладагента: </b>R410А <br>       
+    <b>Гарантия:</b> 3 года<br> 
+    <b>Производитель:</b> AUX серия LA Exclusive Inverter  <br>       
+    <b>Модель:</b> ASW-H12A4/LA800R1DI  <br>      
+    <b>Наличие:</b> Есть в наличии  <br>      
       
-Производитель: AUX серия FJ  <br>   
-Модель: ASW-H07A4/FJ-SR1 <br>     
-Наличие: Есть в наличии <br>    
-">30 м²
-                </option>  -->
-
-<!--                <option value="AUX <br>      
-14 300 руб. <br>      
-Тип: on/off сплит-система  <br>   
-Тип монтажа: настенный   <br>   
-Режимы: охлаждение/обогрев/осушение   <br>  
-Рекомендуемая площадь: до20 м² <br>     
-Мощность охлаждения: 2100 Вт <br>     
-Мощность обогрева: 2200Вт  <br>   
-Потребляемая мощность: 650 Вт <br>    
-Уровень шума (max/min): 33/24 дБ   <br>   
-Тип хладагента: R410А   <br>  
-Гарантия: 3 года  <br>    
-      
-Производитель: AUX серия FJ <br>    
-Модель: ASW-H07A4/FJ-BR1 <br>     
-Наличие: Есть в наличии <br>    
-">35 м² -->
-                </option> 
-            </select>
-            
-           <div class="model">AUX <br>      
-14 300 руб.   <br>    
-Тип: on/off сплит-система <br>    
-Тип монтажа: настенный  <br>    
-Режимы: охлаждение/обогрев/осушение <br>    
-Рекомендуемая площадь: до 20 м² <br>    
-Мощность охлаждения: 2100 Вт <br>     
-Мощность обогрева: 2200Вт  <br>   
-Потребляемая мощность: 650 Вт <br>    
-Уровень шума (max/min): 33/24 дБ <br>     
-Тип хладагента: R410А <br>    
-Гарантия: 3 года<br>
-Производитель: AUX серия FJ <br>    
-Модель: ASW-H07A4/FJ-WR1 <br>     
-Наличие: Есть в наличии"     </div>         
-          <button type="button" class="buy_btn " data-toggle="modal" data-target="#order_modal">Купить</button>
-          
-     </div>
-   </div>
-
-
-
-
-
-         
+    ">35 м²
+</option> 
+</select>
+           
+           <div class="model"></div> 
+ </div>
+       </div>
       </div>
+
+              <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>        
+       
     </div>
   </div>
+ </div>
 </div>
 
+
+<div class="modal modal_obj fade modal_objKid" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel5" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>     
+              <li data-target="#myCarousel5" data-slide-to="1"></li>              
+              <li data-target="#myCarousel5" data-slide-to="2"></li>
+              <li data-target="#myCarousel5" data-slide-to="3"></li>
+              <li data-target="#myCarousel5" data-slide-to="4"></li>              
+              <li data-target="#myCarousel5" data-slide-to="5"></li>
+              <li data-target="#myCarousel5" data-slide-to="6"></li>
+              <li data-target="#myCarousel5" data-slide-to="7"></li>
+              <li data-target="#myCarousel5" data-slide-to="8"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/premium/Kids/blue1.png" alt="AUX 
+серия Kids Inverter">     
+              </div>
+              <div class="item"> 
+                 <img src="catalog/premium/Kids/blue2.png" alt="AUX 
+серия Kids Inverter">    
+              </div>
+              <div class="item">
+                  <img src="catalog/premium/Kids/blue3.png" alt="AUX серия Kids Inverter">
+              </div>
+
+              <div class="item">
+                  <img src="catalog/premium/Kids/blue4.png" alt="AUX серия Kids Inverter">
+              </div>
+              <div class="item">
+                  <img src="catalog/premium/Kids/blue5.png" alt="AUX серия Kids Inverter">
+              </div>
+              
+              <div class="item">
+                  <img src="catalog/premium/Kids/pink2.png" alt="AUX серия Kids Inverter">
+              </div>
+              <div class="item">
+                  <img src="catalog/premium/Kids/pink3.png" alt="AUX серия Kids Inverter">
+              </div>
+
+              <div class="item">
+                  <img src="catalog/premium/Kids/pink4.png" alt="AUX серия Kids Inverter">
+              </div>
+              <div class="item">
+                  <img src="catalog/premium/Kids/pink5.png" alt="AUX серия Kids Inverter">
+              </div>
+             
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel5" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel5" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: AUX серия Kids Inverter</p>          
+              <div class="product_card">                 
+                    
+                    <img id="girl2" data-image="розовый" class="active" src="catalog/premium/Kids/pink.png" alt="серия Kids Inverter">
+                    <img id="boy2" data-image="голубой"  src="catalog/premium/Kids/blue.png" alt="серия Kids Inverter"> 
+                </div>
+                <div class="color-choose"></div>
+
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать</p>
+
+            <select name="model" class="userselect">
+              <option data-id="Модель: <br>AWG-H09BC/R1DI" value="   
+    <b>AUX</b>  <br>        
+    <b>49 700 руб. </b> <br>      
+    <b>Тип: </b>DC-инвертор, сплит-система <br>       
+    <b>Тип монтажа:</b> настенный <br>        
+    <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
+    <b>Рекомендуемая площадь:</b> до 35м² <br>        
+    <b>Мощность охлаждения:</b> 2700 Вт <br>        
+    <b>Мощность обогрева:</b> 2800 Вт  <br>       
+    <b>Потребляемая мощность:</b> 820 Вт<br>        
+    <b>Уровень шума (max/min): </b>26/19 дБ <br>        
+    <b>Тип хладагента:</b> R410А <br>       
+    <b>Гарантия:</b> 3 года  <br> 
+    <b>Производитель:</b> AUX серия LA Exclusive Inverter <br>        
+    <b>Модель:</b> ASW-<b></b>H12A4/LA600R1DI  <br>      
+    <b>Наличие:</b> Есть в наличии <br>       
+    ">для девочек
+                    </option>
+
+     <option data-id="Модель: <br>AWB-H09BC/R1DI" value="   
+    <b>AUX </b><br>         
+    <b>49 700 руб.</b>  <br>      
+    <b>Тип:</b> DC-инвертор, сплит-система <br>       
+    <b>Тип монтажа: </b>настенный <br>        
+    <b> Режимы: </b>охлаждение/обогрев/осушение <br>       
+    <b>Рекомендуемая площадь:</b> до 35м² <br>        
+    <b>Мощность охлаждения:</b> 2700 Вт<br>         
+    <b>Мощность обогрева: </b>2800 Вт <br>        
+    <b>Потребляемая мощность:</b> 820 Вт <br>       
+    <b>Уровень шума (max/min): </b>26/19 дБ <br>        
+    <b>Тип хладагента:</b> R410А <br>       
+    <b>Гарантия:</b> 3 года <br> 
+   <b> Производитель:</b> AUX серия LA Exclusive Inverter   <br>      
+   <b> Модель:</b> ASW-H12A4/LA600R1DI  <br>      
+    <b>Наличие:</b> Есть в наличии  <br>      
+">для мальчиков</option>             
+</select>
+<div class="model"></div>
+  </div>
+       </div>
+      </div>       
+        <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>              
+      
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_objTib" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel6" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>              
+              <li data-target="#myCarousel6" data-slide-to="1"></li>              
+              <li data-target="#myCarousel6" data-slide-to="2"></li>
+              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/Tibio/general.jpg" alt="Haier серия TIBIO">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/low/Tibio/haier1.png" alt="Haier серия TIBIO">    
+              </div>
+              <div class="item">
+                  <img src="catalog/low/Tibio/pult.png" alt="Haier серия TIBIO">
+              </div>
+             
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel6" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel6" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+           
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier серия TIBIO      
+</p>          
+                <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/low/Tibio/haier-tibio.png" alt="Haier серия TIBIO">
+                </div>
+                <div class="color-choose">
+                    
+                </div>
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+<select name="model" class="userselect">
+<option selected="selected" data-id="Модель: <br> HSU-07HT103/R2" value="   
+       <b>Haier </b> <br>      
+      <b>17 280 руб.</b><br>        
+      <b>Тип: </b>on/off сплит-система   <br>     
+      <b>Тип монтажа:</b> настенный  <br>       
+      <b>Режимы: </b>охлаждение/обогрев/осушение    <br>    
+      <b>Рекомендуемая площадь:</b> до 20м²   <br>      
+      <b>Мощность охлаждения:</b> 2100 Вт <br>        
+      <b>Мощность обогрева:</b> 2100Вт  <br>      
+      <b>Потребляемая мощность:</b> 655 Вт <br>       
+      <b>Уровень шума (max/min):</b> 34/22 дБ   <br>      
+     <b> Тип хладагента:</b> R410А <br>       
+      <b>Гарантия:</b> 3 года <br> 
+      <b>Производитель:</b> Haier серия TIBIO  <br>       
+      <b>Модель:</b> HSU-07HT103/R2    <br>     
+      <b>Наличие: </b>Есть в наличии       
+      ">20 м²</option>
+
+      <option data-id="Модель: <br> HSU-09HT103/R2" value="<b>Haier </b>        
+      <b>18 270 руб.</b> <br>       
+      <b>Тип:</b> on/off сплит-система <br>       
+      <b>Тип монтажа:</b> настенный  <br>       
+      <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
+      <b>Рекомендуемая площадь:</b> до 25м²  <br>       
+      <b>Мощность охлаждения:</b> 2700 Вт <br>        
+      <b>Мощность обогрева:</b> 2700Вт  <br>      
+      <b>Потребляемая мощность:</b> 830 Вт  <br>      
+      <b>Уровень шума (max/min):</b> 34/24 дБ   <br>      
+      <b>Тип хладагента: </b>R410А  <br>      
+      <b>Гарантия:</b> 3 года <br> 
+      <b>Производитель:</b> Haier серия TIBIO <br>        
+      <b>Модель:</b> HSU-09HT103/R2 <br>        
+      <b>Наличие:</b> Есть в наличии       
+      ">25 м²</option> 
+              
+      <option data-id="Модель: <br> HSU-12HT203/R2" value="  
+      <b>Haier</b> <br>         
+      <b>21 600 руб.</b>  <br>      
+      <b>Тип:</b> on/off сплит-система <br>       
+      <b>Тип монтажа:</b> настенный <br>        
+     <b> Режимы:</b> охлаждение/обогрев/осушение  <br>      
+      <b>Рекомендуемая площадь:</b> до 35м²   <br>      
+      <b>Мощность охлаждения: </b>3300 Вт <br>        
+      <b>Мощностьбогрева:</b> 3300Вт<br>        
+      <b>Потребляемая мощность:</b> 1025 Вт <br>        
+      <b>Уровень шума (max/min):</b> 37/27 дБ <br>        
+      <b>Тип хладагента:</b> R410А  <br>      
+      <b>Гарантия:</b> 3 года<br> 
+      <b>Производитель:</b> Haier серия TIBIO <br>        
+      <b>Модель:</b> HSU-12HT203/R2  <br>       
+      <b>Наличие:</b> Есть в наличии       
+
+      ">35 м²</option> 
+                      
+      <option data-id="Модель: <br> HSU-18HT203/R2" value=" 
+     <b> Haier</b><br>          
+      <b>32 220 руб.</b> <br>       
+      <b>Тип: </b>on/off сплит-система  <br>      
+      <b>Тип монтажа: </b>настенный <br>        
+      <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
+      <b>Рекомендуемая площадь:</b> до 45м²   <br>      
+      <b> Мощность охлаждения:</b> 5100 Вт <br>        
+      <b>Мощность обогрева:</b> 5100Вт <br>       
+      <b> Потребляемая мощность:</b> 1590 Вт <br>        
+      <b>Уровень шума (max/min):</b> 44/31 дБ  <br>       
+      <b>Тип хладагента:</b> R410А<br>        
+      <b>Гарантия:</b> 3 года <br> 
+      <b>Производитель: </b>Haier серия TIBIO <br>        
+      <b>Модель:</b> HSU-18HT203/R2   <br>      
+      <b>Наличие:</b> Есть в наличии       
+      ">45 м²</option> 
+
+      <option data-id="Модель: <br> HSU-24HT203/R2    
+      " value="  
+      <b>Haier</b><br>          
+      <b>43 020 руб.</b>  <br>      
+      <b>Тип:</b> on/off сплит-система   <br>     
+      <b>Тип монтажа:</b> настенный   <br>      
+      <b>Режимы: </b>охлаждение/обогрев/осушение    <br>    
+      <b>Рекомендуемая площадь: </b>до 70м² <br>        
+      <b>Мощность охлаждения:</b> 6800 Вт<br>         
+      <b>Мощность обогрева:</b> 7200Вт <br>       
+      <b>Потребляемая мощность:</b> 2195 Вт <br>        
+      <b>Уровень шума (max/min):</b> 50/33 дБ <br>        
+      <b>Тип хладагента:</b> R410А<br>        
+      <b>Гарантия:</b> 3 года <br>  
+      <b> Производитель:</b> Haier серия TIBIO <br>        
+      <b>Модель:</b> HSU-24HT203/R2  <br>       
+      <b>Наличие:</b> Есть в наличии       
+      ">70 м²</option> 
+            
+</select>
+           
+           <div class="model"></div>
+            </div>
+       </div>
+      </div>        
+            <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>         
+       
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_objFam" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel7" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>              
+              <li data-target="#myCarousel7" data-slide-to="1"></li>              
+              <li data-target="#myCarousel7" data-slide-to="2"></li>
+              <li data-target="#myCarousel7" data-slide-to="3"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/Family/family1.png" alt="AUX серия Family">     
+              </div>
+              <div class="item"> 
+                  <img src="catalog/low/Family/family2.jpg" alt="AUX серия Family">
+              </div>
+              <div class="item">
+                  <img src="catalog/low/Family/general.png" alt="AUX серия Family">
+              </div>
+             <div class="item">
+                 <img src="catalog/low/Family/pult.png" alt="AUX серия Family">
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel7" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel7" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier серия Family</p>          
+              <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/low/Family/Family.png" alt="Haier серия FAMILY">               
+                </div>
+                <div class="color-choose"> 
+                         
+                </div>
+
+             <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> HSU-30HNH03/R2-W" value="   
+<b>Haier </b> <br>         
+<b>48 960 руб.</b> <br>      
+<b>Тип:</b> on/off сплит-система <br>    
+<b>Тип монтажа:</b> настенный <br>     
+<b>Режимы: </b>охлаждение/обогрев/осушение <br>
+<b>Рекомендуемая площадь:</b> до 90м²  <br>  
+<b>Мощность охлаждения:</b> 9000 Вт <br>   
+<b>Мощность обогрева:</b> 9800Вт  <br>   
+<b>Потребляемая мощность:</b> 2700 Вт <br>   
+<b>Уровень шума (max/min):</b> 52/43 дБ   <br> 
+<b>Тип хладагента:</b> R410А <br>    
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия FAMILY  <br> 
+<b>Модель:</b> HSU-30HNH03/R2-W  <br>    
+<b>Наличие:</b> Есть в наличии <br>
+">90 м²</option>
+<option data-id="Модель: <br> HSU-36HNH03R2" value="
+<b>Haier</b> <br>          
+<b>60 080 руб.</b> <br>      
+<b>Тип:</b> on/off сплит-система <br>    
+<b>Тип монтажа:</b> настенный <br>     
+<b>Режимы:</b> охлаждение/обогрев/осушение <br>
+<b>Рекомендуемая площадь:</b> до 100м² <br>  
+<b>Мощность охлаждения:</b> 1100 Вт <br>   
+<b>Мощность обогрева: </b> 1130Вт <br>    
+ <b>  Потребляемая мощность:</b> 3425 Вт    <br>
+<b>Уровень шума (max/min):</b> 52/43 дБ  <br>  
+<b>Тип хладагента:</b> R410А   <br>  
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия FAMILY <br>  
+<b>Модель:</b> HSU-36HNH03R2   <br>  
+<b>Наличие:</b> Есть в наличии <br>   
+
+">100 м²</option> 
+        
+
+</select>
+       
+<div class="model"></div>
+         </div>
+       </div>
+      </div>
+        <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>         
+       
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_obj8" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel8" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel8" data-slide-to="1"></li>              
+              <li data-target="#myCarousel8" data-slide-to="2"></li>
+              <li data-target="#myCarousel8" data-slide-to="3"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/Lightera/gold1.png" alt="Haier серия Lightera">     
+              </div>
+              <div class="item"> 
+                 <img src="catalog/low/Lightera/white1.jpg" alt="Haier серия Lightera">
+              </div>
+              <div class="item">
+                 <img src="catalog/low/Lightera/general.png" alt="Haier серия Lightera">
+              </div>
+             <div class="item">
+                <img src="catalog/low/Lightera/pult.jpg" alt="Haier серия Lightera">
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel8" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel8" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+           
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier <br> серия Lightera</p>          
+              <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/low/Lightera/white.png" alt="Haier серия Lightera"> 
+                    <img data-image="золотой" class="active" src="catalog/low/Lightera/gold.png" alt="Haier серия Lightera">              
+                </div>
+                <div class="color-choose"> 
+                       <input  data-image="золотой" type="radio" class="gold" name="color" value="золотой">
+                <label data-color="золотой"><span></span></label>            
+                <input  data-image="белый" type="radio" class="white" name="color" value="белый">
+                <label data-color="белый"><span></span></label>    
+                </div>
+
+             <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> HSU-07HNF203/R2" value="   
+<b>Haier  </b><br>      
+<b>16 990 руб.</b> <br>    
+<b>Тип:</b> on/off сплит-система  <br> 
+<b>Тип монтажа:</b> настенный <br>   
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 20м²  <br>
+<b>Мощность охлаждения:</b> 2100 Вт <br> 
+<b>Мощность обогрева:</b> 2100Вт <br>  
+<b>Потребляемая мощность:</b> 650 Вт <br>
+<b>Уровень шума (max/min):</b> 35/23 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года  <br>
+<b>Производитель:</b> Haier серия Lightera <br>
+<b>Модель:</b> HSU-07HNF203/R2 <br>  
+<b>Наличие:</b> Есть в наличии   
+ 
+">20 м²</option>
+<option data-id="Модель: <br> HSU-09HNF203/R2" value="
+<b>Haier</b>  <br>       
+<b>18 320 руб.</b><br>    
+<b>Тип:</b> on/off сплит-система  <br> 
+<b>Тип монтажа:</b> настенный <br>   
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 25м² <br> 
+<b>Мощность охлаждения:<b> 2600 Вт <br> 
+<b>  Мощность обогрева: </b>2600Вт <br>  
+<b>Потребляемая мощность:</b> 800 Вт <br>
+<b>Уровень шума</b> (max/min):</b> 35/23 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года  <br> 
+<b>Производитель:</b> Haier серия Lightera<br> 
+<b>Модель:</b> HSU-09HNF203/R2   <br>
+<b>Наличие:</b> Есть в наличии  
+">25²</option> 
+        
+
+<option data-id="Модель: <br> HSU-12HNF203/R2" value="
+<b>Haier</b>   <br>      
+<b>21 310 руб.</b> <br>    
+<b>Тип:</b> on/off сплит-система <br> 
+<b>Тип монтажа: </b>настенный <br>   
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 35м²  <br>
+<b>Мощность охлаждения:</b> 3300 Вт <br> 
+<b>Мощность обогрева:</b> 3500Вт <br>  
+<b>Потребляемая мощность:</b> 1025 Вт  <br>
+<b>Уровень шума (max/min):</b> 37/26 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года  <br>      
+<b>Производитель:</b> Haier серия Lightera <br>
+<b>Модель:</b> HSU-12HNF203/R2   <br>
+<b>Наличие:</b> Есть в наличии   
+
+">35²</option> 
+
+
+
+<option data-id="Модель: <br> HSU-12HNF203/R2" value="
+<b>Haier</b> <br>        
+<b>21 310 руб.</b> <br>    
+<b>Тип:</b> on/off сплит-система <br>  
+<b>Тип монтажа:</b> настенный<br>    
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 35м² <br> 
+<b>Мощность охлаждения:</b> 3300 Вт <br> 
+<b>Мощность обогрева:</b> 3500Вт  <br> 
+<b>Потребляемая мощность:</b> 1025 Вт <br> 
+<b>Уровень шума (max/min):</b> 37/26 дБ  <br>
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия:</b> 3 года  <br>      
+<b>Производитель:</b> Haier серия Lightera <br>
+<b>Модель: </b>HSU-12HNF203/R2  <br> 
+<b>Наличие:</b> Есть в наличии   
+
+">35²</option> 
+
+
+<option data-id="Модель: <br>  HSU-18HNF103/R2" value="
+<b>Haier</b> <br>        
+<b>31 390 руб.</b>   <br>  
+<b>Тип:</b> on/off сплит-система   <br>
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 45м²  <br>
+<b>Мощность охлаждения:</b> 5400 Вт <br> 
+<b>Мощность обогрева:</b> 6000Вт  <br> 
+<b>Потребляемая мощность:</b> 1630 Вт  <br>
+<b>Уровень шума (max/min):</b> 42/31 дБ <br> 
+<b>Тип хладагента:</b> R410А<br>   
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Lightera <br>
+<b>Модель:</b> HSU-18HNF103/R2   <br>
+<b>Наличие:</b> Есть в наличии">45²</option> 
+
+
+<option data-id="Модель: <br> HSU-24HNF103/R2" value="
+<b>Haier </b><br>        
+<b>40 320 руб.</b>  <br>   
+<b>Тип:</b> on/off сплит-система <br>  
+<b>Тип монтажа:</b> настенный <br>   
+<b>Режимы: </b>охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь: </b>до 70м² <br> 
+<b>Мощность охлаждения:</b> 7300 Вт <br> 
+<b>Мощность обогрева:</b> 7600Вт <br>  
+<b>Потребляемая мощность:</b> 2205 Вт <br> 
+<b>Уровень шума (max/min):</b> 49/33 дБ <br> 
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Lightera <br>
+<b>Модель:</b> HSU-24HNF103/R2   <br>
+<b>Наличие:</b> Есть в наличии   
+">70²</option> 
+
+</select>
+         
+<div class="model"></div>
+
+                </div>
+       </div>
+      </div>
+      <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>             
+
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+<div class="modal modal_obj fade modal_objLeader" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel9" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>              
+              <li data-target="#myCarousel9" data-slide-to="1"></li>              
+              
+              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/LEADER/1.jpg" alt="Haier серия LEADER">     
+              </div>
+              <div class="item"> 
+                 <img src="catalog/low/LEADER/2.jpg" alt="Haier серия LEADER">       
+              </div>
+              
+             
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel9" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel9" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+             
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier серия LEADER      
+</p>          
+                <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/low/Leader/haier_lider.jpg" alt="Haier серия LEADER">
+                </div>
+                <div class="color-choose">
+                    
+                </div>
+
+              <p class="model_title"></p>
+            <p class="select_square">Выбрать площадь помещения</p>
+
+<select name="model" class="userselect">
+<option selected="selected" data-id="Модель: <br> HSU-07HLT03/R2" value="   
+<b>Haier</b> <br>        
+<b>10 990 руб.</b><br>     
+<b>Тип:</b> on/off сплит-система   <br>
+<b>Тип монтажа: </b>настенный   <br> 
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 20м²  <br>
+<b>Мощность охлаждения:</b> 2050 Вт <br> 
+<b>Мощность обогрева:</b> 2050Вт <br>  
+<b>Потребляемая мощность:</b> 730 Вт <br>
+<b>Уровень шума (max/min):</b> 34/22 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года   <br>     
+<b>Производитель:</b> Haier серия Leader <br>
+<b>Модель: </b>HSU-07HLT03/R2   <br> 
+<b>Наличие:</b> Есть в наличии   
+       
+">20 м²</option>
+
+<option data-id="Модель: <br> HSU-09HLT03/R2" value="<b>Haier </b>        
+<b>11 990 руб.</b>    <br> 
+<b>Тип:</b> on/off сплит-система <br>  
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 25м²  <br>
+<b>Мощность охлаждения: </b>2400 Вт <br> 
+<b>Мощность обогрева:</b> 2400Вт<br>   
+<b>Потребляемая мощность:</b> 885 Вт <br>
+<b>Уровень шума (max/min):<b>35/23 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Leader<br> 
+<b>Модель: </b>HSU-09HLT03/R2    <br>
+<b>Наличие:</b> Есть в наличии   
+      
+">25 м²</option> 
+        
+<option data-id="Модель: <br> HSU-12HLT03/R2" value="  
+<b>Haier</b><br>         
+<b>13 990 руб.</b><br>     
+<b>Тип:</b> on/off сплит-система  <br> 
+<b>Тип монтажа: </b>настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 35м²  <br>
+<b>Мощность охлаждения:</b> 3200 Вт<br>  
+<b>Мощность обогрева:</b> 3250Вт <br>  
+<b>Потребляемая мощность:</b> 920 Вт <br>
+<b>Уровень шума (max/min):</b> 37/27 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Leader <br>
+<b>Модель:</b> HSU-12HLT03/R2  <br>  
+<b>Наличие:</b> Есть в наличии   
+     
+      
+
+">35 м²</option> 
+                
+<option data-id="Модель: <br> HSU-18HLT03R2" value=" 
+<b>Haier</b>  <br>       
+<b>23 500 руб</b>. <br>    
+<b>Тип:</b> on/off сплит-система <br>  
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 45м² <br> 
+<b>Мощность охлаждения:</b> 5000 Вт<br>  
+<b>Мощность обогрева:</b> 5000Вт<br>   
+<b>Потребляемая мощность: </b>1780 Вт <br> 
+<b>Уровень шума (max/min):</b> 44/31 дБ <br> 
+<b>Тип хладагента: </b>R410А <br>  
+<b>Гарантия:</b> 3 года  <br>
+<b>Производитель:</b> Haier серия Leader <br>
+<b>Модель:</b> HSU-18HLT03R2   <br>
+<b>Наличие: </b>Есть в наличии   
+
+      
+">45 м²</option> 
+
+<option data-id="Модель: <br> HSU-24HLT03R2    
+" value="  
+<b>Haier </b> <br>       
+<b>31 450 руб.</b>   <br>  
+<b>Тип:</b> on/off сплит-система <br>  
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы: </b>охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 70м² <br> 
+<b>Мощность охлаждения:</b> 6800 Вт<br>  
+<b>Мощность обогрева:</b> 7200Вт <br>  
+<b>Потребляемая мощность:</b> 2195 Вт <br> 
+<b>Уровень шума (max/min):</b> 44/31 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Leader <br>
+<b>Модель:</b> HSU-24HLT03R2 <br>  
+<b>Наличие:</b> Есть в наличии   
+     
+">70 м²</option> 
+            
+</select>
+           
+           <div class="model"></div>
+        </div>
+       </div>
+      </div>
+
+        <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>               
+
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_obj10" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel10" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel10" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel10" data-slide-to="1"></li>              
+              <li data-target="#myCarousel10" data-slide-to="2"></li>
+              <li data-target="#myCarousel10" data-slide-to="3"></li>
+              <li data-target="#myCarousel10" data-slide-to="4"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/low/Lightera/gold1.png" alt="Haier серия Lightera">     
+              </div>
+              <div class="item"> 
+                 <img src="catalog/medium/ElegantDCInverter/white1.png" alt="ELEGANT DC Inverter">
+              </div>
+              <div class="item">
+                 <img src="catalog/medium/ElegantDCInverter/white2.png" alt="ELEGANT DC Inverter">
+              </div>
+             <div class="item">
+                <img src="catalog/medium/ElegantDCInverter/general.jpg" alt="ELEGANT DC Inverter">
+              </div>
+              <div class="item">
+                <img src="catalog/medium/ElegantDCInverter/pult.png" alt="ELEGANT DC Inverter">
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel10" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel10" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+             
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier <br> серия Elegant DC Inverter</p>         
+              <div class="product_card">
+                     <img data-image="белый" class="active" src="catalog/medium/ElegantDCInverter/white.png" alt="Elegant DC Inverter">
+                               
+                </div>
+                <div class="color-choose"> 
+                         
+                </div>
+
+             <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> AS07NM5HRA" value="   
+<b>Haier</b> <br>        
+<b>20 850 руб.</b> <br>    
+<b>Тип:</b> DC-инвертор, сплит-система <br>  
+<b>Тип монтажа: </b>настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 20м²<br>  
+<b>Мощность охлаждения:</b> 2200 Вт <br> 
+<b>Мощность обогрева:</b> 2600Вт <br>  
+<b>Потребляемая мощность: </b>657 Вт <br>
+<b>Уровень шума (max/min):</b> 34/20 дБ  <br>
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Elegant DC Inverter  
+<b>Модель:</b> AS07NM5HRA <br>   
+<b>Наличие:</b> Есть в наличии   
+
+">20 м²</option>
+<option data-id="Модель: <br> AS09NM5HRA " value="
+<b>Haier</b> <br>        
+<b>22 350 руб. </b><br>    
+<b>Тип:</b> DC-инвертор, сплит-система <br> 
+<b>Тип монтажа:</b> настенный    <br>
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 25м² <br> 
+<b>Мощность охлаждения:</b> 2700 Вт <br> 
+<b>Мощность обогрева:</b> 3100Вт  <br> 
+<b>Потребляемая мощность:</b> 805 Вт <br>
+<b>Уровень шума (max/min):</b> 34/20 дБ  <br>
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия:</b> 3 года   <br>   
+        
+<b>Производитель:</b> Haier серия Elegant DC Inverter <br> 
+<b>Модель:</b> AS09NM5HRA    <br>
+<b>Наличие:</b> Есть в наличии   
+  
+">25²</option> 
+        
+
+<option data-id="Модель: <br> AS12NM5HRA" value="
+<b>Haier  </b> <br>      
+<b>25 110 руб.</b> <br>    
+<b>Тип:</b> DC-инвертор, сплит-система  <br> 
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 35м² <br> 
+<b>Мощность охлаждения:</b> 3500 Вт <br> 
+<b>Мощность обогрева:</b> 3900Вт<br>  
+<b>Потребляемая мощность:</b> 1080 Вт  <br>
+<b>Уровень шума (max/min):</b> 35/21 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года<br>  
+<b>Производитель:</b> Haier серия Elegant DC Inverter  <br>
+<b>Модель:</b> AS12NM5HRA    <br>
+<b>Наличие:</b> Есть в наличии   
+
+">35²</option> 
+
+
+
+<option data-id="Модель: <br> AS18NM5HRA" value="
+<b>Haier</b> <br>       
+<b>36 520 руб.</b> <br>    
+<b>Тип:</b> DC-инвертор, сплит-система<br>  
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 45м² <br> 
+<b>Мощность охлаждения:</b> 5200 Вт <br> 
+<b>Мощность обогрева:</b> 6000Вт  <br> 
+<b>Потребляемая мощность:</b> 1485 Вт  <br>
+<b>Уровень шума (max/min):</b> 44/28 дБ <br> 
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Elegant DC Inverter<br>  
+<b>Модель:</b> AS18NM5HRA  <br>  
+<b>Наличие:</b> Есть в наличии   
+
+">45²</option> 
+
+
+<option data-id="Модель: <br> AS24NM5HRA" value="
+<b>Haier </b> <br>       
+<b>45 330 руб</b><br>     
+<b>Тип:</b> DC-инвертор, сплит-система <br>  
+<b>Тип монтажа:</b> настенный <br>   
+<b>Режимы: </b>охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 70м² <br> 
+<b>Мощность охлаждения: </b>7100 Вт <br> 
+<b>Мощность обогрева:</b> 7600Вт <br>  
+<b>Потребляемая мощность:</b> 2190 Вт <br> 
+<b>Уровень шума (max/min):</b> 47/35 дБ  <br>
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Elegant DC Inverter <br> 
+<b>Модель:</b> AS24NM5HRA    <br>
+<b>Наличие:</b> Есть в наличии   
+
+">70²</option> 
+</select>
+         
+<div class="model"></div>  
+        </div>
+       </div>
+      </div>       
+  <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>                      
+       
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_obj11" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel11" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel11" data-slide-to="1"></li>              
+              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/medium/TibioDCInverter/general.jpg" alt="Haier серия Tibio DC Inverter">     
+              </div>
+              <div class="item"> 
+                 <img src="catalog/medium/TibioDCInverter/pult.png" alt="Haier серия Tibio DC Inverter"> 
+              </div>
+              
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel11" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel11" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+          
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier <br>серия Tibio DC Inverter</p>          
+              <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/medium/TibioDCInverter/white.png" alt="Haier серия Tibio DC Inverter ">
+                               
+                </div>
+                <div class="color-choose"> 
+                         
+                </div>
+
+             <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> AS07TH3HRA" value="   
+<b>Haier </b> <br>       
+<b>19 350 руб.</b>   <br>  
+<b>Тип:</b> DC-инвертор, сплит-система  <br>
+<b>Тип</b> монтажа: настенный   <br> 
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 20м²  <br>
+<b>Мощность охлаждения:</b> 2050 Вт <br> 
+<b>Мощность обогрева:</b> 2200Вт <br>  
+<b>Потребляемая мощность:</b> 635 Вт <br>
+<b>Уровень шума (max/min):</b> 36/22 дБ  <br>
+<b>Тип хладагента:</b> R410А<br>   
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Tibio DC Inverter  <br>
+<b>Модель:</b> AS07TH3HRA    <br>
+<b>Наличие:</b> Есть в наличии   
+
+">20 м²</option>
+<option data-id="Модель: <br>  AS09TH3HRA" value="
+<b>Haier</b>  <br>       
+<b>20 330 руб.</b> <br>    
+<b>Тип:</b> DC-инвертор, сплит-система  <br> 
+<b>Тип монтажа:</b> настенный   <br> 
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 25м²<br>  
+<b>Мощность охлаждения:</b> 2500 Вт <br> 
+<b>Мощность обогрева:</b> 2800Вт <br>  
+<b>Потребляемая мощность: </b>778 Вт <br>
+<b>Уровень шума (max/min):</b> 36/22 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года   <br>
+<b>Производитель:</b> Haier серия Tibio DC Inverter  <br>
+<b>Модель:</b> AS09TH3HRA    <br>
+<b>Наличие:</b> Есть в наличии   
+
+">25²</option> 
+        
+
+<option data-id="Модель: <br>  AS12TB3HRA" value="
+<b>Haier </b><br>        
+<b>23 160 руб.</b> <br>    
+<b>Тип:</b> DC-инвертор, сплит-система<br>   
+<b>Тип монтажа:</b> настенный  <br>  
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 35м² <br> 
+<b>Мощность охлаждения:</b> 3500 Вт  <br>
+<b>Мощность обогрева:</b> 3700 Вт  <br>  
+<b>Потребляемая мощность:</b> 1090 Вт <br> 
+<b>Уровень шума (max/min):</b> 37/25 дБ  <br>
+<b>Тип хладагента:</b> R410А   
+<b>Гарантия:</b> 3 года <br> 
+<b>Производитель:</b> Haier серия Tibio DC Inverter  
+<b>Модель:</b> AS12TB3HRA <br>   
+<b>Наличие:</b> Есть в наличии<br>   
+
+">35²</option> 
+
+
+
+<option data-id="Модель: <br> AS18TD2HRA" value="
+<b>Haier</b><br>        
+<b>33 240 руб.</b> <br>    
+<b>Тип:</b> DC-инвертор, сплит-система   <br>
+<b>Тип монтажа:</b> настенный <br>   
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 45м²  <br>
+<b>Мощность охлаждения:</b> 5000 Вт<br>  
+<b>Мощность обогрева:</b> 6000 Вт  <br>  
+<b>Потребляемая мощность:</b> 1540 Вт  <br>
+<b>Уровень шума (max/min):</b> 40/28 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Tibio DC Inverter  <br>
+<b>Модель:</b> AS18TD2HRA    <br>
+<b>Наличие:</b> Есть в наличии   
+
+">45²</option> 
+
+
+<option data-id="Модель: <br> AS24TD2HRA" value="
+<b>Haier</b>  <br>       
+ <b> 42 680 руб.</b><br>     
+<b>Тип:</b> DC-инвертор, сплит-система   <br>
+<b>Тип монтажа:</b> настенный   <br> 
+<b>Режимы:</b> охлаждение/обогрев/осушение<br>
+<b>Рекомендуемая площадь:</b> до 70м²  <br>
+<b>Мощность охлаждения:</b> 6600 Вт <br> 
+<b>Мощность обогрева:</b> 7400 Вт <br>   
+<b>Потребляемая мощность:</b> 2019 Вт  <br>
+<b>Уровень шума (max/min):</b> 42/28 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Tibio DC Inverter <br> 
+<b>Модель:</b> AS24TD2HRA  <br>  
+<b>Наличие:</b> Есть в наличии   
+
+">70²</option> 
+</select>
+         
+<div class="model"></div>
+ </div>
+       </div>
+      </div>
+
+       <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>              
+       
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+<div class="modal modal_obj fade modal_obj12" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel12" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel12" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel12" data-slide-to="1"></li>              
+              <li data-target="#myCarousel12" data-slide-to="2"></li>
+              <li data-target="#myCarousel12" data-slide-to="3"></li>
+              <li data-target="#myCarousel12" data-slide-to="4"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/premium/LighteraCrystalDCInverter/white.jpg" alt="серия Lightera Crystal DC Inverter">     
+              </div>
+              <div class="item"> 
+               <img src="catalog/premium/LighteraCrystalDCInverter/white1.png" alt="серия Lightera Crystal DC Inverter">  
+              </div>
+              <div class="item">
+                 <img src="catalog/premium/LighteraCrystalDCInverter/white3.png" alt="серия Lightera Crystal DC Inverter">  
+              </div>
+             <div class="item">
+               <img src="catalog/premium/LighteraCrystalDCInverter/general.png" alt="серия Lightera Crystal DC Inverter">  
+              </div>
+              <div class="item">
+               <img src="catalog/premium/LighteraCrystalDCInverter/pult.jpg" alt="серия Lightera Crystal DC Inverter">  
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel12" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel12" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+           
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier <br>Lightera Crystal DC Inverter</p>          
+              <div class="product_card">
+                    <img class="active" data-image="белый" src="catalog/premium/LighteraCrystalDCInverter/white.jpg" alt="Haier  Lightera Crystal DC Inverter">
+                               
+                </div>
+                <div class="color-choose"> 
+                         
+                </div>
+
+             <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> AS09CB2HRA" value="   
+<b>Haier </b>        
+<b>46 430 руб.</b>       
+<b>Тип:</b> DC инвертор, сплит-система       
+<b>Тип монтажа:</b> настенный  <br>      
+<b>Режимы:</b> охлаждение/обогрев/осушение <br>    
+<b>Рекомендуемая площадь:</b> до 25м² <br>   
+<b>Мощность охлаждения:</b> 2600 Вт<br>    
+<b>Мощность обогрева: </b>3200Вт<br>
+<b>Потребляемая мощность:</b> 650 Вт <br>
+<b>Уровень шума (max/min): </b>37/19 дБ  <br>
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия:</b> 3<b></b> года<br>
+<b>Производитель:</b> Haier серия Lightera Crystal DC Inverter   
+<b>Модель:</b> AS09CB2HRA <br>     
+<b>Наличие:</b> Есть в наличии 
+">25 м²</option>
+<option data-id="Модель: <br>  AS12CB2HRA" value="
+<b>Haier</b>  <br>       
+<b>48 960 руб.</b> <br>      
+<b>Тип:</b> DC инвертор, сплит-система <br>      
+<b>Тип монтажа:</b> настенный  <br>      
+<b>Режимы:</b> охлаждение/обогрев/осушение  <br>   
+<b>Рекомендуемая площадь:</b> до 35м²  <br>  
+<b>Мощность охлаждения:</b> 3600 Вт <br>   
+<b>Мощность обогрева:</b> 4200Вт<br>
+<b>Потребляемая мощность:</b> 950 Вт <br>
+<b>Уровень шума (max/min):</b> 38/21 дБ  <br>
+<b>Тип хладагента:</b> R410А   <br>
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Lightera Crystal DC Inverter<br>   
+<b>Модель:</b> AS12CB2HRA  <br>    
+  <b> <b></b>Наличие:</b> Есть в наличии
+">35²</option> 
+</select>
+         
+         <div class="model"></div> 
+
+        </div>
+       </div>
+      </div>       
+  <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>                    
+        
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_obj14" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel14" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel14" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel14" data-slide-to="1"></li>              
+              <li data-target="#myCarousel14" data-slide-to="2"></li>
+              <li data-target="#myCarousel14" data-slide-to="3"></li>              
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">                 
+               
+                  <img src="catalog/premium/LighteraPremiumDCInverter/white1.png" alt="Haier серия Lightera Premium DC Inverter"> 
+              </div>
+              <div class="item">
+                  <img src="catalog/premium/LighteraPremiumDCInverter/pult.jpg" alt="Haier серия Lightera Premium DC Inverter"> 
+              </div>
+             <div class="item">
+                <img src="catalog/premium/LighteraPremiumDCInverter/pult2.jpg" alt="Haier серия Lightera Premium DC Inverter"> 
+              </div>
+              <div class="item">
+                 <img src="catalog/premium/LighteraPremiumDCInverter/general.png" alt="Haier серия Lightera Premium DC Inverter"> 
+              </div>
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel14" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel14" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier <br>серия Lightera Premium DC Inverter</p>          
+              <div class="product_card">                   
+                    
+                     <img data-image="белый" class="active" src="catalog/premium/LighteraPremiumDCInverter/white.png" alt="Haier серия Lightera Premium DC Inverter">
+                    
+                </div>
+                <div class="color-choose">
+                <!-- <input  data-image="белый" type="radio" id="white" name="color" value="белый">
+                <label name="белый" for="белый"><span></span></label>            
+                <input  data-image="золотой" type="radio" id="gold" name="color" value="серый">
+                <label name="золотой" for="золотой"><span></span></label>              
+                </div>
+                <input  data-image="черный" type="radio" id="grey" name="color" value="черный">
+                <label name="черный" for="черный"><span></span></label>   -->            
+                </div>
+
+             <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> AS25S2SD1FA" value="   
+<b>Haier </b>   <br> 
+<b>55 580 руб</b>.<br>       
+<b>Тип:</b> Super DC инвертор, сплит-система   <br>    
+<b>Тип монтажа:</b> настенный  <br>      
+<b>Режимы:</b> охлаждение/обогрев/осушение  <br>     
+<b>Рекомендуемая площадь:</b> до 25м² <br>       
+<b>Мощность охлаждения:</b> 2600 Вт<br>      
+<b>Мощность обогрева:</b> 3200 Вт<br>   
+<b>Потребляемая мощность:</b> 650 Вт   <br>
+<b>Уровень шума (max/min):</b> 34/15 дБ<br>
+<b>Тип хладагента:</b> R410А <br>
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Lightera Premium DC Inverter <br>
+<b>Модель:</b> AS25S2SD1FA <br>
+<b>Наличие:</b> Есть в наличии
+">25 м²</option>
+<option data-id="Модель: <br> AS35S2SD1FA" value="
+<b>Haier</b> <br>    
+<b>59 440 руб. </b> <br>     
+<b>Тип:</b> Super DC инвертор, сплит-система   <br>    
+<b>Тип монтажа:</b> настенный  <br>      
+<b>Режимы:</b> охлаждение/обогрев/осушение   <br>    
+<b>Рекомендуемая площадь:</b> до 35м²   <br>     
+<b>Мощность охлаждения:</b> 3500 Вт <br>     
+<b>Мощность обогрева:</b> 4200 Вт <br>   
+<b>Потребляемая мощность:</b> 875 Вт  <br> 
+<b>Уровень шума (max/min):</b> 35/16 дБ<br>
+<b>Тип хладагента:</b> R32 <br>
+<b>Гарантия:</b> 3 года<br>
+<b>Производитель:</b> Haier серия Lightera Premium DC Inverter <br>
+<b>Модель:</b> AS35S2SD1FA <br>
+<b>Наличие:</b> Есть в наличии   
+
+">35²</option> 
+</select>
+         
+<div class="model"></div>
+ </div>
+       </div>
+      </div>
+
+         <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>             
+       
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="modal modal_obj fade modal_obj13" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content big">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+       <div class="row">
+        <div class="col-md-6">
+            <!-- Карусель -->
+            <div id="myCarousel13" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">             
+              <li data-target="#myCarousel13" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel13" data-slide-to="1"></li>              
+              <li data-target="#myCarousel13" data-slide-to="2"></li>
+              <li data-target="#myCarousel13" data-slide-to="3"></li>
+             
+            </ol> 
+            <div class="carousel-inner">
+              <div class="active item">
+                 <img src="catalog/premium/LighteraDCInverter/gold1.png" alt="Haier серия Lightera DC Inverter">     
+              </div>
+              <div class="item"> 
+                <img src="catalog/premium/LighteraDCInverter/white1.jpg" alt="Haier серия Lightera DC Inverter">  
+              </div>
+              <div class="item">
+                <img src="catalog/premium/LighteraDCInverter/general.png" alt="Haier серия Lightera DC Inverter">  
+              </div>
+             <div class="item">
+                <img src="catalog/premium/LighteraDCInverter/pult.jpg" alt="Haier серия Lightera DC Inverter">  
+              </div>
+              
+            </div> <!-- inner carousel -->
+            <a class="carousel-control left" href="#myCarousel13" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel13" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- myCarousel -->
+            
+        </div> <!-- 6-md -->
+        <div class="col-md-6">
+        <div class="one_product"> 
+             <div class="product_item product1">       
+                <p class="productor">Производитель: Haier <br>серия Lightera DC Inverter</p>          
+              <div class="product_card">
+                    <img data-image="белый" class="active" src="catalog/premium/LighteraDCInverter/white.png" alt="серия Lightera DC Inverter">
+                     <img data-image="золотой"  src="catalog/premium/LighteraDCInverter/gold.png" alt="серия Lightera DC Inverter">
+                     <img data-image="черный"  src="catalog/premium/LighteraDCInverter/black.jpg" alt="серия Lightera DC Inverter">
+                </div>                
+                <div class="color-choose">
+               <input  data-image="белый" type="radio" class="white" name="color" value="белый">
+                <label data-color="белый" ><span></span></label> 
+
+                <input  data-image="черный" type="radio" class="black" name="color" value="черный">
+                <label data-color="черный" ><span></span></label>  
+                <input  data-image="золотой" type="radio" class="gold" name="color" value="серый">
+                <label data-color="золотой"><span></span></label>              
+                           
+                </div>
+
+              <p class="model_title"></p>
+
+<select name="model" class="userselect">
+<option  data-id="Модель: <br> AS09NS4ERA" value="   
+<b>Haier </b> <br>       
+<b>29 610 руб.</b> <br>      
+<b>Тип:</b> DC инвертор, сплит-система   <br>    
+<b>Тип монтажа:</b> настенный    <br>    
+<b>Режимы:</b> охлаждение/обогрев/осушение  <br>   
+<b>Рекомендуемая площадь: </b>до 25м²   <br> 
+<b>Мощность охлаждения:</b> 2700 Вт <br>   
+<b>Мощность обогрева:</b> 2800Вт<br>
+<b>Потребляемая мощность:</b> 710 Вт <br>
+<b>Уровень шума (max/min):</b> 38/20 дБ  <br>
+<b>Тип хладагента: </b>R410А <br>  
+<b>Гарантия:</b> 3 года<br>
+  
+<b>Производитель:</b> Haier серия Lightera DC Inverter  <br> 
+<b>Модель:</b> AS09NS4ERA-W/G/B   <br>   
+<b>Наличие:</b> Есть в наличии       
+
+">25 м²</option>
+<option data-id="Модель: <br> AS12NS4ERA" value="
+<b>Haier </b>     <br>   
+<b>33 580 руб.</b> <br>     
+<b>Тип:</b> DC инвертор, сплит-система   <br>    
+<b>Тип монтажа:</b> настенный <br>       
+<b>Режимы:</b> охлаждение/обогрев/осушение  <br>   
+<b>Рекомендуемая площадь:</b> до 35м²  <br>  
+<b>Мощность охлаждения: </b>3700 Вт <br>   
+<b>Мощность обогрева:</b> 3600Вт<br>
+<b>Потребляемая мощность:</b> 1000 Вт <br> 
+<b>Уровень шума (max/min):</b> 39/23 дБ  <br>
+<b>Тип хладагента: </b>R410А <br>  
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Lightera DC Inverter<br>   
+<b>Модель:</b> AS12NS4ERA-W/G/B   <br>   
+<b>Наличие:</b> Есть в наличии       
+
+">35²</option> 
+
+<option data-id="Модель: <br> AS12NS4ERA" value="
+<b>Haier</b> <br>        
+<b>33 580 руб.</b>  <br>     
+<b>Тип:</b> DC инвертор, сплит-система <br>      
+<b>Тип монтажа:</b> настенный  <br>      
+<b>Режимы: </b>охлаждение/обогрев/осушение <br>    
+<b>Рекомендуемая площадь:</b> до 35м² <br>   
+<b>Мощность охлаждения:</b> 3700 Вт <br>   
+<b>Мощность обогрева:</b> 3600Вт<br>
+<b>Потребляемая мощность:</b> 1000 Вт <br> 
+<b>Уровень шума (max/min):</b> 39/23 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия: <b>3 года <br>
+<b></b><b>Производитель:</b> Haier серия Lightera DC Inverter <br>  
+<b>Модель:</b> AS12NS4ERA-W/G/B   <br>   
+<b>Наличие:</b> Есть в наличии       
+
+">35²</option> 
+
+
+<option data-id="Модель: <br> AS18NS4ERA" value="
+<b>Haier </b> <br>       
+<b>50 000 руб.</b> <br>      
+<b>Тип:</b> DC инвертор, сплит-система  <br>     
+<b>Тип монтажа:</b> настенный   <br>     
+<b>Режимы:</b> охлаждение/обогрев/осушение <br>    
+<b>Рекомендуемая площадь:</b> до 45м² <br>   
+<b>Мощность охлаждения:</b> 5200 Вт <br>   
+<b>Мощность обогрева:</b> 5800Вт<br>
+<b>Потребляемая мощность:</b> 1000 Вт <br> 
+<b>Уровень шума (max/min):</b> 44/28 дБ  <br>
+<b>Тип хладагента:</b> R410А  <br> 
+<b>Гарантия:</b> 3 года <br>
+<b>Производитель:</b> Haier серия Lightera DC Inverter <br>  
+<b>Модель:</b> AS18NS4ERA-W/G/B <br>     
+<b>Наличие:</b> Есть в наличии       
+
+">45²</option> 
+
+<option data-id="Модель: <br> AS24NS4ERA" value="
+<b>Haier </b> <br>       
+<b>61 800 руб.</b> <br>      
+<b>Тип:</b> DC инвертор, сплит-система <br>      
+<b>Тип монтажа:</b> настенный <br>       
+<b>Режимы:</b> охлаждение/обогрев/осушение <br>    
+<b>Рекомендуемая площадь:</b> до 70м² <br>   
+<b>Мощность охлаждения:</b> 7000 Вт <br>   
+<b>Мощность обогрева:</b> 7500Вт<br>
+<b>Потребляемая мощность:</b> 2180 Вт <br> 
+<b>Уровень шума (max/min):</b> 47/30 дБ <br> 
+<b>Тип хладагента:</b> R410А <br>  
+<b>Гарантия: </b>3 года <br>
+<b>Производитель:</b> Haier серия Lightera DC Inverter<br>   
+<b>Модель:</b> AS24NS4ERA-W/G/B <br>     
+<b>Наличие:</b> Есть в наличии       
+
+">70²</option> 
+
+
+</select>
+         
+         <div class="model"></div>        
+        </div>
+       </div>
+      </div>
+         <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>
+    </div>
+  </div>
+ </div>
+</div>
 
 
 
@@ -2699,12 +5082,12 @@ DC-инвертор   <br>
 	
 	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
 	<script src="libs/selectstyle/jquery.formstyler.min.js"></script>
-  <script type="text/javascript">$('#userselect').styler({
+ <!--  <script>$('#userselect').styler({
   selectSearch: true
-});</script>
+});</script> -->
 	<script src="js/common.js"></script>
-	<script src="js/calculate.js"></script>
-	<script src="js/plugins_all.js" type="text/javascript"> </script>
+	<!-- <script src="js/calculate.js"></script> -->
+	<script src="js/plugins_all.js"> </script>
   <script src="js/colorselect.js"></script>
 	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
 	<!-- <script src="js/map.js"></script>	 -->
